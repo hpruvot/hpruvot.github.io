@@ -1,0 +1,55 @@
+.mcam-block-quote {
+  position: relative;
+
+  padding: 0 20px;
+
+  //.mcam-block-quote::before
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: calc(100% + 10px);
+    width: 7px;
+    background: $blueSky;
+  }
+
+  //.mcam-block-quote__text
+  &__text {
+    margin-bottom: 25px;
+
+    font-size: rem(45px);
+    line-height: rem(65px);
+    font-weight: 600;
+  }
+
+  //.mcam-block-quote__author-photo
+  &__author-photo {
+    display: block;
+    float: left;
+
+    margin-right: 15px;
+
+    width: 48px;
+    height: 48px;
+
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+  //.mcam-block-quote__author-name
+  &__author-name {
+    display: block;
+
+    color: $greyDark;
+    font-size: rem(15px);
+    line-height: rem(20px);
+    font-weight: bold;
+  }
+
+  //.mcam-block-quote__author-job
+  &__author-job {
+    color: $grey;
+    font-size: rem(14px);
+    line-height: rem(19px);
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+
+<body class="mcam-page mcam-page--story mcam-page--story3">
+
+  <header class="mcam-layout-header">
+    <div class="mcam-layout-header__inner">
+      <a href="/" class="mcam-layout-header__logo">
+        <img src="./img/logo_mcam.svg" alt="Logo MCAM">
+      </a>
+      <nav class="mcam-layout-header__nav">
+        <a href="/" class="mcam-layout-header__item">Home</a>
+        <a href="/client-stories.html" class="mcam-layout-header__item active">Client Stories</a>
+        <a href="/our-solutions.html" class="mcam-layout-header__item">Our Solutions</a>
+        <a href="/contact.html" class="mcam-cta">
+          <span class="mcam-cta__link">Contact us</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mcam-layout-section mcam-layout-section--intro">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <div class="mcam-section-article">
+        <div class="mcam-section-article__head">{{ date }}</div>
+        <h1 class="mcam-section-article__title mcam-headline-1">{{ title }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--image">
+    <div class="mcam-layout-section__inner">
+      <picture>
+        <source srcset="./img/{{ thumbnail }}-mobile.jpg" media="(max-width: 639px)">
+        <img src="./img/{{ thumbnail }}-desktop.jpg" />
+      </picture>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--content">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <div class="mcam-section-article__content">
+        <p class="mcam-body-text">
+          Quadrant AG announced today that the company will change its name to Mitsubishi Chemical Advanced Materials AG (MCAM) as of April 1, 2019. This name change will be an important further step in the history of the Group as the renamed company as well as most of its subsidiaries and affiliates which will share the name of Mitsubishi Chemical as part of its new identity with some additional designation.<br>
+          <br>
+          The name aligns with the Mitsubishi Chemical Group brand and is well reflecting the activities of the company. MCAM will, under the new name, continue to serve a growing portfolio of market segments as a Strategic Business Unit (SBU) under the umbrella of its parent company Mitsubishi Chemical Corporation (MCC).<br>
+          <br>
+          Starting April 1, 2019 a new corporate identity will be established with Mitsubishi Chemical Advanced Materials at the core.<br>
+          <br>
+          The existing portfolio of product brands such as Ketron®, MediTECH®, SymaLITE®, Symalit® etc. will remain unaffected and will continue to be used to distribute products under the same specifications and quality into the various customer channels.<br>
+          <br>
+          The company will continue to enhance its high-performance thermoplastic materials business and strive to realize “KAITEKI”.<br>
+          <br>
+          ※    KAITEKI is an original concept of the Mitsubishi Chemical Holdings Group that proposes a way forward in the sustainable development of society and the planet, in addition to serving as a guide for solving environmental and social issues.<br>
+          <br>
+
+          Further information can be obtained from:<br>
+          <br>
+          Frank-Michael Schilling, Chief Financial Officer    frank.schilling@qplas.com<br>
+          <br>
+          Quadrant AG, Talstrasse 70, CH-8001 Zurich<br>
+          Phone +41 (0)44 213 66 66, Fax +41 (0)44 213 66 99
+          <br>
+          <br>
+          Quadrant is a leading global manufacturer of high-performance thermoplastic materials in the form of semi-finished products and finished parts. The company has locations in 21 countries and more than 2800 employees. Its specialty engineering thermoplastics and composites are superior in performance to metals and other materials and are used in a wide range of applications, primarily in the capital goods industry. The company is continuously developing new areas of applications in close cooperation with industry leaders in a broad variety of customer markets. Quadrant is a fully owned subsidiary of Mitsubishi Chemical Corporation (MCC) and its parent company Mitsubishi Chemical Holdings Corporation (MCHC).
+        </p>
+      </div>
+      <a href="/" class="mcam-cta-icon mcam-cta-icon--back">
+        <svg class="icon icon-chevron">
+          <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
+        </svg>
+        <span class="mcam-cta-icon__link">Go back to homepage</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--stories">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <p class="mcam-headline-2">More articles</p>
+      <div class="mcam-section-article__stories">
+        {{#each otherArticles}}
+        <div class="mcam-card-news">
+          <a href="/articles/{{ url }}.html">
+            <picture class="mcam-card-news__picture">
+              <source srcset="./img/{{ thumbnail }}-mobile.jpg" media="(max-width: 767px)">
+              <img src="./img/{{ thumbnail }}-desktop.jpg" />
+            </picture>
+          </a>
+          <div class="mcam-card-news__content">
+            <p class="mcam-card-news__content-date">{{ date }}</p>
+            <a href="/articles/{{ url }}.html">
+              <p class="mcam-card-news__content-title">{{ title }}</p>
+            </a>
+          </div>
+          <a href="/articles/{{ url }}.html" class="mcam-cta-icon">
+            <svg class="icon icon-chevron">
+              <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
+            </svg>
+            <span class="mcam-cta-icon__link">Read the article</span>
+          </a>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  {{#> partials/contact-form}}{{/partials/contact-form}}
+
+  <footer class="mcam-layout-footer">
+    <div class="mcam-layout-footer__columns">
+      <div class="mcam-layout-footer__inner">
+        <div class="mcam-layout-footer__column">
+          <a href="/" class="mcam-layout-footer__logo">
+            <img src="./img/logo_mcam.svg" alt="Logo MCAM">
+          </a>
+          <p>Mitsubishi Chemical Advanced Materials delivers product and application solutions to all leading industries
+            around the
+            world.</p>
+          <a href="https://mcam.com">Visit mcam.com</a>
+        </div>
+        <div class="mcam-layout-footer__column">
+          <p class="mcam-layout-footer__title">Our industries</p>
+          <ul>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Oil & Gas / CPI</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Aerospace & Defense</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Alternative Energy</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Architectural</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Automotive</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Building & Construction</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Food & Beverage</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Heavy Equipment</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Industrial Equipment</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Medical & Life Science</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Recreational Vehicles</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Semiconductor & Electronics</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Sports & Leisure</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Transportation</a></li>
+          </ul>
+        </div>
+        <div class="mcam-layout-footer__column">
+          <p class="mcam-layout-footer__title">Contact us</p>
+          <a href="" class="mcam-cta-icon">
+            <svg class="icon icon-mail">
+              <use xlink:href="/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            <span class="mcam-cta-icon__link">Reach out to one of our Oil<br>& Gas experts</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mcam-layout-footer__copyright">
+      <div class="mcam-layout-footer__inner">
+        <ul>
+          <li class="mcam-layout-footer__item"><a href="/privacy-policies.html">Privacy policies</a></li>
+          <li class="mcam-layout-footer__item"><a href="/legal.html">Legal</a></li>
+          <li class="mcam-layout-footer__item"><a href="/sitemap.html">Sitemap</a></li>
+        </ul>
+        <p>MCAM® 2019 - All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

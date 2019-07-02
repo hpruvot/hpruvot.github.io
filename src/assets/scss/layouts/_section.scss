@@ -1,0 +1,17 @@
+.mcam-layout-section {
+  &__title {
+    margin-bottom: 15px;
+    
+    text-align: center;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+
+    &--small {
+      max-width: 760px;
+    }
+  }
+}

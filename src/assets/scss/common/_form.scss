@@ -1,0 +1,265 @@
+//.mcam-fieldset
+.mcam-fieldset {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 20px 0;
+  
+  width: 100%;
+
+  z-index: 1;
+
+  &--cta {
+    //.mcam-fieldset--cta .mcam-cta
+    .mcam-cta {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+  }
+  
+  //.mcam-fieldset
+  &__input {
+    position: relative;
+    display: block;
+
+    padding: 0 16px;
+    height: 54px;
+    width: 100%;
+
+    color: $blueDark;
+    font-weight: 600;
+    font-size: rem(16px);
+    line-height: rem(22px);
+
+    border: none;
+    border-radius: 1px;
+    border: 1px solid $greyLight;
+
+    transition: border-color 0.3s;
+    -webkit-appearance: none; /* for box shadows to show on iOS */
+
+    &:focus {
+      outline: none;
+    }
+  
+    // ERRORS
+    //.mcam-fieldset--error .mcam-fieldset__input
+    .mcam-fieldset--error & {
+      border-color: $red;
+    }
+
+    //.mcam-fieldset__input:focus+.mcam-fieldset__label, .mcam-fieldset__input.filled+.mcam-fieldset__label
+    &:focus + .mcam-fieldset__label,
+    &.filled + .mcam-fieldset__label {
+      transform: translate3d(0, 0, 0);
+
+      .mcam-fieldset__label-content {
+        // ERRORS
+        //.mcam-fieldset--error .mcam-fieldset__label-content
+        .mcam-fieldset--error & {
+          color: $red;
+        }
+      }
+    }
+
+    //.mcam-fieldset__input:focus, .mcam-fieldset__input.filled
+    &:focus,
+    &.filled {
+      outline: none;
+      border: 1px solid $blueSky;
+
+      // ERRORS
+      //.mcam-fieldset--error .mcam-fieldset__input
+      .mcam-fieldset--error & {
+        border-color: $red;
+      }
+    }
+
+    &--select {
+      /* This is to remove the arrow of select element in IE */
+      &::-ms-expand { 
+        display: none; 
+      }
+
+      //.mcam-fieldset__input--select ~ .icon-chevron
+      & ~ .icon-chevron {
+        position: absolute;
+        top: 15px;
+        right: 16px;
+
+        width: 24px;
+        height: 24px;
+
+        fill: $blueDark;
+      }
+    }
+
+    //.mcam-fieldset__input--checkbox, .mcam-fieldset__input--radio
+    &--checkbox,
+    &--radio {
+      position: absolute;
+      height: 14px;
+      width: 14px;
+      padding: 0;
+      opacity: 0;
+      z-index: 1;
+
+      //.mcam-fieldset__input--checkbox ~ label, .mcam-fieldset__input--radio ~ label
+      & ~ label {
+        position: relative;
+        display: inline-block;
+        padding: 0 0 0 2em;
+        height: 20px;
+        line-height: 20px;
+        cursor: pointer;
+
+        //.mcam-fieldset__input--checkbox ~ label::before, .mcam-fieldset__input--checkbox ~ label::after, .mcam-fieldset__input--radio ~ label::before, .mcam-fieldset__input--radio ~ label::after
+        &::before,
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 18px;
+          height: 18px;
+        }
+
+        //.mcam-fieldset__input--checkbox ~ label::before, .mcam-fieldset__input--radio ~ label::before
+        &::before {
+          content: " ";
+          border: 1px solid $greyLight;
+          border-radius: 1px;
+          box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    &--radio {
+      & ~ label {
+        //.mcam-fieldset__input--radio ~ label::before
+        &::before {
+          background: $white;
+          border-radius: 100%;
+        }
+
+        //.mcam-fieldset__input--radio ~ label::after
+        &::after {
+          content: "";
+          width: 10px;
+          height: 10px;
+          background: $white;
+          border-radius: 100%;
+          top: 6px;
+          left: 6px;
+        }
+      }
+
+      &:checked {
+        & + label {
+          //.mcam-fieldset__input--radio:checked+label::before
+          &::before {
+            border-color: $blueSky;
+          }
+        }
+      }
+    }
+
+    &--checkbox {
+      & ~ .icon {
+        position: absolute;
+        display: none;
+        top: 3px;
+        left: 3px;
+
+        height: 14px;
+        width: 14px;
+
+        fill: $blueSky;
+      }
+
+      &:checked {
+        & ~ .icon {
+          display: block;
+        }
+
+        & + label {
+          //.mcam-fieldset__input--checkbox:checked+label::before
+          &::before {
+            border-color: $blueSky;
+          }
+        }
+      }
+    }
+
+    &--textarea {
+      height: 250px;
+      
+      resize: none;
+
+      @media #{$desktop-up} {
+        height: 210px;
+      }
+    }
+  }
+
+  //.mcam-fieldset__label
+  &__label {
+    position: absolute;
+    bottom: 100%;
+
+    padding: 0 16px;
+    
+    width: 100%;
+
+    color: $greyLight;
+    font-weight: 600;
+    font-size: rem(16px);
+    line-height: rem(22px);
+    text-align: left;
+    
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    transform: translate3d(0, 40px, 0);
+    transition: transform 0.3s;
+  }
+
+  //.mcam-fieldset__label-content
+  &__label-content {
+    position: relative;
+    display: block;
+    padding: 1.6em 0;
+    width: 100%;
+
+    color: $greyLight;
+    padding: 0.25em 0;
+    transition: transform 0.3s;
+  }
+
+  //.mcam-fieldset__text
+  &__text {
+    font-size: rem(9px);
+    line-height: rem(12px);
+    font-weight: 600;
+
+    color: $greyLight;
+
+    margin-top: 5px;
+
+    // ERRORS
+    //.mcam-fieldset--error .mcam-fieldset__text
+    .mcam-fieldset--error & {
+      color: $red;
+    }
+  }
+
+  button {
+    display: inline-block;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+  }
+}

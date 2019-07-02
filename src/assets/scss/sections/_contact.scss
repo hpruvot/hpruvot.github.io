@@ -1,0 +1,61 @@
+.mcam-section-contact {
+  margin-top: 40px;
+  padding: 80px 0;
+
+  background: #F2F2F2;
+  text-align: center;
+  
+  //.mcam-section-contact__fieldsets
+  &__fieldsets {
+    margin-top: 40px;
+
+    text-align: left;
+
+    @media #{$tablet-up} {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  //.mcam-section-contact .mcam-fieldset
+  .mcam-fieldset {
+    @media #{$tablet-up} {
+      width: 48%;
+    }
+
+    select {
+      margin-bottom: 20px;
+    }
+
+    //.mcam-section-contact .mcam-fieldset--full
+    &--full {
+      width: 100%;
+    }
+
+    //.mcam-section-contact .mcam-fieldset--textarea
+    &--textarea {
+      height: 250px;
+      
+      @media #{$tablet-up} {
+        height: 245px;
+      }
+
+      //.mcam-section-contact .mcam-fieldset--textarea input
+      textarea {
+        padding: 15px;
+        height: 100%;
+      }
+    }
+  }
+
+  //.mcam-section-contact__marketing
+  &__marketing {
+    margin: 20px 0;
+
+    color: $greyLight;
+    font-size: rem(14px);
+    line-height: rem(20px);
+    text-align: left;
+  }
+}

@@ -1,0 +1,48 @@
+.mcam-block-author {
+  //.mcam-block-author__photo
+  &__photo {
+    display: block;
+    float: left;
+
+    margin-right: 15px;
+
+    width: 48px;
+    height: 48px;
+
+    overflow: hidden;
+    border-radius: 100%;
+
+    //.mcam-block-author__photo img
+    img {
+      height: 100%;
+      width: 100%;
+      max-width: none;
+      object-fit: cover;
+    }
+  }
+
+  //.mcam-block-author__name
+  &__name {
+    display: block;
+
+    color: $greyDark;
+    font-size: rem(15px);
+    line-height: rem(20px);
+    font-weight: bold;
+  }
+
+  //.mcam-block-author__job
+  &__job {
+    color: $grey;
+    font-size: rem(14px);
+    line-height: rem(19px);
+  }
+
+  //.mcam-block-author__description
+  &__description {
+    margin-top: 20px;
+
+    color: $greyLight;
+    clear: left;
+  }
+}

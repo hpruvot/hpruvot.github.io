@@ -1,0 +1,99 @@
+.mcam-section-article {
+  text-align: center;
+  
+  &__head {
+    margin-bottom: 10px;
+
+    color: $blueSky;
+
+    span {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    @media #{$desktop-up} {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__author {
+    display: inline-block;
+
+    text-align: left;
+  }
+
+  .mcam-block-author__description {
+    font-size: rem(18px);
+    line-height: rem(30px);
+    text-align: center;
+  }
+
+  &__captions {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 30px -1%;
+
+    @media #{$desktop-up} {
+      margin: 50px -1%;
+    }
+
+    .mcam-card-image {
+      width: 48%;
+      margin: 25px 1%;
+
+      overflow: hidden;
+
+      @media #{$desktop-up} {
+        width: 31%;
+      }
+    }
+  }
+
+  &__content-title {
+    margin: 50px 0 20px;
+  }
+
+  &__table {
+    margin-bottom: 30px;
+    
+    @media #{$desktop-up} {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    span {
+      font-size: rem(12px);
+      line-height: rem(20px);
+      color: $grey;
+      font-style: italic;
+    }
+
+    p {
+      margin-bottom: 10px;
+
+      font-size: rem(12px);
+      line-height: rem(20px);
+      color: $grey;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    &-legend {
+      @media #{$desktop-up} {
+        padding-left: 2%;
+      }
+    }
+
+    &-title {
+      border-bottom: 1px solid $greyLight;
+      margin-bottom: 10px;
+    }
+  }
+}

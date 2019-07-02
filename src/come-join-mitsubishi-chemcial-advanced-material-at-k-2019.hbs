@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+
+<body class="mcam-page mcam-page--story mcam-page--story2">
+
+  <header class="mcam-layout-header">
+    <div class="mcam-layout-header__inner">
+      <a href="/" class="mcam-layout-header__logo">
+        <img src="./img/logo_mcam.svg" alt="Logo MCAM">
+      </a>
+      <nav class="mcam-layout-header__nav">
+        <a href="/" class="mcam-layout-header__item">Home</a>
+        <a href="/client-stories.html" class="mcam-layout-header__item active">Client Stories</a>
+        <a href="/our-solutions.html" class="mcam-layout-header__item">Our Solutions</a>
+        <a href="/contact.html" class="mcam-cta">
+          <span class="mcam-cta__link">Contact us</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mcam-layout-section mcam-layout-section--intro">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <div class="mcam-section-article">
+        <div class="mcam-section-article__head">{{ date }}</div>
+        <h1 class="mcam-section-article__title mcam-headline-1">{{ title }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--image">
+    <div class="mcam-layout-section__inner">
+      <picture>
+        <source srcset="./img/{{ img }}-mobile.jpg" media="(max-width: 639px)">
+        <source srcset="./img/{{ img }}-tablet.jpg" media="(max-width: 767px)">
+        <img src="./img/{{ img }}-desktop.jpg" />
+      </picture>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--content">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <div class="mcam-section-article__content">
+        <p class="mcam-body-text">
+          Come join Mitsubishi Chemicals Advanced Materials at the K2019, the worlds largest exhibition for Plastics in
+          Dusseldorf,Germany from October 16 through23, booth # OA Hall 4 / 04.1.<br>
+          <br>
+          We would be gladto host you in our booth.<br>
+          <br>Come and join us for a session in which we address increasing your customer experience with when working with Mitsubishi
+          Chemical Advanced Materials, our Engineered Solutions for the Oil&Gas Industry andwhat we are doing to become your
+          preferred business partner.<br>
+          <br>
+          The K 2019only occurs every three years and focusses primarily on new product innovations
+          and future product material technology.<br>
+          <br>
+          At the show you will find all key segments of the supply chain from pre polymer
+          technology to finished part manufacturing.<br>
+          <br>
+          For more detailed information please click link
+        </p>
+        <p class="mcam-body-text">
+          <a class="mcam-button" href="https://www.k-online.com/vis/v1/en/exhibitors/k2019.2632277?oid=87926&lang=2" target="_new">https://www.k-online.com/vis/v1/en/exhibitors/k2019.2632277?oid=87926&lang=2</a>
+        </p>
+      </div>
+      <a href="/" class="mcam-cta-icon mcam-cta-icon--back">
+        <svg class="icon icon-chevron">
+          <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
+        </svg>
+        <span class="mcam-cta-icon__link">Go back to homepage</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--stories">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <p class="mcam-headline-2">More articles</p>
+      <div class="mcam-section-article__stories">
+        {{#each otherArticles}}
+        <div class="mcam-card-news">
+          <a href="/articles/{{ url }}.html">
+            <picture class="mcam-card-news__picture">
+              <source srcset="./img/{{ thumbnail }}-mobile.jpg" media="(max-width: 767px)">
+              <img src="./img/{{ thumbnail }}-desktop.jpg" />
+            </picture>
+          </a>
+          <div class="mcam-card-news__content">
+            <p class="mcam-card-news__content-date">{{ date }}</p>
+            <a href="/articles/{{ url }}.html">
+              <p class="mcam-card-news__content-title">{{ title }}</p>
+            </a>
+          </div>
+          <a href="/articles/{{ url }}.html" class="mcam-cta-icon">
+            <svg class="icon icon-chevron">
+              <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
+            </svg>
+            <span class="mcam-cta-icon__link">Read the article</span>
+          </a>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  {{#> partials/contact-form}}{{/partials/contact-form}}
+
+  <footer class="mcam-layout-footer">
+    <div class="mcam-layout-footer__columns">
+      <div class="mcam-layout-footer__inner">
+        <div class="mcam-layout-footer__column">
+          <a href="/" class="mcam-layout-footer__logo">
+            <img src="./img/logo_mcam.svg" alt="Logo MCAM">
+          </a>
+          <p>Mitsubishi Chemical Advanced Materials delivers product and application solutions to all leading industries
+            around the
+            world.</p>
+          <a href="https://mcam.com">Visit mcam.com</a>
+        </div>
+        <div class="mcam-layout-footer__column">
+          <p class="mcam-layout-footer__title">Our industries</p>
+          <ul>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Oil & Gas / CPI</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Aerospace & Defense</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Alternative Energy</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Architectural</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Automotive</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Building & Construction</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Food & Beverage</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Heavy Equipment</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Industrial Equipment</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Medical & Life Science</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Recreational Vehicles</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Semiconductor & Electronics</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Sports & Leisure</a></li>
+            <li class="mcam-layout-footer__item"><a href="http://mcam.com">Transportation</a></li>
+          </ul>
+        </div>
+        <div class="mcam-layout-footer__column">
+          <p class="mcam-layout-footer__title">Contact us</p>
+          <a href="" class="mcam-cta-icon">
+            <svg class="icon icon-mail">
+              <use xlink:href="/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            <span class="mcam-cta-icon__link">Reach out to one of our Oil<br>& Gas experts</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mcam-layout-footer__copyright">
+      <div class="mcam-layout-footer__inner">
+        <ul>
+          <li class="mcam-layout-footer__item"><a href="/privacy-policies.html">Privacy policies</a></li>
+          <li class="mcam-layout-footer__item"><a href="/legal.html">Legal</a></li>
+          <li class="mcam-layout-footer__item"><a href="/sitemap.html">Sitemap</a></li>
+        </ul>
+        <p>MCAM® 2019 - All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

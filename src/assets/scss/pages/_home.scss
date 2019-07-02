@@ -1,0 +1,58 @@
+.mcam-page--home {
+  .mcam-layout-section {
+    //.mcam-page--home .mcam-layout-section--slider
+    &--slider {
+      @media #{$desktop-up} {
+        margin: 37px 0 155px;
+      }
+    }
+
+    //.mcam-page--home .mcam-layout-section--textoverlay
+    &--textoverlay {
+      margin: 60px 0;
+    } 
+
+    &--filters {
+      //.mcam-page--home .mcam-layout-section--filters .mcam-section-homefilters
+      .mcam-section-homefilters {
+        margin: 27px 0;  
+      }
+
+      //.mcam-page--home .mcam-layout-section--filters .mcam-cta
+      .mcam-cta {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    //.mcam-page--home .mcam-layout-section--certif
+    &--certif {
+      @media #{$desktop-up} {
+        margin: 85px 0;
+      }
+    }
+
+    //.mcam-page--home .mcam-layout-section--keynumbers
+    &--keynumbers {
+      margin-top: 65px;
+    }
+
+    &--map {
+      //.mcam-page--home .mcam-layout-section--map .mcam-section-map
+      .mcam-section-map {
+        padding: 100px 0 35px;
+      }
+    }
+
+    //.mcam-page--home .mcam-layout-section--news
+    &--news {
+      margin: 40px 0;
+
+      @media #{$desktop-up} {
+        margin: 150px 0;
+      }
+    }
+
+  }
+}

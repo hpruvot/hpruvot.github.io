@@ -1,0 +1,54 @@
+.mcam-block-tooltip {
+  position: relative;
+  display: inline-block;
+
+  margin: 20px;
+
+  background: $white;
+  border: 1px solid $greyLighter;
+  box-shadow: 0px 5px 15px rgba($black, 0.1);
+  border-radius: 100px;
+
+  text-align: center;
+
+  //.mcam-block-tooltip::before, .mcam-block-tooltip::after
+  &::before,
+  &::after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  //.mcam-block-tooltip::before
+  &::before {
+    border-color: rgba($greyLighter, 0);
+    border-bottom-color: $greyLighter;
+    border-width: 11px;
+    margin-left: -11px;
+  }
+
+  //.mcam-block-tooltip::after
+  &::after {
+    border-color: rgba($greyLighter, 0);
+    border-bottom-color: $white;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+
+  //.mcam-block-tooltip__text
+  &__text {
+    display: block;
+
+    padding: 13px 20px;
+
+    color: $blueSky;
+    font-size: rem(14px);
+    line-height: rem(19px);
+    font-weight: 600;
+  }
+}

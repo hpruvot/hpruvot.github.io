@@ -1,0 +1,116 @@
+.mcam-layout-footer {
+  padding-bottom: 56px;
+
+  color: $grey;
+  font-size: rem(16px);
+  line-height: rem(27px);
+
+  border-top: 1px solid rgba($blueDark, 0.3);
+
+  @media #{$tablet-up} {
+    padding-bottom: 0;
+  }
+
+  //.mcam-layout-footer__columns
+  &__columns {
+    padding: 50px 20px;
+    
+    //.mcam-layout-footer__columns .mcam-layout-footer__inner
+    .mcam-layout-footer__inner {
+      margin: 0 auto;
+      max-width: 1150px;
+
+      @media #{$tablet-up} {
+        display: flex;
+      }
+    }
+  }
+
+  //.mcam-layout-footer__column
+  &__column {
+
+    //.mcam-layout-footer__column:not(:last-of-type)
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+
+    //.mcam-layout-footer__column:first-of-type
+    &:first-of-type {
+      @media #{$tablet-up} {
+        width: 36%;
+        margin-right: 7%;
+      }
+    }
+
+    //.mcam-layout-footer__column:nth-of-type(2)
+    &:nth-of-type(2) {
+      @media #{$tablet-up} {
+        margin-right: 7%;
+      }
+    }
+  }
+  
+  //.mcam-layout-footer__logo
+  &__logo {
+    display: block;
+
+    margin-bottom: 20px;
+
+    //.mcam-layout-footer__logo img
+    img {
+      width: 260px;
+      height: 50px;
+    }
+  }
+
+  //.mcam-layout-footer__title
+  &__title {
+    margin: 15px 0;
+    
+    color: $blueSky;
+
+    font-size: rem(18px);
+    line-height: rem(25px);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  //.mcam-layout-footer__copyright
+  &__copyright {
+    padding: 20px;
+
+    text-align: center;
+    background: #f2f2f2;
+
+    //.mcam-layout-footer__copyright .mcam-layout-footer__inner
+    .mcam-layout-footer__inner {
+      margin: 0 auto;
+      max-width: 390px;
+    }
+
+    //.mcam-layout-footer__copyright ul
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      margin-bottom: 60px;
+    }
+
+    //.mcam-layout-footer__copyright .mcam-layout-footer__item
+    .mcam-layout-footer__item {
+      display: inline-block;
+
+      font-size: rem(12px);
+      line-height: rem(16px);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    //.mcam-layout-footer__copyright p
+    p {
+      font-size: rem(9px);
+      line-height: rem(12px);
+      font-weight: 600;
+    }
+  }
+}
