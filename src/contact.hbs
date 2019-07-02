@@ -10,26 +10,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
     content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 </head>
 
 <body class="mcam-page mcam-page--contact">
 
-  <header class="mcam-layout-header">
-    <div class="mcam-layout-header__inner">
-      <a href="/" class="mcam-layout-header__logo">
-        <img src="./img/logo_mcam.svg" alt="Logo MCAM">
-      </a>
-      <nav class="mcam-layout-header__nav">
-        <a href="/" class="mcam-layout-header__item">Home</a>
-        <a href="/client-stories.html" class="mcam-layout-header__item">Client Stories</a>
-        <a href="/our-solutions.html" class="mcam-layout-header__item">Our Solutions</a>
-        <a href="/contact.html" class="mcam-cta">
-          <span class="mcam-cta__link">Contact us</span>
-        </a>
-      </nav>
-    </div>
-  </header>
+  {{#> partials/header}}{{/partials/header}}
 
   {{#> partials/contact-form}}{{/partials/contact-form}}
 
