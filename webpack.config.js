@@ -135,8 +135,7 @@ module.exports = {
   entry,
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: "./"
+    path: path.resolve(__dirname, './'),
   },
   devtool: isDevelopment && "source-map",
   resolve: {
@@ -267,7 +266,7 @@ module.exports = {
         // browse to http://localhost:3000/ during development,
         // ./public directory is being served
         host: 'localhost',
-        server: { baseDir: ['dist'] }
+        server: { baseDir: ['./'] }
       }, {
         // prevent BrowserSync from reloading the page
         // and let Webpack Dev Server take care of this

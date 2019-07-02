@@ -22,15 +22,15 @@
         {{#each articles}}
         <div class="mcam-card-newsbig">
           <picture class="mcam-card-newsbig__picture">
-            <source srcset="./img/{{ img }}-mobile" media="(max-width: 767px)">
-            <source srcset="./img/{{ img }}-tablet" media="(max-width: 1023px)">
-            <img src="./img/{{ img }}-desktop.jpg" />
+            <source srcset="/img/{{ img }}-mobile" media="(max-width: 767px)">
+            <source srcset="/img/{{ img }}-tablet" media="(max-width: 1023px)">
+            <img src="/img/{{ img }}-desktop.jpg" />
           </picture>
           <div class="mcam-card-newsbig__content">
             <p class="mcam-card-newsbig__content-title mcam-headline-2">{{ title }}</p>
             <div class="mcam-block-author">
               <picture class="mcam-block-author__photo">
-                <img src="./img/{{ authorImg }}" alt="">
+                <img src="/img/{{ authorImg }}" alt="">
               </picture>
               <span class="mcam-block-author__name">{{ authorName }}</span>
               <span class="mcam-block-author__job">{{ authorJob }}</span>
@@ -52,7 +52,7 @@
       <div class="mcam-layout-footer__inner">
         <div class="mcam-layout-footer__column">
           <a href="/" class="mcam-layout-footer__logo">
-            <img src="./img/logo_mcam.svg" alt="Logo MCAM">
+            <img src="/img/logo_mcam.svg" alt="Logo MCAM">
           </a>
           <p>Mitsubishi Chemical Advanced Materials delivers product and application solutions to all leading industries
             around the
