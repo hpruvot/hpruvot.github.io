@@ -136,7 +136,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "/"
+    publicPath: "./"
   },
   devtool: isDevelopment && "source-map",
   resolve: {
