@@ -29,11 +29,6 @@ const copyFiles = new CopyWebpackPlugin([
     from: path.resolve(__dirname, 'src/assets/icons/symbol-defs.svg'),
 
     to: ''
-  },
-  {
-    from: path.resolve(__dirname, '.htaccess'),
-
-    to: ''
   }
 ]);
 
