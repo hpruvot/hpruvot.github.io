@@ -250,12 +250,6 @@ module.exports = {
     //   chunks: ['legal'],
     //   filename: 'legal.html'
     // }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/sitemap.html',
-    //   inject: true,
-    //   chunks: ['sitemap'],
-    //   filename: 'sitemap.html'
-    // }),
     new BrowserSyncPlugin(
       {
         // browse to http://localhost:3000/ during development,
