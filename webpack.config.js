@@ -52,12 +52,12 @@ const clientStories = [
     'img': 'client-story-1'
   },
   {
-    'title': 'Client Story 2',
-    'url': 'get-your-free-pass-and-meet-our-experts',
+    'title': '3% compressor flow improvement achieved with polymer seal use in centrifugal compressors',
+    'url': '3-compressor-flow-improvement-achieved-with-polymer-seal-use-in-centrifugal-compressors',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
     'authorImg': 'frank-olmos.png',
-    'date': 'June 2019',
+    'date': 'July 2019',
     'img': 'client-story-2'
   },
   {

@@ -1,8 +1,17 @@
 .mcam-card-image {
+
+  &__picture {
+    height: 100%;
+  }
+  
   //.mcam-card-image img
   img {
-    width: 100%;
-    object-fit: cover;
+    height: 160px;
+    object-fit: contain;
+
+    @media #{$tablet-up} {
+      height: 220px;
+    }
   }
 
   //.mcam-card-image figcaption
