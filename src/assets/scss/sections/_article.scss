@@ -58,13 +58,9 @@
     margin: 50px 0 20px;
   }
 
+  //.mcam-section-article__table
   &__table {
     margin-bottom: 30px;
-    
-    @media #{$desktop-up} {
-      display: flex;
-      justify-content: space-between;
-    }
 
     span {
       font-size: rem(12px);
@@ -86,9 +82,7 @@
     }
 
     &-legend {
-      @media #{$desktop-up} {
-        padding-left: 2%;
-      }
+      margin-top: 10px;
     }
 
     &-title {
