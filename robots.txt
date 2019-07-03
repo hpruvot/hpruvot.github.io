@@ -1,5 +1,3 @@
 User-Agent: *
 
-Disallow: ???
-
 Sitemap: https://oil-and-gas-polymer-solutions.mcam.com/sitemap.xml
