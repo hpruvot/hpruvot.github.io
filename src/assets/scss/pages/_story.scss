@@ -1,5 +1,5 @@
 .mcam-page--story {
-  .mcam-layout-section{
+  .mcam-layout-section {
     &--intro {
       margin: 50px 0;
 
@@ -10,35 +10,53 @@
     
     &--image {
       @media #{$tablet-up} {
-        margin-bottom: 85px;
+        margin-bottom: 40px;
       }
-
+      
       img {
         margin: 0 auto;
       }
     }
-  
+    
     &--content {
+      //.mcam-page--story .mcam-layout-section--content .mcam-layout-section__inner
       .mcam-layout-section__inner {
         position: relative;
+
+        @media #{$desktop-up} {
+          display: flex;
+        }
+      }
+
+      //.mcam-page--story .mcam-layout-section--content .mcam-section-article__content:first-of-type
+      .mcam-section-article__content:nth-of-type(1) {
+        @media #{$desktop-up} {
+          max-width: calc(83% - 166px);
+          margin-left: auto;
+          padding-right: 2%;
+        }
       }
     }
 
+    //.mcam-page--story .mcam-layout-section--stories
     &--stories {
       margin-top: 95px;
     }
 
+    //.mcam-page--story .mcam-layout-section--author
     &--author {
       @media #{$tablet-up} {
-        margin-top: 100px;
+        padding-top: 100px; // not margin - for anchor link
       }
 
+      //.mcam-page--story .mcam-layout-section--author .mcam-section-author
       .mcam-section-author {
         @media #{$tablet-up} {
           display: flex;
           flex-wrap: wrap;
         }
 
+        //.mcam-page--story .mcam-layout-section--author .mcam-section-author__left
         &__left {
           margin-bottom: 60px;
           padding: 16px 15px;
@@ -52,7 +70,7 @@
           }
         }
 
-        //.mcam-section-intro__right
+        //.mcam-page--story .mcam-layout-section--author .mcam-section-author__right
         &__right {
           margin-bottom: 60px;
 
@@ -64,6 +82,7 @@
       }
 
       .mcam-block-author {
+        //.mcam-page--story .mcam-layout-section--author .mcam-block-author .mcam-cta-icon, .mcam-page--story .mcam-layout-section--author .mcam-block-author__description
         &__description,
         .mcam-cta-icon {
           @media #{$tablet-up} {
@@ -71,6 +90,7 @@
           }
         }
 
+        //.mcam-page--story .mcam-layout-section--author .mcam-block-author__description
         &__description {
           margin-bottom: 20px;
         }
@@ -78,14 +98,17 @@
     }
   }
   
+  //.mcam-page--story .mcam-card-author
   .mcam-card-author {
-    display: none;
-    
+    @media #{$desktop-down} {
+      display: none;
+    }
+
     @media #{$desktop-up} {
-      position: absolute;
-      display: block;
-      right: -174px;
-      top: 26px;
+      position: sticky;
+      margin-top: 65px;
+      top: 150px;
+      left: 100%;
     }
   }
 
