@@ -223,14 +223,18 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      title: 'Our polymers solutions for Oil and Gas | MCAM',
       template: './src/our-solutions.hbs',
-      filename: 'our-solutions.html'
+      filename: 'our-solutions.html',
+      templateParameters: {
+        'title': 'Our polymers solutions for Oil and Gas | MCAM'
+      }
     }),
     new HtmlWebpackPlugin({
-      title: 'Contact',
       template: './src/contact.hbs',
-      filename: 'contact.html'
+      filename: 'contact.html',
+      templateParameters: {
+        'title': 'Contact'
+      }
     }),
     new HtmlWebpackPlugin({
       template: './src/404.hbs',
