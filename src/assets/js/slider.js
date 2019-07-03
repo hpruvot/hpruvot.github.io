@@ -1,7 +1,8 @@
 export default class Slider {
-  constructor(container, slides, dots, activeSlideIndex) {
+  constructor(container, slides, dots, titles, activeSlideIndex) {
     this.container = container;
     this.slides = document.querySelectorAll(slides);
+    this.titles = document.querySelectorAll(titles);
     this.dots = document.querySelectorAll(dots);
     this.activeSlideIndex = activeSlideIndex;
 
@@ -9,6 +10,9 @@ export default class Slider {
   }
 
   init() {
+    this.slides[0].classList.add('active');
+    this.titles[0].classList.add('active');
+
     this.initEvents()
   }
 
@@ -27,8 +31,10 @@ export default class Slider {
         // remove current active class
         this.removeActiveClasses(this.dots);
         this.removeActiveClasses(this.slides);
+        this.removeActiveClasses(this.titles);
         dot.classList.add('active');
         this.slides[index].classList.add('active');
+        this.titles[index].classList.add('active');
         this.activeSlideIndex = index;
       });
     })
@@ -50,7 +56,9 @@ export default class Slider {
 
     this.removeActiveClasses(this.dots);
     this.removeActiveClasses(this.slides);
+    this.removeActiveClasses(this.titles);
     this.dots[this.activeSlideIndex].classList.add('active');
     this.slides[this.activeSlideIndex].classList.add('active');
+    this.titles[this.activeSlideIndex].classList.add('active');
   }
 }

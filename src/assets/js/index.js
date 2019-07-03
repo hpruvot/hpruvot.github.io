@@ -23,8 +23,12 @@ const App = {
     new Filters();
 
     if (document.querySelector('.mcam-section-homeslider__list')) {
-      new Slider('.mcam-section-homeslider__list', '.mcam-section-homeslider__item', '.mcam-section-homeslider__bullet', 0);
+      new Slider('.mcam-section-homeslider__list', '.mcam-section-homeslider__item', '.mcam-section-homeslider__bullet', '.mcam-section-homeslider__title', 0);
     }
+
+    // if (document.querySelector('.mcam-section-homeslider__titles')) {
+    //   new Slider('.mcam-section-homeslider__titles', '.mcam-section-homeslider__title', null, 0);
+    // }
   }
 }
 

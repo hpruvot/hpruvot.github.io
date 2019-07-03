@@ -52,22 +52,22 @@ const clientStories = [
     'img': 'client-story-1'
   },
   {
-    'title': 'KSHOW - Get your free pass and meet our experts',
+    'title': 'Client Story 2',
     'url': 'get-your-free-pass-and-meet-our-experts',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
     'authorImg': 'frank-olmos.png',
     'date': 'June 2019',
-    'img': 'client-story-2',
+    'img': 'client-story-2'
   },
   {
-    'title': 'MCAM wins the "Labby of the Year" 1rst price',
+    'title': 'Client Story 3',
     'url': 'mcam-wins-the-labby-of-the-year',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
     'authorImg': 'frank-olmos.png',
     'date': 'June 2019',
-    'img': 'client-story-3',
+    'img': 'client-story-3'
   }
 ];
 

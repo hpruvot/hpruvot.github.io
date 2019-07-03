@@ -46,6 +46,37 @@
     }
   }
 
+  //.mcam-section-homeslider__titles
+  &__titles {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  //.mcam-section-homeslider__title
+  &__title {
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    
+    opacity: 0;
+    
+    transition: opacity .4s ease-in-out;
+    
+    //.mcam-section-homeslider__title.active
+    &.active {
+      opacity: 1;
+
+      z-index: 1;
+      
+      @media #{$desktop-down} {
+        position: relative;
+      } 
+    }
+  }
+
   //.mcam-section-homeslider__list
   &__list {
     height: 100%;

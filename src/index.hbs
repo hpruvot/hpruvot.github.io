@@ -8,22 +8,29 @@
   <div class="mcam-layout-section mcam-layout-section--slider">
     <div class="mcam-section-homeslider">
       <div class="mcam-section-homeslider__left">
-        <p class="mcam-headline-1">We helped a leading OEM significantly increase their mean time between repair (MTBR)</p>
-        <a href="/client-stories/{{clientStories.0.url}}.html" class="mcam-cta">
-          <span class="mcam-cta__link">Read the story</span>
-        </a>
+        <div class="mcam-section-homeslider__titles">
+        {{#each clientStories}}
+          <div class="mcam-section-homeslider__title">
+            <p class="mcam-headline-1">{{ title }}</p>
+            <a href="/client-stories/{{ url }}.html" class="mcam-cta">
+              <span class="mcam-cta__link">Read the story</span>
+            </a>
+          </div>
+        {{/each}}
+        </div>
       </div>
       <div class="mcam-section-homeslider__right">
         <div class="mcam-section-homeslider__slider">
           <div class="mcam-section-homeslider__list">
-            <div class="mcam-section-homeslider__item active">
+            {{#each clientStories}}
+            <div class="mcam-section-homeslider__item">
               <picture>
-                <source srcset="/img/home-slider-1-640.jpg" media="(max-width: 640px)">
-                <source srcset="/img/home-slider-1-1024.jpg" media="(max-width: 1024px)">
-                <img src="/img/home-slider-1-1110.jpg" />
+                <source srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 640px)">
+                <img src="/img/{{ img }}-desktop.jpg" />
               </picture>
             </div>
-            <div class="mcam-section-homeslider__item">
+            {{/each}}
+            {{!-- <div class="mcam-section-homeslider__item">
               <picture>
                 <source srcset="/img/home-slider-2-640.jpg" media="(max-width: 640px)">
                 <source srcset="/img/home-slider-2-1024.jpg" media="(max-width: 1024px)">
@@ -36,7 +43,7 @@
                 <source srcset="/img/home-slider-3-1024.jpg" media="(max-width: 1024px)">
                 <img src="/img/home-slider-3-1110.jpg" />
               </picture>
-            </div>
+            </div> --}}
           </div>
           <div class="mcam-section-homeslider__bullets">
             <div class="mcam-section-homeslider__bullet active">
@@ -86,7 +93,7 @@
             <img src="/img/home-filter-1-desktop.jpg" />
           </picture>
           <svg class="mcam-card-filter__icon icon icon-waves4">
-            <use xlink:href="symbol-defs.svg#icon-waves4"></use>
+            <use xlink:href="/symbol-defs.svg#icon-waves4"></use>
           </svg>
           <p class="mcam-card-filter__title">High Temperature High Pressure (HTHP)</p>
         </a>
@@ -99,7 +106,7 @@
             <img src="/img/home-filter-2-desktop.jpg" />
           </picture>
           <svg class="mcam-card-filter__icon icon icon-waves4">
-            <use xlink:href="symbol-defs.svg#icon-waves5"></use>
+            <use xlink:href="/symbol-defs.svg#icon-waves5"></use>
           </svg>
           <p class="mcam-card-filter__title">Chemical Resistance</p>
         </a>
@@ -112,7 +119,7 @@
             <img src="/img/home-filter-3-desktop.jpg" />
           </picture>
           <svg class="mcam-card-filter__icon icon icon-waves4">
-            <use xlink:href="symbol-defs.svg#icon-waves3"></use>
+            <use xlink:href="/symbol-defs.svg#icon-waves3"></use>
           </svg>
           <p class="mcam-card-filter__title">Clearance</p>
         </a>
@@ -203,7 +210,7 @@
             </div>
             <a href="/articles/{{ url }}.html" class="mcam-cta-icon">
               <svg class="icon icon-chevron">
-                <use xlink:href="symbol-defs.svg#icon-chevron"></use>
+                <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
               </svg>
               <span class="mcam-cta-icon__link">Read the article</span>
             </a>
