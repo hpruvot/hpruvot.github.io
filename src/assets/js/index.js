@@ -1,4 +1,5 @@
 require('../icons/svgxuse.min');
+require('./tarteaucitron.js');
 import AOS from 'aos';
 
 import Form from './form';
