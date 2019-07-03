@@ -80,15 +80,15 @@ const articles = [
     'img': 'article-1'
   },
   {
-    'title': 'Come Join Mitsubishi Chemcial Advanced Material at K 2019',
-    'url': 'come-join-mitsubishi-chemcial-advanced-material-at-k-2019',
+    'title': 'Meet us at K 2019 | Mitsubishi Chemical Advanced Solutions',
+    'url': 'come-join-mitsubishi-chemical-advanced-material-at-k-2019',
     'date': '28.6.2019',
     'thumbnail': 'home-article-2',
     'img': 'article-2'
   },
   {
-    'title': 'Quadrant Changes Name to Mitsubishi Chemcial Advanced Materials as of April 1, 2019',
-    'url': 'quadrant-changes-name-to-mitsubishi-chemcial-advanced-materials-as-of-april-1-2019',
+    'title': 'Quadrant becomes Mitsubishi Chemical Advanced Materials | MCAM',
+    'url': 'quadrant-changes-name-to-mitsubishi-chemical-advanced-materials-as-of-april-1-2019',
     'date': '25.02.2019',
     'thumbnail': 'home-article-3',
     'img': 'article-3'
@@ -209,20 +209,21 @@ module.exports = {
       template: './src/index.hbs',
       filename: 'index.html',
       templateParameters: {
-        'title': 'Homepage',
-        'articles': articles
+        'title': 'Oil and gas polymer materials | Mitsubishi Chemical Advanced Solutions',
+        'articles': articles,
+        'clientStories': clientStories
       }
     }),
     new HtmlWebpackPlugin({
       template: './src/client-stories.hbs',
       filename: 'client-stories.html',
       templateParameters: {
-        'title': 'Client stories',
+        'title': 'Client stories in Oil and Gas industry using polymers solutions | MCAM',
         'articles': clientStories
       }
     }),
     new HtmlWebpackPlugin({
-      title: 'Our solutions',
+      title: 'Our polymers solutions for Oil and Gas | MCAM',
       template: './src/our-solutions.hbs',
       filename: 'our-solutions.html'
     }),
@@ -235,21 +236,23 @@ module.exports = {
       template: './src/404.hbs',
       filename: '404.html',
       templateParameters: {
-        'title': 'title'
+        'title': '404'
       }
     }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/privacy-policies.html',
-    //   inject: true,
-    //   chunks: ['privacy-policies'],
-    //   filename: 'privacy-policies.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/legal.html',
-    //   inject: true,
-    //   chunks: ['legal'],
-    //   filename: 'legal.html'
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/privacy-notice.hbs',
+      filename: 'privacy-notice.html',
+      templateParameters: {
+        'title': 'Privacy Notice'
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/terms-of-use.hbs',
+      filename: 'terms-of-use.html',
+      templateParameters: {
+        'title': 'Terms of Use'
+      }
+    }),
     new BrowserSyncPlugin(
       {
         // browse to http://localhost:3000/ during development,
