@@ -58,7 +58,7 @@ const clientStories = [
     'authorJob': 'Global Market Segment Manager',
     'authorImg': 'frank-olmos.png',
     'date': 'June 2019',
-    'img': 'client-story-1',
+    'img': 'client-story-2',
   },
   {
     'title': 'MCAM wins the "Labby of the Year" 1rst price',
@@ -67,7 +67,7 @@ const clientStories = [
     'authorJob': 'Global Market Segment Manager',
     'authorImg': 'frank-olmos.png',
     'date': 'June 2019',
-    'img': 'client-story-1',
+    'img': 'client-story-3',
   }
 ];
 

@@ -10,21 +10,22 @@
     justify-content: space-between;
   }
 
-  //.mcam-section-intro__left
+  //.mcam-section-more__left
   &__left {
     @media #{$desktop-up} {
       width: 43%;
+      padding-right: 2%;
     }
   }
 
-  //.mcam-section-intro__right
+  //.mcam-section-more__right
   &__right {
     @media #{$desktop-up} {
       width: 57%;
     }
   }
 
-  //.mcam-section-intro .mcam-body-text
+  //.mcam-section-more .mcam-body-text
   .mcam-body-text {
     margin-top: 15px;
 
@@ -40,7 +41,8 @@
     
     @media #{$desktop-up} {
       margin-top: 25px;
-      width: auto;
+      width: 77%;
+      margin-left: auto;
     }
   }
 }

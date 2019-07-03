@@ -12,8 +12,8 @@
         {{#each articles}}
         <div class="mcam-card-newsbig">
           <picture class="mcam-card-newsbig__picture">
-            <source srcset="/img/{{ img }}-mobile" media="(max-width: 767px)">
-            <source srcset="/img/{{ img }}-tablet" media="(max-width: 1023px)">
+            <source srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 767px)">
+            <source srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 1023px)">
             <img src="/img/{{ img }}-desktop.jpg" />
           </picture>
           <div class="mcam-card-newsbig__content">
@@ -25,10 +25,10 @@
               <span class="mcam-block-author__name">{{ authorName }}</span>
               <span class="mcam-block-author__job">{{ authorJob }}</span>
             </div>
+            <a href="/client-stories/{{url}}.html" class="mcam-cta">
+              <span class="mcam-cta__link">Read the story</span>
+            </a>
           </div>
-          <a href="/client-stories/{{url}}.html" class="mcam-cta">
-            <span class="mcam-cta__link">Read the story</span>
-          </a>
         </div>
         {{/each}}
       </div>
