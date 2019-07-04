@@ -10,7 +10,7 @@
 
   //.mcam-card-author__content
   &__content {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   //.mcam-card-author .mcam-block-author
@@ -30,5 +30,12 @@
   .icon-info {
     display: block;
     margin: 0 auto;
+  }
+
+  &__more {
+    //.mcam-card-author__more .mcam-cta-icon
+    .mcam-cta-icon {
+      display: block;
+    }
   }
 }

@@ -27,10 +27,8 @@
     }
 
     //.mcam-page--home .mcam-layout-section--certif
-    &--certif {
-      @media #{$desktop-up} {
-        margin: 85px 0;
-      }
+    &--certif { 
+      margin: 85px 0;
     }
 
     //.mcam-page--home .mcam-layout-section--keynumbers
