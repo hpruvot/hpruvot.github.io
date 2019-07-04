@@ -14,13 +14,13 @@
           <picture class="mcam-card-newsbig__picture">
             <source data-srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 767px)">
             <source data-srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 1023px)">
-            <img data-src="/img/{{ img }}-desktop.jpg" class="lazy" alt="" />
+            <img data-src="/img/{{ img }}-desktop.jpg" class="lazy" alt="{{ title }}" />
           </picture>
           <div class="mcam-card-newsbig__content">
             <h2 class="mcam-card-newsbig__content-title mcam-headline-2">{{ title }}</h2>
             <div class="mcam-block-author">
               <picture class="mcam-block-author__photo">
-                <img data-src="/img/{{ authorImg }}" class="lazy" alt="">
+                <img data-src="/img/{{ authorImg }}" class="lazy" alt="{{ authorName }}">
               </picture>
               <span class="mcam-block-author__name">{{ authorName }}</span>
               <span class="mcam-block-author__job">{{ authorJob }}</span>

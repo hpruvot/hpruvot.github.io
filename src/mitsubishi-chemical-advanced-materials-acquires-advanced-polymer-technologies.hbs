@@ -18,7 +18,7 @@
       <picture>
         <source data-srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 639px)">
         <source data-srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 767px)">
-        <img data-src="/img/{{ img }}-desktop.jpg" class="lazy" alt="" />
+        <img data-src="/img/{{ img }}-desktop.jpg" class="lazy" alt="{{ title }}" />
       </picture>
     </div>
   </div>
@@ -95,7 +95,7 @@
           <a href="/articles/{{ url }}.html">
             <picture class="mcam-card-news__picture">
               <source data-srcset="/img/{{ thumbnail }}-mobile.jpg" media="(max-width: 767px)">
-              <img data-src="/img/{{ thumbnail }}-desktop.jpg" class="lazy" alt="" />
+              <img data-src="/img/{{ thumbnail }}-desktop.jpg" class="lazy" alt="{{ title }}" />
             </picture>
           </a>
           <div class="mcam-card-news__content">

@@ -26,8 +26,8 @@
             <div class="mcam-section-homeslider__item">
               <picture>
                 <source data-srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 640px)">
-                <source data-srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 1400px)" alt=""/>
-                <img data-src="/img/{{ img }}-desktop.jpg" class="lazy" alt=""/>
+                <source data-srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 1400px)" />
+                <img data-src="/img/{{ img }}-desktop.jpg" class="lazy" alt="{{ title }}" />
               </picture>
             </div>
             {{/each}}
@@ -77,7 +77,7 @@
           <picture class="mcam-card-filter__picture">
             <source data-srcset="/img/home-filter-1-mobile.jpg" media="(max-width: 640px)">
             <source data-srcset="/img/home-filter-1-tablet.jpg" media="(max-width: 1024px)">
-            <img data-src="/img/home-filter-1-desktop.jpg" class="lazy" alt="" />
+            <img data-src="/img/home-filter-1-desktop.jpg" class="lazy" alt="High Pressure High Temperature (HTHP)" />
           </picture>
           <svg class="mcam-card-filter__icon icon icon-waves4">
             <use xlink:href="/symbol-defs.svg#icon-waves4"></use>
@@ -90,7 +90,7 @@
           <picture class="mcam-card-filter__picture">
             <source data-srcset="/img/home-filter-2-mobile.jpg" media="(max-width: 640px)">
             <source data-srcset="/img/home-filter-2-tablet.jpg" media="(max-width: 1024px)">
-            <img data-src="/img/home-filter-2-desktop.jpg" class="lazy" alt="" />
+            <img data-src="/img/home-filter-2-desktop.jpg" class="lazy" alt="Chemical Resistance" />
           </picture>
           <svg class="mcam-card-filter__icon icon icon-waves4">
             <use xlink:href="/symbol-defs.svg#icon-waves5"></use>
@@ -103,7 +103,7 @@
           <picture class="mcam-card-filter__picture">
             <source data-srcset="/img/home-filter-3-mobile.jpg" media="(max-width: 640px)">
             <source data-srcset="/img/home-filter-3-tablet.jpg" media="(max-width: 1024px)">
-            <img data-src="/img/home-filter-3-desktop.jpg" class="lazy" alt="" />
+            <img data-src="/img/home-filter-3-desktop.jpg" class="lazy" alt="Clearance" />
           </picture>
           <svg class="mcam-card-filter__icon icon icon-waves4">
             <use xlink:href="/symbol-defs.svg#icon-waves3"></use>
@@ -122,8 +122,8 @@
       <div class="mcam-block-certif">
         <div class="mcam-"></div>
         <div class="mcam-block-certif__logos">
-          <img data-src="/img/logo1.jpg" class="lazy" alt="">
-          <img data-src="/img/logo2.jpg" class="lazy" alt="">
+          <img data-src="/img/logo1.jpg" class="lazy" alt="NORSOK M-710">
+          <img data-src="/img/logo2.jpg" class="lazy" alt="PASSED">
         </div>
         <p class="mcam-block-certif__text">Mitsubishi Chemical Advanced Materials was the world’s FIRST to earn NORSOK M-710 compliance and provides the most
         accurate and reliable data on their stock shapes.The NORSOK M-710 specification was developed by the Norwegian petroleum
@@ -137,7 +137,7 @@
   <div class="mcam-layout-section mcam-layout-section--keynumbers">
     <div class="mcam-section-keynumbers">
       <picture class="mcam-section-keynumbers__background">
-        <img data-src="/img/03_Key_Numbers.jpg" class="lazy" alt="">
+        <img data-src="/img/03_Key_Numbers.jpg" class="lazy" alt="Key numbers">
       </picture>
       <div class="mcam-section-keynumbers__content">
         <p class="mcam-layout-section__title mcam-button">Key numbers</p>
@@ -169,7 +169,7 @@
         <p class="mcam-layout-section__title mcam-button">We are almost everywhere</p>
         <h2 class="mcam-section-map__title mcam-headline-2">Mitsubishi Chemical Advanced Materials locations around the world</h2>
         <div class="mcam-section-map__content" data-aos="zoom-out" data-aos-delay="0" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-once="true">
-          <img data-src="/img/map.svg" class="lazy" alt="">
+          <img data-src="/img/map.svg" class="lazy" alt="Map">
         </div>
       </div>
     </div>
@@ -186,7 +186,7 @@
             <a href="/articles/{{ url }}.html">
               <picture class="mcam-card-news__picture">
                 <source data-srcset="/img/{{ thumbnail }}-mobile.jpg" media="(max-width: 767px)">
-                <img data-src="/img/{{ thumbnail }}-desktop.jpg" class="lazy" alt=""/>
+                <img data-src="/img/{{ thumbnail }}-desktop.jpg" class="lazy" alt="{{ title }}" />
               </picture>
             </a>
             <div class="mcam-card-news__content">
