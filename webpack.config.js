@@ -44,7 +44,8 @@ const extractSass = new MiniCssExtractPlugin({
 
 const clientStories = [
   {
-    'title': 'We helped a leading OEM significantly increase their mean time between repair (MTBR)',
+    'title': 'We helped a leading OEM to significantly increase its mean time between repair (MTBR)',
+    'metaTitle': 'Increase mean time between repair using polymer labby seals | MCAM',
     'description': 'After 15 years of service in a natural gas compressor, the MCAM\'s Duratron T4540 PAI polymer seals are similar to new ones.',
     'url': 'we-helped-a-leading-oem-significantly-increase-their-mean-time-between-repair',
     'authorName': 'Frank Olmos',
@@ -55,7 +56,8 @@ const clientStories = [
   },
   {
     'title': '3% compressor flow improvement achieved with polymer seal use in centrifugal compressors',
-    'description': '',
+    'metaTitle': '3% compressor flow improvement achieved with polymer seal use in centrifugal compressors',
+    'description': '3% compressor flow improvement achieved with polymer seal use in centrifugal compressors',
     'url': '3-compressor-flow-improvement-achieved-with-polymer-seal-use-in-centrifugal-compressors',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
@@ -65,7 +67,8 @@ const clientStories = [
   },
   {
     'title': 'Client Story 3',
-    'description': '',
+    'metaTitle': 'Client Story 3',
+    'description': 'Client Story 3',
     'url': 'mcam-wins-the-labby-of-the-year',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
@@ -95,7 +98,7 @@ const articles = [
     'img': 'article-2'
   },
   {
-    'title': 'Quadrant Changes Name to Mitsubishi Chemcial Advanced Materials as of April 1, 2019 ',
+    'title': 'Quadrant Changes Name to Mitsubishi Chemical Advanced Materials as of April 1, 2019 ',
     'metaTitle': 'Quadrant becomes Mitsubishi Chemical Advanced Materials | MCAM',
     'description': 'Quadrant becomes MCAM and will continue to enhance its high-performance thermoplastics materials and strive to realize KAITEKI',
     'url': 'quadrant-changes-name-to-mitsubishi-chemical-advanced-materials-as-of-april-1-2019',
@@ -111,6 +114,8 @@ let clientStoriesHtmlPlugins = clientStories.map(function (clientStory) {
     template: __dirname + `/src/${clientStory.url}.hbs`,
     templateParameters: {
       'title': clientStory.title,
+      'metaTitle': clientStory.metaTitle,
+      'description': clientStory.description,
       'img': clientStory.img,
       'authorName': clientStory.authorName,
       'authorJob': clientStory.authorJob,
@@ -127,6 +132,8 @@ let articlesHtmlPlugins = articles.map(function (article) {
     template: __dirname + `/src/${article.url}.hbs`,
     templateParameters: {
       'title': article.title,
+      'metaTitle': article.metaTitle,
+      'description': article.description,
       'url': article.url,
       'date': article.date,
       'thumbnail': article.thumbnail,
