@@ -28,6 +28,14 @@ export default class Form {
         inputEl.addEventListener('blur', (e) => this.onInputBlur(e, inputEl));
       }
     });
+
+    // Get country select and zipcode input
+    let inputCountry = document.querySelector('#mcam-fieldset-country select');
+    let inputZipcode = document.querySelector('#mcam-fieldset-zipcode');
+
+    if (inputCountry && inputZipcode) {
+      inputCountry.addEventListener('change', (e) => this.changeCountry(e, inputZipcode));
+    }
   }
 
   // On focus
@@ -43,6 +51,18 @@ export default class Form {
     // If the input is filled
     if (e.target.value.trim() === '') {
       inputEl.classList.remove('filled')
+    }
+  }
+
+  changeCountry(e, inputZipcode) {
+    e.preventDefault();
+    // If USA or Germany is selected
+    if (e.target.value === 'United States of America' || e.target.value === 'Germany') {
+      // We display the zipcode inpute
+      inputZipcode.classList.remove('hidden')
+    } else {
+      // Else we hide it
+      inputZipcode.classList.add('hidden')
     }
   }
 }

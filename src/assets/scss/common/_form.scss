@@ -10,6 +10,10 @@
 
   z-index: 1;
 
+  &.hidden {
+    display: none;
+  }
+
   &--cta {
     //.mcam-fieldset--cta .mcam-cta
     .mcam-cta {
