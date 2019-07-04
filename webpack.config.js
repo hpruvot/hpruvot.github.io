@@ -45,6 +45,7 @@ const extractSass = new MiniCssExtractPlugin({
 const clientStories = [
   {
     'title': 'We helped a leading OEM significantly increase their mean time between repair (MTBR)',
+    'description': 'After 15 years of service in a natural gas compressor, the MCAM\'s Duratron T4540 PAI polymer seals are similar to new ones.',
     'url': 'we-helped-a-leading-oem-significantly-increase-their-mean-time-between-repair',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
@@ -54,6 +55,7 @@ const clientStories = [
   },
   {
     'title': '3% compressor flow improvement achieved with polymer seal use in centrifugal compressors',
+    'description': '',
     'url': '3-compressor-flow-improvement-achieved-with-polymer-seal-use-in-centrifugal-compressors',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
@@ -63,6 +65,7 @@ const clientStories = [
   },
   {
     'title': 'Client Story 3',
+    'description': '',
     'url': 'mcam-wins-the-labby-of-the-year',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
@@ -75,20 +78,26 @@ const clientStories = [
 const articles = [
   {
     'title': 'Mitsubishi Chemical Advanced Materials Acquires Advanced Polymer Technologies',
+    'metaTitle': 'Acquisition : Advanced polymer technology | MCAM',
+    'description': 'Mitsubishi Chemical Advanced Solutions acquires the Advanced Poylmer Technology',
     'url': 'mitsubishi-chemical-advanced-materials-acquires-advanced-polymer-technologies',
     'date': '03.06.2019',
     'thumbnail': 'home-article-1',
     'img': 'article-1'
   },
   {
-    'title': 'Meet us at K 2019 | Mitsubishi Chemical Advanced Solutions',
+    'title': 'Come Join Mitsubishi Chemcial Advanced Material at K 2019',
+    'metaTitle': 'Meet us at K 2019 | Mitsubishi Chemical Advanced Solutions',
+    'description': 'Meet us at trade fair for plastics and rubber in Düsseldorf in October 2019 and discover our latest innovations in advanced polymer solutions',
     'url': 'come-join-mitsubishi-chemical-advanced-material-at-k-2019',
     'date': '28.6.2019',
     'thumbnail': 'home-article-2',
     'img': 'article-2'
   },
   {
-    'title': 'Quadrant becomes Mitsubishi Chemical Advanced Materials | MCAM',
+    'title': 'Quadrant Changes Name to Mitsubishi Chemcial Advanced Materials as of April 1, 2019 ',
+    'metaTitle': 'Quadrant becomes Mitsubishi Chemical Advanced Materials | MCAM',
+    'description': 'Quadrant becomes MCAM and will continue to enhance its high-performance thermoplastics materials and strive to realize KAITEKI',
     'url': 'quadrant-changes-name-to-mitsubishi-chemical-advanced-materials-as-of-april-1-2019',
     'date': '25.02.2019',
     'thumbnail': 'home-article-3',
@@ -216,7 +225,9 @@ module.exports = {
       template: './src/index.hbs',
       filename: 'index.html',
       templateParameters: {
-        'title': 'Oil and gas polymer materials | Mitsubishi Chemical Advanced Solutions',
+        'title': 'Oil and gas polymer solutions| Mitsubishi Chemical Advanced Materials',
+        'metaTitle': 'Oil and gas polymer solutions| Mitsubishi Chemical Advanced Materials',
+        'description': 'Mitsubishi chemical advanced materials provides taylor made solutions for Oil and Gas compressors and pumps such as labyrinth seals, valves.',
         'articles': articles,
         'clientStories': clientStories
       }
@@ -226,6 +237,8 @@ module.exports = {
       filename: 'client-stories.html',
       templateParameters: {
         'title': 'Client stories in Oil and Gas industry using polymers solutions | MCAM',
+        'metaTitle': 'Client stories in Oil and Gas industry using polymers solutions | MCAM',
+        'description': 'Discover case studies based on client succes stories using taylor made polymer solutions and labby seals',
         'articles': clientStories
       }
     }),
@@ -233,35 +246,46 @@ module.exports = {
       template: './src/our-solutions.hbs',
       filename: 'our-solutions.html',
       templateParameters: {
-        'title': 'Our polymers solutions for Oil and Gas | MCAM'
+        'title': 'Our polymers solutions and products for Oil and Gas industry | MCAM',
+        'metaTitle': 'Our polymers solutions and products for Oil and Gas industry | MCAM',
+        'description': 'Discover all products and taylor made solutions for extrem requirements such as high temperature, high pressure (HTHP), chemical resistance and tolerance.'
       }
     }),
     new HtmlWebpackPlugin({
       template: './src/contact.hbs',
       filename: 'contact.html',
       templateParameters: {
-        'title': 'Contact'
+        'title': 'Contact us | Mitsubishi Chemical Advanced Solutions',
+        'metaTitle': 'Contact us | Mitsubishi Chemical Advanced Solutions',
+        'description': 'Contact one of our business development engineers to help you find the best solution for your activity'
+
       }
     }),
     new HtmlWebpackPlugin({
       template: './src/404.hbs',
       filename: '404.html',
       templateParameters: {
-        'title': '404'
+        'title': '404',
+        'metaTitle': 'Error 404',
+        'description': 'Error 404'
       }
     }),
     new HtmlWebpackPlugin({
       template: './src/privacy-notice.hbs',
       filename: 'privacy-notice.html',
       templateParameters: {
-        'title': 'Privacy Notice'
+        'title': 'Privacy Notice',
+        'metaTitle': 'Privacy policies | Mitsubishi Chemical Advanced Solutions',
+        'description': 'Data protection and security are important to Mitsubishi Chemical Advanced Materials AG (MCAM) and its group companies ("MCAM"; "we")'
       }
     }),
     new HtmlWebpackPlugin({
       template: './src/terms-of-use.hbs',
       filename: 'terms-of-use.html',
       templateParameters: {
-        'title': 'Terms of Use'
+        'title': 'Terms of Use',
+        'metaTitle': 'Legal | Mitsubishi Chemical Advanced Solutions',
+        'description': 'This web site (mcam.com; herein referred to as the "Site") is provided by MITSUBISHI CHEMICAL ADVANCED MATERIALS AG (MCAM) and its group companies'
       }
     }),
     new BrowserSyncPlugin(
