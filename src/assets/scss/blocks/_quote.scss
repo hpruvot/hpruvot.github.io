@@ -1,6 +1,7 @@
 .mcam-block-quote {
   position: relative;
 
+  margin: 25px 0 30px;
   padding: 0 20px;
 
   //.mcam-block-quote::before
@@ -15,11 +16,14 @@
 
   //.mcam-block-quote__text
   &__text {
-    margin-bottom: 25px;
-
-    font-size: rem(45px);
-    line-height: rem(65px);
+    font-size: rem(30px);
+    line-height: rem(50px);
     font-weight: 600;
+
+    @media #{$desktop-up} {
+      font-size: rem(45px);
+      line-height: rem(65px);
+    }
   }
 
   //.mcam-block-quote__author-photo
