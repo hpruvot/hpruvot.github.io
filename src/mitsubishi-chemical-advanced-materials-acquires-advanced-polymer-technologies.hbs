@@ -16,9 +16,9 @@
   <div class="mcam-layout-section mcam-layout-section--image">
     <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
       <picture>
-        <source srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 639px)">
-        <source srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 767px)">
-        <img src="/img/{{ img }}-desktop.jpg" />
+        <source data-srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 639px)">
+        <source data-srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 767px)">
+        <img data-src="/img/{{ img }}-desktop.jpg" class="lazy" alt="" />
       </picture>
     </div>
   </div>
@@ -94,8 +94,8 @@
         <div class="mcam-card-news">
           <a href="/articles/{{ url }}.html">
             <picture class="mcam-card-news__picture">
-              <source srcset="/img/{{ thumbnail }}-mobile.jpg" media="(max-width: 767px)">
-              <img src="/img/{{ thumbnail }}-desktop.jpg" />
+              <source data-srcset="/img/{{ thumbnail }}-mobile.jpg" media="(max-width: 767px)">
+              <img data-src="/img/{{ thumbnail }}-desktop.jpg" class="lazy" alt="" />
             </picture>
           </a>
           <div class="mcam-card-news__content">

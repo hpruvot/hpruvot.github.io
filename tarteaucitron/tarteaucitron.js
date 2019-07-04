@@ -245,7 +245,7 @@ var tarteaucitron = {
             linkElement.rel = 'stylesheet';
             linkElement.type = 'text/css';
             linkElement.href = cdn + 'css/tarteaucitron.css?v=' + tarteaucitron.version;
-            document.getElementsByTagName('head')[0].appendChild(linkElement);
+            document.getElementsByTagName('body')[0].appendChild(linkElement);
         }
         // Step 2: load language and services
         tarteaucitron.addScript(pathToLang, '', function () {

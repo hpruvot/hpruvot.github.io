@@ -12,15 +12,15 @@
         {{#each articles}}
         <div class="mcam-card-newsbig">
           <picture class="mcam-card-newsbig__picture">
-            <source srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 767px)">
-            <source srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 1023px)">
-            <img src="/img/{{ img }}-desktop.jpg" />
+            <source data-srcset="/img/{{ img }}-mobile.jpg" media="(max-width: 767px)">
+            <source data-srcset="/img/{{ img }}-tablet.jpg" media="(max-width: 1023px)">
+            <img data-src="/img/{{ img }}-desktop.jpg" class="lazy" alt="" />
           </picture>
           <div class="mcam-card-newsbig__content">
             <p class="mcam-card-newsbig__content-title mcam-headline-2">{{ title }}</p>
             <div class="mcam-block-author">
               <picture class="mcam-block-author__photo">
-                <img src="/img/{{ authorImg }}" alt="">
+                <img data-src="/img/{{ authorImg }}" class="lazy" alt="">
               </picture>
               <span class="mcam-block-author__name">{{ authorName }}</span>
               <span class="mcam-block-author__job">{{ authorJob }}</span>

@@ -1,5 +1,6 @@
 require('../icons/svgxuse.min');
 require('./tarteaucitron.js');
+import LazyLoad from "vanilla-lazyload";
 import AOS from 'aos';
 
 import Form from './form';
@@ -20,6 +21,10 @@ const App = {
     if (ie > 0 || !!window.MSInputMethodContext && !!document.documentMode) {
       document.documentElement.className += " ie";
     }
+
+    new LazyLoad({
+      threshold: 100
+    });
 
     new Form();
 
