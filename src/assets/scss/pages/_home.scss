@@ -31,9 +31,15 @@
       margin: 85px 0;
     }
 
-    //.mcam-page--home .mcam-layout-section--keynumbers
-    &--keynumbers {
-      margin-top: 65px;
+    //.mcam-page--home .mcam-layout-section--whitepaper
+    &--whitepaper {
+      padding: 40px 0;
+
+      background: #F2F2F2;
+
+      @media #{$tablet-up} {
+        padding: 75px 0;
+      }
     }
 
     &--map {

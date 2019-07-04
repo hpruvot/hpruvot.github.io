@@ -288,6 +288,15 @@ module.exports = {
         'description': 'This web site (mcam.com; herein referred to as the "Site") is provided by MITSUBISHI CHEMICAL ADVANCED MATERIALS AG (MCAM) and its group companies'
       }
     }),
+    new HtmlWebpackPlugin({
+      template: './src/white-paper.hbs',
+      filename: 'white-paper.html',
+      templateParameters: {
+        'title': 'Download our white paper on the effects of processing on thermoplastics',
+        'metaTitle': 'Download our white paper on the effects of processing on thermoplastics | MCAM',
+        'description': 'This paper focuses on how the processing of thermoplastics impacts physical properties, theories behind the differences, and the availability of various materials for use in prototypes or production.'
+      }
+    }),
     new BrowserSyncPlugin(
       {
         // browse to http://localhost:3000/ during development,

@@ -1,0 +1,62 @@
+.mcam-page--whitepaper {
+  .mcam-layout-section {
+      //.mcam-page--whitepaper .mcam-layout-section--intro
+     &--intro {
+      margin: 50px 0;
+    }
+
+    //.mcam-page--whitepaper .mcam-layout-section--whitepaper
+    &--whitepaper {
+      @media #{$tablet-up} {
+        margin-top: 80px;
+      }
+    }
+
+    //.mcam-page--whitepaper .mcam-layout-section--download
+    &--download {
+      background: #F2F2F2;
+
+      margin: 30px 0 0;
+      padding: 30px 0;
+
+      text-align: center;
+
+      @media #{$tablet-up} {
+        margin: 70px 0 0;
+        padding: 60px 0;
+      }
+    }
+  }
+  
+  //.mcam-page--whitepaper .mcam-section-whitepaper
+  .mcam-section-whitepaper {
+    text-align: left;
+
+    //.mcam-page--whitepaper .mcam-section-whitepaper__fieldsets
+    &__fieldsets {
+      margin-top: 40px;
+
+      @media #{$tablet-up} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+
+    //.mcam-page--whitepaper .mcam-section-whitepaper .mcam-fieldset
+    .mcam-fieldset {
+      @media #{$tablet-up} {
+        width: 48%;
+      }
+    }
+
+    //.mcam-page--whitepaper .mcam-section-whitepaper .mcam-cta
+    .mcam-cta {
+      @media #{$tablet-up} {
+        display: block;
+        margin: 50px auto 0;
+        width: 210px;
+      }
+    }
+  }
+}
