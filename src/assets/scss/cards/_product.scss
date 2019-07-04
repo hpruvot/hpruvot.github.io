@@ -27,6 +27,10 @@
       height: 136px;
       width: 100%;
       object-fit: cover;
+
+      .ie & {
+        height: auto;
+      }
     }
   }
 

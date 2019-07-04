@@ -10,7 +10,7 @@ export default class Filters {
   }
 
   init() {
-    this.initEvents()
+    this.initEvents();
   }
   
   initEvents() {
@@ -31,10 +31,10 @@ export default class Filters {
     }
 
     // For each filter on the solution page
-    for (var filter of filters) {
+    [].slice.call(filters).forEach((filter) => {
       // Handle click and apply filter
       filter.addEventListener('click', (e) => this.filterProducts(e, filters, e.currentTarget, products, more));
-    }
+    });
   }
 
   // On focus

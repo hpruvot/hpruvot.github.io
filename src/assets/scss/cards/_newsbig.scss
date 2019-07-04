@@ -6,14 +6,25 @@
     position: relative;
     display: block;
 
+    height: 260px;
+    width: 100%;
+
+    @media #{$desktop-up} {
+      height: 387px;
+    }
+
     //.mcam-card-newsbig__picture img
     img {
-      height: 260px;
+      height: 100%;
       width: 100%;
       object-fit: cover;
 
-      @media #{$desktop-up} {
-        height: 387px;
+      .ie & {
+        max-width: none;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
       }
     }
     
