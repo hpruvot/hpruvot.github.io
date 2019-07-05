@@ -24,8 +24,11 @@
       width: 48%;
     }
 
+    //.mcam-section-contact .mcam-fieldset select
     select {
       margin-bottom: 20px;
+
+      background: $white;
     }
 
     //.mcam-section-contact .mcam-fieldset--full
