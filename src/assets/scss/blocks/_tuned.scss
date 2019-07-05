@@ -37,6 +37,10 @@
     }
   }
 
+  .mcam-section-contact__fieldsets {
+    margin-top: 0;
+  }
+
   .mcam-fieldset__input:focus+.mcam-fieldset__label {
     opacity: 0;
   }
