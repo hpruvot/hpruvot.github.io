@@ -66,10 +66,10 @@ const clientStories = [
     'img': 'client-story-2'
   },
   {
-    'title': 'Client Story 3',
-    'metaTitle': 'Client Story 3',
-    'description': 'Client Story 3',
-    'url': 'mcam-wins-the-labby-of-the-year',
+    'title': 'Incremental horsepower achieved with Fluorosint® 500 on rotor shrouds thanks to better clearance',
+    'metaTitle': 'Incremental horsepower achieved with Fluorosint® 500 on rotor shrouds thanks to better clearance',
+    'description': 'Incremental horsepower achieved with Fluorosint® 500 on rotor shrouds thanks to better clearance',
+    'url': 'incremental-horsepower-achieved-with-fluorosint-500-on-rotor-shrouds-thanks-to-better-clearance',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
     'authorImg': 'frank-olmos.png',

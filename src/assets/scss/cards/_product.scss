@@ -66,6 +66,21 @@
 
     padding: 4px 8px;
 
+    &:hover {
+      .no-touch & {
+        //.no-touch .mcam-card-product__bottom-download:hover ~ .mcam-block-tooltip
+        & ~ .mcam-block-tooltip {
+          opacity: 1;
+        }
+      }
+    }
+
+    & ~ .mcam-block-tooltip {
+      left: 35%;
+      width: 255px;
+      bottom: -18%;
+    }
+
     //.mcam-card-product__bottom hr
     hr {
       margin: 0 8px;
@@ -112,6 +127,12 @@
           }
         }
       }
+
+      & ~ .mcam-block-tooltip {
+        bottom: -12%;
+        right: -60%;
+        width: 186px;
+      }
     }
   }
 
@@ -135,10 +156,6 @@
   .mcam-block-tooltip {
     position: absolute;
     margin: 0;
-
-    bottom: -12%;
-    right: -60%;
-    width: 186px;
     
     opacity: 0;
     
