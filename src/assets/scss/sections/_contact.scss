@@ -4,6 +4,10 @@
 
   background: #F2F2F2;
   text-align: center;
+
+  a {
+    text-decoration: underline;
+  }
   
   //.mcam-section-contact__fieldsets
   &__fieldsets {
