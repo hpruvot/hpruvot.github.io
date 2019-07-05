@@ -55,10 +55,10 @@ const clientStories = [
     'img': 'client-story-1'
   },
   {
-    'title': '3% compressor flow improvement achieved with polymer seal use in centrifugal compressors',
-    'metaTitle': '3% compressor flow improvement achieved with polymer seal use in centrifugal compressors',
-    'description': '3% compressor flow improvement achieved with polymer seal use in centrifugal compressors',
-    'url': '3-compressor-flow-improvement-achieved-with-polymer-seal-use-in-centrifugal-compressors',
+    'title': '3% compressor flow improvement achieved with polymer seals in centrifugal compressors',
+    'metaTitle': '3% compressor flow improvement achieved with polymer seals in centrifugal compressors',
+    'description': '3% compressor flow improvement achieved with polymer seals in centrifugal compressors',
+    'url': '3-compressor-flow-improvement-achieved-with-polymer-seals-in-centrifugal-compressors',
     'authorName': 'Frank Olmos',
     'authorJob': 'Global Market Segment Manager',
     'authorImg': 'frank-olmos.png',

@@ -68,13 +68,14 @@
 
     &:hover {
       .no-touch & {
-        //.no-touch .mcam-card-product__bottom-download:hover ~ .mcam-block-tooltip
+        //.no-touch .mcam-card-product__bottom:hover ~ .mcam-block-tooltip
         & ~ .mcam-block-tooltip {
           opacity: 1;
         }
       }
     }
 
+    //.mcam-card-product__bottom~.mcam-block-tooltip
     & ~ .mcam-block-tooltip {
       left: 35%;
       width: 255px;
@@ -128,6 +129,7 @@
         }
       }
 
+      //.mcam-card-product__bottom-download~.mcam-block-tooltip
       & ~ .mcam-block-tooltip {
         bottom: -12%;
         right: -60%;
