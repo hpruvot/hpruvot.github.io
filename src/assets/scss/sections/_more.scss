@@ -36,13 +36,12 @@
     }
   }
 
+  //.mcam-section-more img
   img {
     margin-top: 15px;
     
     @media #{$desktop-up} {
       margin-top: 25px;
-      width: 77%;
-      margin-left: auto;
     }
   }
 }
