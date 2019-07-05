@@ -228,7 +228,7 @@
     -webkit-touch-callout: none;
     user-select: none;
     transform: translate3d(0, 40px, 0);
-    transition: transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
   }
 
   //.mcam-fieldset__label-content

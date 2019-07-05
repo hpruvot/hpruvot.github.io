@@ -36,4 +36,8 @@
       margin-bottom: 30px;
     }
   }
+
+  .mcam-fieldset__input:focus+.mcam-fieldset__label {
+    opacity: 0;
+  }
 }
