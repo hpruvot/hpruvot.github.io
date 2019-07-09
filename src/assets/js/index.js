@@ -6,6 +6,7 @@ import AOS from 'aos';
 import Form from './form';
 import Slider from './slider';
 import Filters from './filters';
+import Engineered from './engineered';
 
 
 const App = {
@@ -32,6 +33,10 @@ const App = {
 
     if (document.querySelector('.mcam-section-homeslider__list')) {
       new Slider('.mcam-section-homeslider__list', '.mcam-section-homeslider__item', '.mcam-section-homeslider__bullet', '.mcam-section-homeslider__title', 0);
+    }
+
+    if (document.querySelector('.mcam-block-engineered')) {
+      new Engineered('.mcam-block-engineered');
     }
 
     AOS.init({

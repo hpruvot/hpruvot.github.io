@@ -27,5 +27,26 @@ module.exports = {
     else {
       location.hash = '#';
     }
-  }
+  },
+
+  scrollElement: function (scrollTo, el, value) {
+    const interval = setInterval(() => {
+      switch (scrollTo) {
+        case 'left':
+          el.scrollLeft += value;
+          break;
+        case 'right':
+          el.scrollLeft -= value;
+          break;
+        case 'top':
+          el.scrollTop += value;
+          break;
+        case 'bottom':
+          el.scrollTop -= value;
+          break;
+      }
+    }, 5);
+
+    return interval;
+  },
 };
