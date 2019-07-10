@@ -90,10 +90,10 @@ const articles = [
     'img': 'article-1'
   },
   {
-    'title': 'Come Join Mitsubishi Chemcial Advanced Material at K 2019',
+    'title': 'Come Join Mitsubishi Chemical Advanced Materials at K 2019',
     'metaTitle': 'Meet us at K 2019 | Mitsubishi Chemical Advanced Solutions',
     'description': 'Meet us at trade fair for plastics and rubber in Düsseldorf in October 2019 and discover our latest innovations in advanced polymer solutions',
-    'url': 'come-join-mitsubishi-chemical-advanced-material-at-k-2019',
+    'url': 'come-join-mitsubishi-chemical-advanced-materials-at-k-2019',
     'date': '28.6.2019',
     'thumbnail': 'home-article-2',
     'img': 'article-2'
@@ -123,7 +123,8 @@ let clientStoriesHtmlPlugins = clientStories.map(function (clientStory) {
       'authorImg': clientStory.authorImg,
       'date': clientStory.date,
       'otherStories': clientStories
-    }
+    },
+    excludeChunks: ['contact']
   })
 });
 
@@ -140,7 +141,8 @@ let articlesHtmlPlugins = articles.map(function (article) {
       'thumbnail': article.thumbnail,
       'img': article.img,
       'otherArticles': articles
-    }
+    },
+    excludeChunks: ['contact']
   })
 });
 
@@ -238,7 +240,8 @@ module.exports = {
         'description': 'Mitsubishi chemical advanced materials provides taylor made solutions for Oil and Gas compressors and pumps such as labyrinth seals, valves.',
         'articles': articles,
         'clientStories': clientStories
-      }
+      },
+      excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
       template: './src/client-stories.hbs',
@@ -248,7 +251,8 @@ module.exports = {
         'metaTitle': 'Client stories in Oil and Gas industry using polymers solutions | MCAM',
         'description': 'Discover case studies based on client succes stories using taylor made polymer solutions and labby seals',
         'articles': clientStories
-      }
+      },
+      excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
       template: './src/our-solutions.hbs',
@@ -257,7 +261,8 @@ module.exports = {
         'title': 'Our polymers solutions and products for Oil and Gas industry | MCAM',
         'metaTitle': 'Our polymers solutions and products for Oil and Gas industry | MCAM',
         'description': 'Discover all products and taylor made solutions for extrem requirements such as high temperature, high pressure (HTHP), chemical resistance and tolerance.'
-      }
+      },
+      excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
       template: './src/contact.hbs',
@@ -267,7 +272,8 @@ module.exports = {
         'metaTitle': 'Contact us | Mitsubishi Chemical Advanced Solutions',
         'description': 'Contact one of our business development engineers to help you find the best solution for your activity'
 
-      }
+      },
+      excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
       template: './src/404.hbs',
@@ -276,7 +282,8 @@ module.exports = {
         'title': '404',
         'metaTitle': 'Error 404',
         'description': 'Error 404'
-      }
+      },
+      excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
       template: './src/privacy-notice.hbs',
@@ -285,7 +292,8 @@ module.exports = {
         'title': 'Privacy Notice',
         'metaTitle': 'Privacy policies | Mitsubishi Chemical Advanced Solutions',
         'description': 'Data protection and security are important to Mitsubishi Chemical Advanced Materials AG (MCAM) and its group companies ("MCAM"; "we")'
-      }
+      },
+      excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
       template: './src/terms-of-use.hbs',
@@ -294,7 +302,8 @@ module.exports = {
         'title': 'Terms of Use',
         'metaTitle': 'Legal | Mitsubishi Chemical Advanced Solutions',
         'description': 'This web site (mcam.com; herein referred to as the "Site") is provided by MITSUBISHI CHEMICAL ADVANCED MATERIALS AG (MCAM) and its group companies'
-      }
+      },
+      excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
       template: './src/white-paper.hbs',
@@ -303,7 +312,8 @@ module.exports = {
         'title': 'Download our white paper on the effects of processing on thermoplastics',
         'metaTitle': 'Download our white paper on the effects of processing on thermoplastics | MCAM',
         'description': 'This paper focuses on how the processing of thermoplastics impacts physical properties, theories behind the differences, and the availability of various materials for use in prototypes or production.'
-      }
+      },
+      excludeChunks: ['contact']
     }),
     new BrowserSyncPlugin(
       {
