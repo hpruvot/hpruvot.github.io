@@ -1,0 +1,197 @@
+@import 'utils/fonts';
+@import 'utils/variables';
+@import 'utils/mixins';
+
+#logo,
+#header {
+  display: none;
+}
+
+form {
+  ul {
+    margin-top: 40px;
+
+    text-align: left;
+
+    @media #{$tablet-up} {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 20px 0;
+    
+    width: 100%;
+
+    z-index: 1;
+
+    @media #{$tablet-up} {
+      width: 48%;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    position: relative;
+    display: block;
+
+    padding: 0 16px;
+    height: 54px;
+    width: 100%;
+
+    color: $blueDark;
+    font-weight: 600;
+    font-size: rem(16px);
+    line-height: rem(22px);
+
+    border: none;
+    border-radius: 1px;
+    border: 1px solid $greyLight;
+
+    transition: border-color 0.3s;
+    -webkit-appearance: none; /* for box shadows to show on iOS */
+
+    @include placeholder {
+      color: $greyLighter;
+      font-weight: 600;
+      font-size: rem(16px);
+      line-height: rem(22px);
+      text-align: left;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  label {
+    display: none;
+  }
+
+  select {
+    display: block !important;
+    margin-bottom: 20px;
+
+    background: $white;
+
+     /* This is to remove the arrow of select element in IE */
+    &::-ms-expand { 
+      display: none; 
+    }
+
+    //.mcam-fieldset__input--select ~ .icon-chevron
+    & ~ .wufoo-dropdown {
+      position: absolute;
+      top: 15px;
+      right: 16px;
+
+      width: 24px;
+      height: 24px;
+
+      fill: $blueDark;
+    }
+  }
+
+  textarea {
+    padding: 16px;
+    height: 250px;
+    width: 100%;
+    
+    resize: none;
+
+    @include placeholder {
+      padding: 0;
+    }
+
+    @media #{$desktop-up} {
+      height: 210px;
+    }
+  }
+
+  .buttons  {
+    width: 100%;
+  
+    & > div {
+      display: block;
+      
+      width: 160px;
+
+      margin: 0 auto;
+      
+      background: $blueSky;
+      border-radius: 1px;
+      text-align: center;
+  
+      transition: all .3s;
+
+      &:hover {
+        background: rgba($blueSky, 0.8);
+        box-shadow: 0px 4px 13px rgba(24, 82, 141, 0.3);
+      }
+  
+      &:active {
+        background: $blueDark;
+      }
+    }
+  }
+
+  input[type="file"] {
+    position: relative;
+    display: inline-block !important;
+    vertical-align: middle;
+
+    width: 130px;
+    height: 38px;
+    margin-right: 10px;
+
+    outline: none;
+    border: none;
+
+    & ~ div {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &::before {
+      content: "Choose a file";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      color: $white;
+      background: $blueSky;
+      height: 100%;
+      line-height: 38px;
+      padding: 0 16px;
+    }
+  }
+  
+  .wufoo-file-upload {
+    p {
+      display: none;
+    }
+  }
+
+  input[type="submit"] {
+    display: block;
+    height: 38px;
+    padding: 11px 16px;
+    color: #fff;
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+}

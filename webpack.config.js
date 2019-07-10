@@ -35,7 +35,8 @@ const copyFiles = new CopyWebpackPlugin([
 
 const entry = {
   index: './src/assets/js/index.js',
-  style: './src/assets/scss/app.scss'
+  style: './src/assets/scss/app.scss',
+  contact: './src/assets/scss/contact-form.scss'
 };
 
 const extractSass = new MiniCssExtractPlugin({
