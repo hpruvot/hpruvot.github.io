@@ -30,7 +30,7 @@
     z-index: 1;
     
     @media screen and (min-width: 730px) {
-      width: 48% !important;
+      // width: 48% !important;
     }
 
     &:focus,
@@ -65,9 +65,14 @@
       }
     }
 
+    &.separation {
+      grid-column: 1/3;
+    }
+
     &.input-marketing {
       width: 100% !important;
       margin: 0;
+      grid-column: 1/3;
 
       legend {
         color: $greyLight !important;
@@ -142,6 +147,15 @@
     }
   }
 
+  .input-textarea {
+    grid-column: 2;
+    grid-row: 3/7;
+
+    & > div {
+      height: 100%;
+    }
+  }
+
   input.checkbox {
     position: absolute;
     height: 14px;
@@ -200,6 +214,7 @@
 
   textarea.textarea {
     padding: 16px !important;
+    height: 100% !important;
   }
 
   .input-zipcode {
@@ -278,8 +293,12 @@ form {
     text-align: left;
 
     @media screen and (min-width: 730px) {
-      display: flex;
-      flex-wrap: wrap;
+      // display: flex;
+      // flex-wrap: wrap;
+      // justify-content: space-between;
+      display: grid;
+      grid-template-rows: 94px;
+      grid-template-columns: 48% 48%;
       justify-content: space-between;
     }
   }
