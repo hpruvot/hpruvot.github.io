@@ -13,6 +13,10 @@
 
     @media #{$tablet-up} {
       height: 845px !important;
+
+      .ie & {
+        height: 1300px !important;
+      }
     }
   }
   

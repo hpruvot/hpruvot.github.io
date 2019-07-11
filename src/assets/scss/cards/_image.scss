@@ -2,6 +2,12 @@
 
   &__picture {
     height: 100%;
+
+    @media #{$tablet-up} {
+      .ie & { 
+        height: 268px;
+      }
+    }
   }
   
   //.mcam-card-image img
@@ -11,6 +17,10 @@
 
     @media #{$tablet-up} {
       height: 220px;
+
+      .ie & {
+        height: auto;
+      }
     }
   }
 

@@ -24,6 +24,10 @@
   &__picture {
     position: relative;
     display: block;
+    
+    height: 232px;
+    
+    overflow: hidden;
 
     &::after {
       content: "";
@@ -41,9 +45,15 @@
     
     //.mcam-card-news__picture img
     img {
-      height: 232px;
+      height: 100%;
       width: 100%;
       object-fit: cover;
+
+      .ie & {
+        max-width: none;
+        min-height: 100%;
+        height: auto;
+      }
     }
   }
 

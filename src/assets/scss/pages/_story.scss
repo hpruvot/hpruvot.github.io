@@ -146,8 +146,9 @@
       width: 46%;
     }
 
-    //.mcam-section-news .mcam-card-news__content-title
+    //.mcam-page--story .mcam-card-news__content-title
     &__content-title {
+      display: block;
       white-space: normal;
       width: 100%;
     }

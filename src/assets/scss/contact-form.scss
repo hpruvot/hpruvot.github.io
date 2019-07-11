@@ -9,6 +9,44 @@
   height: 100%;
 }
 
+html.embed:not(.safari),
+html.embed:not(.firefox) {
+  .wufoo {
+    li {
+      order: 7;
+      
+      &.input-firstname {
+        order: 0;
+      }
+
+      &.input-lastname {
+        order: 1;
+      }
+
+      &.input-email {
+        order: 2;
+      }
+
+      &.input-company {
+        order: 3;
+      }
+
+      &.input-country {
+        order: 4;
+      }
+
+      &.input-zipcode {
+        order: 5;
+      }
+
+      &.input-textarea {
+        order: 6;
+      }
+    }
+  }
+}
+
+
 #logo,
 #header {
   display: none;

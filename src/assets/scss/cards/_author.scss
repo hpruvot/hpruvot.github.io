@@ -28,6 +28,10 @@
     //.mcam-card-author .mcam-block-author__job
     &__job {
       width: auto;
+
+      .ie & {
+        width: 100%;
+      }
     }
   }
 
