@@ -9,8 +9,7 @@
   height: 100%;
 }
 
-html.embed:not(.safari),
-html.embed:not(.firefox) {
+html.embed.unknown {
   .wufoo {
     li {
       order: 7;
