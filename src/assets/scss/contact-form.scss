@@ -18,7 +18,7 @@
   font-family: $font !important;
 
   li {
-     position: relative;
+    position: relative;
     display: inline-block;
     vertical-align: top;
     
@@ -28,15 +28,44 @@
     width: 100% !important;
     
     z-index: 1;
-    
-    @media screen and (min-width: 730px) {
-      // width: 48% !important;
-    }
 
     &:focus,
     &.focused {
       background-color: transparent !important;
     }
+
+    @media screen and (max-width: 729px) {
+      order: 7;
+      
+      &.input-firstname {
+        order: 0;
+      }
+
+      &.input-lastname {
+        order: 1;
+      }
+
+      &.input-email {
+        order: 2;
+      }
+
+      &.input-company {
+        order: 3;
+      }
+
+      &.input-country {
+        order: 4;
+      }
+
+      &.input-zipcode {
+        order: 5;
+      }
+
+      &.input-textarea {
+        order: 6;
+      }
+    }
+
 
     &.buttons  {
       width: 100% !important;
@@ -253,14 +282,14 @@
 
 form {
   ul {
+    display: flex;
+    flex-wrap: wrap;
+
     margin-top: 40px;
 
     text-align: left;
 
     @media screen and (min-width: 730px) {
-      // display: flex;
-      // flex-wrap: wrap;
-      // justify-content: space-between;
       display: grid;
       grid-template-rows: 94px;
       grid-template-columns: 48% 48%;
