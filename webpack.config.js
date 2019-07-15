@@ -279,9 +279,9 @@ module.exports = {
       template: './src/thanks.hbs',
       filename: 'thanks.html',
       templateParameters: {
-        'title': 'Contact us | Mitsubishi Chemical Advanced Solutions',
-        'metaTitle': 'Contact us | Mitsubishi Chemical Advanced Solutions',
-        'description': ''
+        'title': 'Thanks for contacting us!',
+        'metaTitle': 'Thank you | Mitsubishi Chemical Advanced Solutions',
+        'description': 'Thanks for contacting us. We will be in touch with you shortly.'
 
       },
       excludeChunks: ['contact']
