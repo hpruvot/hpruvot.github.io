@@ -1,0 +1,19 @@
+.mcam-section-solutionfilters {
+  
+  //.mcam-section-solutionfilters__list
+  &__list {
+    margin-top: 15px;
+
+    @media #{$desktop-up} {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 20px 0;
+    }
+  }
+
+  //.mcam-section-solutionfilters .mcam-block-tab
+  .mcam-block-tab {
+    margin-bottom: 8px;
+  }
+}

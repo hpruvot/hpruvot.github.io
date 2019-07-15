@@ -1,0 +1,311 @@
+#tarteaucitronBack {
+  background: rgba($black, 0.4);
+}
+
+#tarteaucitronPercentage {
+  background: $blueSky;
+}
+
+.mcam-layout-tarteaucitron {
+  position: fixed;
+  bottom: 0;
+
+  background: $white;
+  color: $grey;
+  box-shadow: 0px -4px 10px rgba($black, 0.1);
+
+  &__disclaimer {
+    display: block;
+    text-align: center;
+    font-size: rem(14px);
+    line-height: rem(22px);
+    margin-bottom: 10px;
+    
+    @media #{$desktop-up} {
+      display: inline-block;
+      vertical-align: bottom;
+      max-width: 42%;
+      margin-right: 20%;
+      text-align: left;
+    }
+  }
+
+  &__personalize,
+  &__close {
+    border: none;
+    appearance: none;
+
+    @extend .mcam-cta;
+
+    padding: 10px 16px;
+
+    font-size: rem(14px);
+    line-height: rem(16px);
+
+    border: 1px solid $blueSky;
+  }
+  
+  &__personalize {
+    color: $white;
+  }
+  
+  &__close {
+    background: $white;
+    color: $blueSky;
+
+    &:hover {
+      .no-touch & {
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__switcher {
+    &-input {
+      position: absolute;
+      display: block;
+  
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      right: 0;
+      top: 0;
+      
+      touch-action: manipulation;
+      appearance: none;
+      z-index: 1;
+
+      &:checked + .mcam-layout-tarteaucitron__switcher-label::before {
+        background-color: $blueSky;
+        content: "✔";
+        color: $white;
+        text-align: left;
+      }
+
+      &:checked + .mcam-layout-tarteaucitron__switcher-label::after {
+        background-color: white;
+        right: 3px;
+      }
+    }
+
+    &-label {
+      position: relative;
+      display: block;
+
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        content: '';
+      }
+
+      &::before {
+        content: "✘";
+        border-radius: 30px;
+        height: 22px;
+        line-height: 22px;
+        right: 0;
+        top: 0;
+        background: #BDBDBD;
+        color: #828282;
+        transition: background-color .3s ease-in-out;
+        width: 30px;
+        padding: 0 7px;
+        font-size: rem(12px);
+        text-align: right;
+      }
+
+      &::after {
+        background-color: white;
+        border-radius: 50%;
+        right: 23px;
+        top: 2px;
+        height: 18px;
+        width: 19px;
+        transition: right .3s ease-in-out;
+      }
+    }
+  }
+
+  &__modal {
+    width: 91%;
+    top: 5% !important;
+    transform: translateX(-50%);
+
+    background: $white;
+    padding: 15px;
+    border-radius: 5px;
+    
+    @media #{$desktop-up} {
+      top: 45% !important;
+      width: 570px;
+      padding: 40px 35px;
+      transform: translate(-50%, -50%);
+    }
+
+    &-header {
+      color: $grey;
+    }
+
+    &-title {
+      font-size: rem(18px);
+      line-height: rem(20px);
+    }
+
+    &-infobox {
+      color: #828282;
+      font-size: rem(14px);
+      line-height: rem(20px);
+      font-weight: 500;
+      text-align: left;
+
+      margin: 10px 0;
+    }
+
+    #tarteaucitronServices {
+      @media #{$desktop-up} {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    &-ask {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 !important;
+      border-top: 1px solid $grey;
+      padding-top: 10px;
+      width: 100%;
+      
+      @media #{$desktop-up} {
+        justify-content: flex-end;
+        align-self: flex-end;
+      }
+    }
+
+    &-allow,
+    &-deny {
+      border: none;
+      appearance: none;
+
+      @extend .mcam-cta;
+
+      padding: 10px 16px;
+
+      font-size: rem(14px);
+      line-height: rem(16px);
+
+      border: 1px solid $blueSky;
+      opacity: 1 !important;
+      cursor: pointer;
+    }
+    
+    &-allow {
+      color: $white;
+    }
+    
+    &-deny {
+      background: $white;
+      color: $blueSky;
+
+      margin-left: 10px;
+
+      &:hover {
+        .no-touch & {
+          background: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    // &-allow,
+    // &-deny {
+    //   @extend .mcam-cta;
+
+    //   font-size: rem(10px);
+    //   opacity: 1 !important;
+    //   border: none;
+    //   padding: 14px 10px;
+
+    //   @media #{$desktop-up} {
+    //     font-size: rem(12px);
+    //     padding: 14px 30px;
+    //   }
+    // }
+    
+    // &-deny {
+    //   background: $white;
+    //   color: $blueSky;
+    //   border: 1px solid $blueSky;
+
+    //   margin-left: 10px;
+    // }
+
+    .tarteaucitronTitle {
+      button {
+        margin-bottom: 7px;
+        padding: 0;
+        
+        color: $blueSky;
+        font-weight: 500;
+        font-size: rem(14px);
+        line-height: rem(20px);
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        
+        background: none;
+        appearance: none;
+        border: none;
+      }
+    }
+
+    ul .tarteaucitronLine {
+      background: #F4F4F4;
+      padding: 10px;
+    }
+
+    .tarteaucitronH3 {
+      font-size: rem(16px);
+    }
+
+    .tarteaucitronListCookies {
+      color: #828282;
+    }
+  }
+
+  &__details {
+    display: block !important;
+    font-weight: 500;
+    font-size: rem(12px);
+    line-height: rem(17px);
+    color: #828282;
+
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    width: 80%;
+  }
+
+  &__list {
+    margin-top: 10px;
+  }
+
+  &__closepanel {
+    width: 25px;
+    height: 25px;
+    background: #E8E8E8;
+    color: #9E9E9E;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    right: 10px;
+    top: 10px;
+
+    @media #{$desktop-up} {
+      right: 25px;
+      top: 25px;
+    }
+  }
+}

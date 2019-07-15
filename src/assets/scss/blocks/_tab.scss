@@ -1,0 +1,76 @@
+.mcam-block-tab {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 15px;
+
+  height: 80px;
+  width: 100%;
+  
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+
+  cursor: pointer;
+  transition: all .3s;
+  
+  @media #{$desktop-up} {
+    height: 120px;
+    max-width: 355px;
+  }
+
+  &:hover {
+    //.no-touch .mcam-block-tab:hover
+    .no-touch & {
+      border-color: $blueSky;
+      box-shadow: 0px 2px 10px rgba($black, 0.1);
+    }
+  }
+
+  //.mcam-block-tab--selected
+  &.selected {
+    background: $blueSky;
+
+    //.mcam-block-tab--selected .mcam-block-tab__icon
+    .mcam-block-tab__icon {
+      fill: $white;
+    }
+
+    //.mcam-block-tab--selected .mcam-block-tab__title
+    .mcam-block-tab__title {
+      color: $white;
+    }
+  }
+
+  //.mcam-block-tab__icon
+  &__icon {
+    margin-right: 20px;
+
+    height: 54px;
+    width: 54px;
+
+    fill: $blueDark;
+
+    @media #{$desktop-up} {
+      height: 68px;
+      width: 68px;
+    }
+  }
+
+  //.mcam-block-tab__title
+  &__title {
+    width: calc(100% - 54px - 20px);
+
+    color: $blueSky;
+    font-size: rem(18px);
+    line-height: rem(27px);
+    font-weight: 800;
+
+    @media #{$desktop-up} {
+      width: calc(100% - 68px - 20px);
+
+      font-size: rem(20px);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  font-family: $font;
+  color: $blueDark;
+  height: auto !important;
+  padding-top: $header-height-mobile;
+  width: 100%;
+
+  @media #{$tablet-up} {
+    padding-top: $header-height-tablet;
+    padding-bottom: 0;
+  }
+}

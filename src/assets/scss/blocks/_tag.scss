@@ -1,0 +1,15 @@
+.mcam-block-tag {
+  display: inline-block;
+
+  padding: 3px 10px;
+
+  color: $grey;
+  font-size: rem(12px);
+  line-height: rem(18px);
+  font-weight: bold;
+
+  background: #E0E0E0;
+  border-radius: 2px;
+
+  text-transform: uppercase;
+}
