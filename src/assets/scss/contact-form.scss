@@ -408,7 +408,7 @@ form {
   ul {
     display: flex;
     max-width: 450px;
-    margin: 40px auto 0;
+    margin: 20px auto 0;
     position: relative;
   }
 
@@ -424,6 +424,10 @@ form {
       &>div {
         width: 100px;
       }
+    }
+
+    label {
+      display: none !important;
     }
 
     input[type="email"] {
