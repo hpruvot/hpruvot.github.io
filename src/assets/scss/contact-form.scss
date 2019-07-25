@@ -399,3 +399,35 @@ form {
     -webkit-appearance: none;
   }
 }
+
+#errorLi {
+  display: none;
+}
+
+#form4 {
+  ul {
+    display: flex;
+    max-width: 450px;
+    margin: 40px auto 0;
+    position: relative;
+  }
+
+  li {
+    width: 100% !important;
+
+    &.buttons {
+      position: absolute;
+      right: 5px;
+      width: auto !important;
+      top: -2px;
+
+      &>div {
+        width: 100px;
+      }
+    }
+
+    input[type="email"] {
+      padding-right: 120px !important;
+    }
+  }
+}
