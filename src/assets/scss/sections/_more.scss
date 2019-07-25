@@ -1,0 +1,48 @@
+.mcam-section-more {
+  
+  &.hidden {
+    display: none;
+  }
+  
+  &__column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  //.mcam-section-more__left
+  &__left {
+    @media #{$desktop-up} {
+      width: 43%;
+      padding-right: 2%;
+    }
+  }
+
+  //.mcam-section-more__right
+  &__right {
+    @media #{$desktop-up} {
+      width: 57%;
+    }
+  }
+
+  //.mcam-section-more .mcam-body-text
+  .mcam-body-text {
+    margin-top: 15px;
+
+    color: $grey;
+
+    @media #{$desktop-up} {
+      margin-top: 0;
+    }
+  }
+
+  //.mcam-section-more img
+  img {
+    margin-top: 15px;
+    
+    @media #{$desktop-up} {
+      margin-top: 25px;
+      margin-left: auto;
+    }
+  }
+}

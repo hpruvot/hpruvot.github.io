@@ -1,0 +1,39 @@
+.mcam-section-newsletter {
+  padding: 45px 0;
+
+  background: #F2F2F2;
+  text-align: center;
+
+  //.mcam-section-newsletter .mcam-layout-section__inner
+  .mcam-layout-section__inner {
+    max-width: 780px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+
+    &__icon {
+      width: 20%;
+    }
+
+    .icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  //.mcam-section-newsletter form
+  form {
+    max-width: 450px;
+    margin: 10px auto 0;
+
+    text-align: left;
+
+    @media #{$desktop-up} {
+      margin: 35px auto 0;
+    }
+  }
+}

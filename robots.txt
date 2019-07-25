@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /files/
+Disallow: /img/
+Sitemap: https://oil-and-gas-polymer-solutions.mcam.com/sitemap.xml

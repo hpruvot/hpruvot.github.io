@@ -1,0 +1,401 @@
+@import 'utils/fonts';
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'common/reset';
+
+#container, html.embed {
+  background: none;
+  height: 100%;
+}
+
+html.embed.unknown {
+  .wufoo {
+    li {
+      order: 7;
+      
+      &.input-firstname {
+        order: 0;
+      }
+
+      &.input-lastname {
+        order: 1;
+      }
+
+      &.input-email {
+        order: 2;
+      }
+
+      &.input-company {
+        order: 3;
+      }
+
+      &.input-country {
+        order: 4;
+      }
+
+      &.input-zipcode {
+        order: 5;
+      }
+
+      &.input-textarea {
+        order: 6;
+      }
+    }
+  }
+}
+
+
+#logo,
+#header {
+  display: none;
+}
+
+.wufoo {
+  font-family: $font !important;
+
+  li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    
+    margin: 20px 0;
+    padding: 0;
+    
+    width: 100% !important;
+    
+    z-index: 1;
+
+    &:focus,
+    &.focused {
+      background-color: transparent !important;
+    }
+
+    @media screen and (max-width: 729px) {
+      order: 7;
+      
+      &.input-firstname {
+        order: 0;
+      }
+
+      &.input-lastname {
+        order: 1;
+      }
+
+      &.input-email {
+        order: 2;
+      }
+
+      &.input-company {
+        order: 3;
+      }
+
+      &.input-country {
+        order: 4;
+      }
+
+      &.input-zipcode {
+        order: 5;
+      }
+
+      &.input-textarea {
+        order: 6;
+      }
+    }
+
+
+    &.buttons  {
+      width: 100% !important;
+      grid-column: 1/3;
+    
+      & > div {
+        display: block;
+        
+        width: 160px;
+
+        margin: 0 auto;
+        
+        background: $blueSky;
+        border-radius: 1px;
+        text-align: center;
+    
+        transition: all .3s;
+
+        &:hover {
+          background: rgba($blueSky, 0.8);
+          box-shadow: 0px 4px 13px rgba(24, 82, 141, 0.3);
+        }
+    
+        &:active {
+          background: $blueDark;
+        }
+      }
+    }
+
+    &.separation {
+      grid-column: 1/3;
+    }
+
+    &.input-marketing {
+      width: 100% !important;
+      margin: 0;
+      grid-column: 1/3;
+
+      legend {
+        color: $greyLight !important;
+        font-size: rem(14px) !important;
+        font-weight: 400;
+        line-height: rem(20px);
+        text-align: left;
+      }
+
+      .subfield {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px 0;
+        width: 48%;
+        z-index: 1;
+      }
+    }
+  }
+
+  label.desc {
+    display: block !important;
+    position: absolute;
+    z-index: 1;
+    top: -26px;
+    color: $greyLight !important;
+  }
+
+  .section div {
+    color: $greyLight !important;
+    font-size: rem(14px) !important;
+    line-height: rem(20px);
+    text-align: left;
+  }
+
+  input.text,
+  textarea.textarea,
+  input.file,
+  select.select {
+    position: relative;
+    display: block;
+
+    margin: 0 !important;
+    padding: 0 16px !important;
+    height: 54px;
+    width: 100% !important;
+
+    color: $blueDark !important;
+    font-weight: 600 !important;
+    font-size: rem(16px) !important;
+    line-height: rem(22px);
+
+    border: none !important;
+    border-radius: 1px;
+    border: 1px solid $greyLight !important;
+
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    -webkit-appearance: none; /* for box shadows to show on iOS */
+
+    @include placeholder {
+      color: $greyLighter;
+      font-weight: 600;
+      font-size: rem(16px);
+      line-height: rem(22px);
+      text-align: left;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .input-textarea {
+    grid-column: 2;
+    grid-row: 3/7;
+
+    & > div {
+      height: 100%;
+    }
+  }
+
+  input.checkbox {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    padding: 0;
+    opacity: 0;
+    z-index: 1;
+
+    //.mcam-fieldset__input--checkbox ~ label, .mcam-fieldset__input--radio ~ label
+    & ~ label {
+      position: relative;
+      display: inline-block;
+      margin-left: 0;
+      padding: 0 0 0 2em;
+      height: 20px;
+      line-height: 20px;
+      cursor: pointer;
+
+      //.mcam-fieldset__input--checkbox ~ label::before, .mcam-fieldset__input--checkbox ~ label::after, .mcam-fieldset__input--radio ~ label::before, .mcam-fieldset__input--radio ~ label::after
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 18px;
+        height: 18px;
+      }
+
+      //.mcam-fieldset__input--checkbox ~ label::before, .mcam-fieldset__input--radio ~ label::before
+      &::before {
+        content: " ";
+        border: 1px solid $greyLight;
+        border-radius: 1px;
+        box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &:checked {
+      & + label {
+        //.mcam-fieldset__input--checkbox:checked+label::before
+        &::before {
+          content: "✔";
+          color: $blueSky;
+          text-align: center;
+          border-color: $blueSky;
+        }
+      }
+    }
+  }
+
+  .choice__text {
+    color: $greyLight !important;
+    font-size: rem(14px);
+  }
+
+  textarea.textarea {
+    padding: 16px !important;
+    height: 100% !important;
+  }
+
+  .input-zipcode {
+    display: inline-block !important;
+
+    &.hide {
+      & > div,
+      & > label {
+        display: none !important;
+      }
+    }
+  }
+
+  input[type="file"].file {
+    position: relative;
+    display: inline-block !important;
+    vertical-align: middle;
+
+    height: 38px;
+    margin: 0 !important;
+    margin-right: 10px;
+    padding-top: 10px !important;
+
+    outline: none;
+    border: none !important;
+
+    padding-left: 0 !important;
+
+    & ~ div {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+form {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+
+    text-align: left;
+
+    @media screen and (min-width: 730px) {
+      display: grid;
+      grid-template-rows: 94px;
+      grid-template-columns: 48% 48%;
+      justify-content: space-between;
+    }
+  }
+
+  select {
+    display: block !important;
+    margin-bottom: 20px;
+
+    background: $white;
+
+     /* This is to remove the arrow of select element in IE */
+    &::-ms-expand { 
+      display: none; 
+    }
+
+    //.mcam-fieldset__input--select ~ .icon-chevron
+    & ~ .wufoo-dropdown {
+      position: absolute;
+      top: 15px;
+      right: 16px;
+
+      width: 24px;
+      height: 24px;
+
+      fill: $blueDark;
+    }
+  }
+
+  textarea {
+    padding: 16px !important;
+    height: 250px !important;
+    width: 100% !important;
+    
+    resize: none;
+
+    @include placeholder {
+      padding: 0;
+    }
+
+    @media #{$desktop-up} {
+      height: 210px;
+    }
+  }
+
+  .wufoo-file-upload {
+    p {
+      display: none;
+    }
+  }
+
+  input[type="submit"] {
+    display: block;
+
+    width: 100%;
+    height: 38px;
+    padding: 11px 16px;
+
+    color: $white;
+    font-size: rem(12px) !important;
+    line-height: rem(16px);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+}

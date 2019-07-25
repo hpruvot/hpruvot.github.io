@@ -1,0 +1,88 @@
+{{#> partials/html-header }}{{/partials/html-header}}
+
+<body class="mcam-page mcam-page--article mcam-page--article3">
+
+  {{#> partials/header}}{{/partials/header}}
+
+  <div class="mcam-layout-section mcam-layout-section--intro">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <div class="mcam-section-article">
+        <div class="mcam-section-article__head">{{ date }}</div>
+        <h1 class="mcam-section-article__title mcam-headline-1">{{ title }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--image">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <picture>
+        <source data-srcset="/img/{{ thumbnail }}-mobile.jpg" media="(max-width: 639px)">
+        <img data-src="/img/{{ thumbnail }}-desktop.jpg" class="lazy" alt="{{ title }}" />
+      </picture>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--content">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <div class="mcam-section-article__content">
+        <p class="mcam-body-text">
+          Quadrant AG announced today that the company will change its name to Mitsubishi Chemical Advanced Materials AG (MCAM) as of April 1, 2019. This name change will be an important further step in the history of the Group as the renamed company as well as most of its subsidiaries and affiliates which will share the name of Mitsubishi Chemical as part of its new identity with some additional designation.<br>
+          <br>
+          The name aligns with the Mitsubishi Chemical Group brand and is well reflecting the activities of the company. MCAM will, under the new name, continue to serve a growing portfolio of market segments as a Strategic Business Unit (SBU) under the umbrella of its parent company Mitsubishi Chemical Corporation (MCC).<br>
+          <br>
+          Starting April 1, 2019 a new corporate identity will be established with Mitsubishi Chemical Advanced Materials at the core.<br>
+          <br>
+          The existing portfolio of product brands such as Ketron®, MediTECH®, SymaLITE®, Symalit® etc. will remain unaffected and will continue to be used to distribute products under the same specifications and quality into the various customer channels.<br>
+          <br>
+          The company will continue to enhance its high-performance thermoplastic materials business and strive to realize “KAITEKI”.<br>
+          <br>
+          KAITEKI is an original concept of the Mitsubishi Chemical Holdings Group that proposes a way forward in the sustainable development of society and the planet, in addition to serving as a guide for solving environmental and social issues.<br>
+          <br>
+
+        </p>
+      </div>
+      <a href="/" class="mcam-cta-icon mcam-cta-icon--back">
+        <svg class="icon icon-chevron">
+          <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
+        </svg>
+        <span class="mcam-cta-icon__link">Go back to homepage</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="mcam-layout-section mcam-layout-section--articles">
+    <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
+      <h3 class="mcam-headline-2">More articles</h3>
+      <div class="mcam-section-article__articles">
+        {{#each otherArticles}}
+        <div class="mcam-card-news">
+          <a href="/articles/{{ url }}.html">
+            <picture class="mcam-card-news__picture">
+              <source data-srcset="/img/{{ thumbnail }}-mobile.jpg" media="(max-width: 767px)">
+              <img data-src="/img/{{ thumbnail }}-desktop.jpg" class="lazy" alt="{{ title }}" />
+            </picture>
+          </a>
+          <div class="mcam-card-news__content">
+            <p class="mcam-card-news__content-date">{{ date }}</p>
+            <a href="/articles/{{ url }}.html">
+              <p class="mcam-card-news__content-title">{{ title }}</p>
+            </a>
+          </div>
+          <a href="/articles/{{ url }}.html" class="mcam-cta-icon">
+            <svg class="icon icon-chevron">
+              <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
+            </svg>
+            <span class="mcam-cta-icon__link">Read the article</span>
+          </a>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  {{#> partials/contact-form}}{{/partials/contact-form}}
+
+  {{#> partials/footer}}{{/partials/footer}}
+
+</body>
+</html>

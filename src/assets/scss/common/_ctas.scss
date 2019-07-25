@@ -1,0 +1,210 @@
+//.mcam-cta
+.mcam-cta {
+  display: inline-block;
+
+  background: $blueSky;
+  border-radius: 1px;
+  text-align: center;
+  
+  transition: all .3s;
+
+  &:hover {
+    //.no-touch .mcam-cta:hover
+    .no-touch & {
+      background: rgba($blueSky, 0.8);
+      box-shadow: 0px 4px 13px rgba(24, 82, 141, 0.3);
+    }
+  }
+
+  &:active {
+    //.no-touch .mcam-cta:active
+    .no-touch & {
+      background: $blueDark;
+    }
+  }
+
+  &--red {
+    background: $red;
+
+    &:hover {
+      //.no-touch .mcam-cta:hover
+      .no-touch & {
+        background: rgba($red, 0.8);
+        box-shadow: 0px 4px 13px rgba($red, 0.3);
+      }
+    }
+  }
+
+  //.mcam-cta__link
+  &__link {
+    display: block;
+    padding: 11px 16px;
+
+    color: $white;
+
+    font-size: rem(12px);
+    line-height: rem(16px);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+  }
+}
+
+
+
+//.mcam-cta-icon
+.mcam-cta-icon {
+  display: flex;
+
+  &:hover {
+    .no-touch & {
+      //.no-touch .mcam-cta-icon:hover .mcam-cta-icon__link
+      .mcam-cta-icon__link {
+        color: $blueDark;
+
+        //.no-touch .mcam-cta-icon:hover .mcam-cta-icon__link::after
+        &::after {
+          width: 100%;
+        }
+      }
+
+      //.no-touch .mcam-cta-icon:hover .icon-mail
+      .icon-mail {
+        fill: $blueDark;
+      }
+    }
+  }
+
+  &:active {
+    .no-touch & {
+      .mcam-cta-icon__link {
+        //.no-touch .mcam-cta-icon:active .mcam-cta-icon__link::after
+        &::after {
+          width: 0;
+        }
+      }
+    }
+  } 
+  
+  //.mcam-cta-icon__link
+  &__link {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 7px;
+
+    color: $blueSky;
+    font-weight: 600;
+    font-size: rem(13px);
+    line-height: rem(18px);
+
+    text-transform: uppercase;
+
+    transition: color .3s;
+
+    //.mcam-cta-icon__link::after
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 0%;
+
+      background: $blueDark;
+
+      transition: width .3s;
+    }
+  }
+
+  //.mcam-cta-icon .icon
+  .icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    
+    width: 18px;
+    height: 18px;
+    
+    fill: $blueSky;
+
+    transition: fill .3s;
+  }
+
+  //.mcam-cta-icon .icon-mail
+  .icon-mail {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    
+    width: 18px;
+    height: 18px;
+    
+    fill: $blueSky;
+
+    transition: fill .3s;
+  }
+}
+
+
+
+//.mcam-cta-select
+.mcam-cta-select {
+  position: relative;
+  display: inline-block;
+
+  background: transparent;
+  border-radius: 16px;
+  
+  margin-bottom: 20px;
+  padding: 6px 16px;
+
+  cursor: pointer;
+  transition: background .2s;
+  
+  //.mcam-cta-select.active
+  &.active {
+    background: $blueDark;
+
+    //.mcam-cta-select.active::after
+    &::after {
+      content: "";
+      position: absolute;
+  
+      width: 6px;
+      height: 6px;
+  
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      background: $blueDark;
+      border-radius: 100%;
+    }
+
+    //.mcam-cta-select.active .mcam-cta-select__link
+    .mcam-cta-select__link {
+      opacity: 1;
+      color: $white;
+    }
+  }
+  
+  //.mcam-cta-select__link
+  &__link {
+    opacity: 0.5;
+    color: $blueDark;
+    font-size: rem(16px);
+    font-weight: 500;
+    line-height: rem(18px);
+
+    transition: all .2s;
+
+    @media #{$tablet-up} {
+      opacity: 1;
+    }
+  }
+}

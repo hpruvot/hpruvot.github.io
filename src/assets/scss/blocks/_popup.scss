@@ -1,0 +1,31 @@
+.popup {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 90%;
+  max-width: 540px;
+  padding: 20px 10px 5px;
+  
+  background: $white;
+  box-shadow: 0px 4px 30px rgba($black, 0.25);
+  border-radius: 5px;
+  text-align: center;
+
+  z-index: 10;
+
+  @media #{$desktop-up} {
+    padding: 35px 50px;
+  }
+
+  &__title {
+    font-size: rem(20px);
+    line-height: rem(28px);
+
+    @media #{$desktop-up} {
+      font-size: rem(24px);
+      line-height: rem(30px);
+    }
+  }
+}

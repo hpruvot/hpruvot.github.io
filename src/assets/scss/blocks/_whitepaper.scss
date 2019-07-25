@@ -1,0 +1,57 @@
+.mcam-block-whitepaper {
+  display: block;
+
+  background: $white;
+
+  @media #{$tablet-up} {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  //.mcam-block-whitepaper img
+  img {
+    margin: 0 auto;
+
+    box-shadow: 0px 10px 20px rgba($black, 0.1);
+  }
+
+  //.mcam-block-whitepaper__left
+  &__left {
+    @media #{$tablet-up} {
+      width: 43%;
+      padding-left: 13%;
+    }
+  }
+
+  //.mcam-block-whitepaper__right
+  &__right {
+    @media #{$tablet-up} {
+      width: 57%;
+    }
+  }
+
+  //.mcam-block-whitepaper__title
+  &__title {
+    margin: 30px 0;
+
+    @media #{$tablet-up} {
+      margin: 0 0 12px;
+    }
+  }
+
+  //.mcam-block-whitepaper__close
+  &__close {
+    position: absolute;
+    display: flex;
+    top: 15px;
+    right: 15px;
+
+    cursor: pointer;
+
+    //.mcam-block-whitepaper__close .icon
+    .icon {
+      width: 11px;
+      height: 11px;
+    }
+  }
+}

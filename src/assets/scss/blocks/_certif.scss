@@ -1,0 +1,24 @@
+.mcam-block-certif {
+  text-align: center;
+  
+  //.mcam-block-certif__logos
+  &__logos {
+    display: flex;
+    justify-content: center;
+
+    //.mcam-block-certif__logos img
+    img {
+      margin: 0 10px;
+    }
+  }
+
+  //.mcam-block-certif__text
+  &__text {
+    margin-top: 20px;
+    padding: 0 20px;
+
+    color: $greyLight;
+    font-size: rem(14px);
+    line-height: rem(22px);
+  }
+}

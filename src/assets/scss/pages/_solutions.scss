@@ -1,0 +1,52 @@
+.mcam-page--solutions {
+  .mcam-layout-section {
+    //.mcam-page--solutions .mcam-layout-section--intro
+    &--intro {
+      margin: 40px 0;
+
+      @media #{$desktop-up} {
+        margin: 110px 0 50px;
+      }
+    }
+
+    //.mcam-page--solutions .mcam-layout-section--products
+    &--products {
+      margin: 45px 0;
+
+      overflow: hidden;
+    }
+
+    //.mcam-page--solutions .mcam-layout-section--certif
+    &--certif {
+      margin: 40px 0;
+
+      @media #{$desktop-up} {
+        margin: 65px 0 85px;
+      }
+    }
+
+    &--more {
+      padding: 60px 0;
+      
+      background: #F2F2F2;
+
+      @media #{$desktop-up} {
+        padding: 115px 0;
+      }
+
+      &.hidden {
+        display: none;
+      }
+      
+      .mcam-layout-section__title {
+        text-align: left;
+      }
+
+      .mcam-body-text {
+        margin-top: 15px;
+
+        color: $grey;
+      }
+    }
+  }
+}
