@@ -60,10 +60,13 @@
     padding: 40px 0;
 
     background: $blueDark;
+
+    text-align: left;
     
     //.mcam-block-certif__logos
     &__logos {
       display: flex;
+      justify-content: flex-start;
 
       margin-top: 20px;
 
