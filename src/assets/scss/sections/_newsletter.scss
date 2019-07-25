@@ -9,14 +9,23 @@
     max-width: 780px;
   }
 
+  //.mcam-section-newsletter__icons
   &__icons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     margin-top: 40px;
+    
+  }
 
-    &__icon {
+  &__icon {
+    width: 50%;
+    margin: 20px 0;
+    
+    @media #{$desktop-up} {
       width: 20%;
+      margin: 0;
     }
 
     .icon {
