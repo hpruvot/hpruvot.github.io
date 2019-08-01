@@ -1,4 +1,4 @@
-.mcam-section-homefilters {
+.section-homefilters {
   padding: 0 15px;
 
   @media #{$desktop-up} {
@@ -6,7 +6,7 @@
     justify-content: center;
   }
 
-  //.mcam-section-homefilters .mcam-card-filter
+  //.section-homefilters .mcam-card-filter
   .mcam-card-filter {
     margin: 15px 0;
   }

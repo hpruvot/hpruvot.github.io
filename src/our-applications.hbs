@@ -1,0 +1,58 @@
+{{#> partials/html-header }}{{/partials/html-header}}
+
+  <body class="page page--applications">
+
+    {{#> partials/header ourApplications=true}}{{/partials/header}}
+
+    <div class="section section--intro">
+      <div class="mcam-layout-section__inner">
+        <div class="section-intro">
+          <div class="section-intro__left">
+            <h1 class="mcam-headline-1">{{ title }}</h1>
+          </div>
+          <div class="section-intro__right">
+            <p class="mcam-body-text">
+              Mitsubishi Chemical Advanced Materials is the leader in Engineered Solutions to the compressor and pump market . We
+              engage in material selection, designing, prototyping, providing advanced polymer stock shapes as well as finished part
+              solutions.<br>
+              <br>
+              No matter if you are using a turbo compressor turning at 60,000 rpm or a piston compressor turning at 500 rpm. Our
+              product portfolio and Engineered Solutions allow our technical service team to apply the right solution for your
+              application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section--applications">
+      <div class="mcam-layout-section__inner">
+        <div class="section-applications">
+          {{#each ourApplications}}
+          <div class="card-application">
+            <picture class="card-application__picture">
+              <img src="/img/{{ img }}.jpg" alt="">
+            </picture>
+            <picture class="card-application__content">
+              <p class="card-application__title">{{ thumbnailTitle }}</p>
+              <p class="card-application__description">{{ thumbnailDescription }}</p>
+              <a href="/our-applications/{{ url }}.html" class="card-application__icon mcam-cta-icon">
+                <svg class="icon icon-arrow">
+                  <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+                <span class="mcam-cta-icon__link">See more</span>
+              </a>
+            </picture>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    {{#> partials/newsletter}}{{/partials/newsletter}}
+    
+    {{#> partials/footer}}{{/partials/footer}}
+    
+  </body>
+
+</html>

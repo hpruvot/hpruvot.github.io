@@ -14,12 +14,10 @@
 @import 'blocks/tab';
 @import 'blocks/author';
 @import 'blocks/certif';
-// @import 'blocks/textoverlay';
 @import 'blocks/tuned';
 @import 'blocks/tarteaucitron';
 @import 'blocks/whitepaper';
 @import 'blocks/engineered';
-// @import 'blocks/popup';
 
 @import 'cards/product';
 @import 'cards/news';
@@ -27,6 +25,7 @@
 @import 'cards/author';
 @import 'cards/image';
 @import 'cards/filter';
+@import 'cards/application';
 
 @import 'layouts/main';
 @import 'layouts/header';
@@ -34,18 +33,17 @@
 @import 'layouts/section';
 @import 'layouts/section';
 
-// @import 'sections/home-slider';
-// @import 'sections/home-filters';
 @import 'sections/all-products';
 @import 'sections/key-numbers';
 @import 'sections/news';
 @import 'sections/newsletter';
-// @import 'sections/map';
 @import 'sections/solution-filters';
 @import 'sections/intro';
 @import 'sections/more';
 @import 'sections/article';
 @import 'sections/contact';
+@import 'sections/applications';
+@import 'sections/related';
 
 @import 'pages/home';
 @import 'pages/solutions';
@@ -55,5 +53,6 @@
 @import 'pages/404';
 @import 'pages/white-paper';
 @import 'pages/thanks';
+@import 'pages/applications';
 
 @import '~aos/dist/aos.css';

@@ -1,23 +1,23 @@
-.mcam-section-intro {
+.section-intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  //.mcam-section-intro__left
+  //.section-intro__left
   &__left {
     @media #{$desktop-up} {
       width: 49%;
     }
   }
 
-  //.mcam-section-intro__right
+  //.section-intro__right
   &__right {
     @media #{$desktop-up} {
       width: 51%;
     }
   }
 
-  //.mcam-section-intro .mcam-body-text
+  //.section-intro .mcam-body-text
   .mcam-body-text {
     margin-top: 15px;
 

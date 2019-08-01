@@ -1,4 +1,4 @@
-.mcam-section-contact {
+.section-contact {
   padding: 80px 0 40px;
 
   background: #F2F2F2;
@@ -20,7 +20,7 @@
     }
   }
   
-  //.mcam-section-contact__fieldsets
+  //.section-contact__fieldsets
   &__fieldsets {
     margin-top: 40px;
 
@@ -33,25 +33,25 @@
     }
   }
 
-  //.mcam-section-contact .mcam-fieldset
+  //.section-contact .mcam-fieldset
   .mcam-fieldset {
     @media #{$tablet-up} {
       width: 48%;
     }
 
-    //.mcam-section-contact .mcam-fieldset select
+    //.section-contact .mcam-fieldset select
     select {
       margin-bottom: 20px;
 
       background: $white;
     }
 
-    //.mcam-section-contact .mcam-fieldset--full
+    //.section-contact .mcam-fieldset--full
     &--full {
       width: 100%;
     }
 
-    //.mcam-section-contact .mcam-fieldset--textarea
+    //.section-contact .mcam-fieldset--textarea
     &--textarea {
       height: 250px;
       
@@ -59,7 +59,7 @@
         height: 245px;
       }
 
-      //.mcam-section-contact .mcam-fieldset--textarea input
+      //.section-contact .mcam-fieldset--textarea input
       textarea {
         padding: 15px;
         height: 100%;
@@ -67,7 +67,7 @@
     }
   }
 
-  //.mcam-section-contact__marketing
+  //.section-contact__marketing
   &__marketing {
     margin: 20px 0;
 

@@ -1,0 +1,26 @@
+.section-related {
+  padding-top: 35px;
+  padding-bottom: 90px;
+
+  //.section-related__title
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  //.section-related__items
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  //.section-related__item
+  &__item {
+    margin-bottom: 20px;
+
+    @media #{$tablet-up} {
+      margin-bottom: 0;
+    }
+  }
+}

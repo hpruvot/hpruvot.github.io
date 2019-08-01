@@ -1,11 +1,9 @@
-.mcam-section-article {
-  text-align: center;
-  
-  //.mcam-section-article__head
+.section-article {
+  //.section-article__head
   &__head {
     margin-bottom: 10px;
 
-    color: $blueSky;
+    text-align: center;
 
     span {
       font-weight: bold;
@@ -70,6 +68,10 @@
       }
     }
 
+    img {
+      margin: 50px auto;
+    }
+
     &-hidden {
       // background: rgba($white, 0.6);
       // filter: blur(7px);
@@ -80,7 +82,7 @@
     margin: 50px 0 20px;
   }
 
-  //.mcam-section-article__table
+  //.section-article__table
   &__table {
     margin-bottom: 30px;
 

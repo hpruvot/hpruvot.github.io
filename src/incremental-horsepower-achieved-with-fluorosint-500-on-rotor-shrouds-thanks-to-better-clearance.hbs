@@ -6,10 +6,10 @@
 
   <div class="mcam-layout-section mcam-layout-section--intro">
     <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
-      <div class="mcam-section-article">
-        <div class="mcam-section-article__head"><span>Client story | </span>{{ date }}</div>
-        <h1 class="mcam-section-article__title mcam-headline-1">{{ title }}</h1>
-        <div class="mcam-section-article__author mcam-block-author">
+      <div class="section-article">
+        <div class="section-article__head"><span>Client story | </span>{{ date }}</div>
+        <h1 class="section-article__title mcam-headline-1">{{ title }}</h1>
+        <div class="section-article__author mcam-block-author">
           <picture class="mcam-block-author__photo">
             <img data-src="/img/{{ authorImg }}"class="lazy" alt="{{ authorName }}">
           </picture>
@@ -37,8 +37,8 @@
 
   <div class="mcam-layout-section mcam-layout-section--content">
     <div class="mcam-layout-section__inner">
-      <div class="mcam-section-article__content">
-        <h2 class="mcam-section-article__content-title mcam-headline-3">Context</h2>
+      <div class="section-article__content">
+        <h2 class="section-article__content-title mcam-headline-3">Context</h2>
         <p class="mcam-body-text">
           This XXM turbo compressor/expander, an enhanced version of an older model, has better rotors that efficiently handle
           higher speeds and larger flow volumes. It is built by Simms Machinery International, Santa Maria, Calif. and sits in a
@@ -57,7 +57,7 @@
           The expander uses relatively tight rotor-blade-to-shroud clearances to boost efficiency. This increases the risk of
           rotor-to-shroud rubs that could cause catastrophic failures. To reduce this risk, Simms sought an abradable material for the shrouds that would let fastmoving blade tips make light contact without harm.
         </p>
-        <h2 class="mcam-section-article__content-title mcam-headline-3">OUR SOLUTION</h2>
+        <h2 class="section-article__content-title mcam-headline-3">OUR SOLUTION</h2>
         <p class="mcam-body-text">
           Mitsubishi Chemical Advanced Materials provided Simms Engineers with its innovative Fluorosint® 500-enhanced PTFE. This
           grade of
@@ -69,11 +69,11 @@
         <p class="mcam-body-text">
           To better accommodate Simms’ requirements, we fabricated a set of prototype inserts for Simms to install and finish.
         </p>
-        <h2 class="mcam-section-article__content-title mcam-headline-3">IMPACT</h2>
+        <h2 class="section-article__content-title mcam-headline-3">IMPACT</h2>
         <p class="mcam-body-text">The <strong>incremental horsepower</strong>, made possible partly by the Fluorosint®, <strong>increased liquefaction</strong> at the original plant from <strong>2.5
         to 4.6</strong> mmscfd (2790 – 5133 Nm³/hr@0°C) without adding fuel or power. Fluorosint® 500 on the rotor shrouds of the expander
         and compressor also reduced risks of mechanical failure.</p>
-        <div class="mcam-section-article__captions">
+        <div class="section-article__captions">
           <div class="mcam-card-image">
             <figure class="mcam-card-image__picture">
               <img data-src="/img/client-story-3-image-1.png" class="lazy"
@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="mcam-section-article__content">
+      <div class="section-article__content">
         <div class="mcam-card-author">
           <div class="mcam-card-author__content">
             <div class="mcam-block-author">
@@ -109,7 +109,7 @@
   <div class="mcam-layout-section mcam-layout-section--stories">
     <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
       <h3 class="mcam-headline-2">More client stories</h3>
-      <div class="mcam-section-article__stories">
+      <div class="section-article__stories">
         {{#each otherStories}}
         <div class="mcam-card-news">
           <a href="/client-stories/{{ url }}.html">
@@ -138,8 +138,8 @@
 
   <div id="author" class="mcam-layout-section mcam-layout-section--author">
     <div class="mcam-layout-section__inner">
-      <div class="mcam-section-author">
-        <div class="mcam-section-author__left">
+      <div class="section-author">
+        <div class="section-author__left">
           <div class="mcam-block-author">
             <div class="mcam-block-author">
               <picture class="mcam-block-author__photo">
@@ -163,7 +163,7 @@
             </div>
           </div>
         </div>
-        <div class="mcam-section-author__right">
+        <div class="section-author__right">
           {{#> partials/stay-tuned}}{{/partials/stay-tuned}}
         </div>
       </div>

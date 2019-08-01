@@ -3,40 +3,40 @@
 
 <body class="mcam-page mcam-page--home">
 
-  {{#> partials/header home=true clientStories=false ourSolutions=false}}{{/partials/header}}
+  {{#> partials/header home=true clientStories=false ourApplications=false ourSolutions=false}}{{/partials/header}}
 
   <div class="mcam-layout-section mcam-layout-section--keynumbers">
-    <div class="mcam-section-keynumbers">
-      <picture class="mcam-section-keynumbers__background">
+    <div class="section-keynumbers">
+      <picture class="section-keynumbers__background">
         <img data-src="/img/key_numbers.jpg" class="lazy" alt="Key numbers">
       </picture>
-      <div class="mcam-section-keynumbers__content">
+      <div class="section-keynumbers__content">
         <div class="mcam-layout-section__inner">
-          <p class="mcam-section-keynumbers__title mcam-headline-1">Our advanced engineered polymer solutions<br>out perform metal in extreme environments</p>
-          <div class="mcam-section-keynumbers__items">
-            <div class="mcam-section-keynumbers__item">
+          <p class="section-keynumbers__title mcam-headline-1">Our advanced engineered polymer solutions<br>out perform metal in extreme environments</p>
+          <div class="section-keynumbers__items">
+            <div class="section-keynumbers__item">
               <a href="/client-stories/{{ clientStories.0.url }}.html">
-                <span class="mcam-section-keynumbers__item-number mcam-key" data-aos="fade-down" data-aos-delay="0"
+                <span class="section-keynumbers__item-number mcam-key" data-aos="fade-down" data-aos-delay="0"
                   data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">2-3x</span>
-                <p class="mcam-section-keynumbers__item-text" data-aos="fade-up" data-aos-delay="0"
+                <p class="section-keynumbers__item-text" data-aos="fade-up" data-aos-delay="0"
                   data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">longer mean time<br>between
                   repairs</p>
               </a>
             </div>
-            <div class="mcam-section-keynumbers__item">
+            <div class="section-keynumbers__item">
               <a href="/client-stories/{{ clientStories.1.url }}.html">
-                <span class="mcam-section-keynumbers__item-number mcam-key" data-aos="fade-down" data-aos-delay="200"
+                <span class="section-keynumbers__item-number mcam-key" data-aos="fade-down" data-aos-delay="200"
                   data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">3%</span>
-                <p class="mcam-section-keynumbers__item-text" data-aos="fade-up" data-aos-delay="200"
+                <p class="section-keynumbers__item-text" data-aos="fade-up" data-aos-delay="200"
                   data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">increase in
                   compressor<br>efficiency</p>
               </a>
             </div>
-            <div class="mcam-section-keynumbers__item">
+            <div class="section-keynumbers__item">
               <a href="/client-stories/{{ clientStories.2.url }}.html">
-                <span class="mcam-section-keynumbers__item-number mcam-key" data-aos="fade-down" data-aos-delay="400"
+                <span class="section-keynumbers__item-number mcam-key" data-aos="fade-down" data-aos-delay="400"
                   data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">Up to 50%</span>
-                <p class="mcam-section-keynumbers__item-text" data-aos="fade-up" data-aos-delay="400"
+                <p class="section-keynumbers__item-text" data-aos="fade-up" data-aos-delay="400"
                   data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">less clearance than
                   API<br>approved metal</p>
               </a>
@@ -62,12 +62,37 @@
         </div>
         <div class="mcam-block-certif__column mcam-block-certif__column--right">
           <div class="mcam-block-certif__logos">
-            <img data-src="/img/logo1.png" class="lazy" alt="NORSOK M-710">
-            <img data-src="/img/logo2.png" class="lazy" alt="PASSED">
+            <img data-src="/img/logo1.png" width="115" class="lazy" alt="NORSOK M-710">
+            <img data-src="/img/logo2.png" width="115" class="lazy" alt="PASSED">
           </div>
           <p class="mcam-block-certif__text">Mitsubishi Chemical Advanced Materials was the world’s FIRST to earn NORSOK M-710 compliance and provides the most
           accurate and reliable data on their stock shapes.</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section--applications">
+    <div class="mcam-layout-section__inner">  
+      <div class="section-applications">
+        <p class="section-applications__title mcam-headline-2">Discover our cutting edge applications</p>
+        {{#each ourApplications}}
+        <div class="card-application">
+          <picture class="card-application__picture">
+            <img src="/img/{{ img }}.jpg" alt="">
+          </picture>
+          <picture class="card-application__content">
+            <p class="card-application__title">{{ thumbnailTitle }}</p>
+            <p class="card-application__description">{{ thumbnailDescription }}</p>
+            <a href="/our-applications/{{ url }}.html" class="card-application__icon mcam-cta-icon">
+              <svg class="icon icon-arrow">
+                <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+              <span class="mcam-cta-icon__link">See more</span>
+            </a>
+          </picture>
+        </div>
+        {{/each}}
       </div>
     </div>
   </div>

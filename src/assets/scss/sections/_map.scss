@@ -1,4 +1,4 @@
-.mcam-section-map {
+.section-map {
   overflow: hidden;
   text-align: center;
 
@@ -9,7 +9,7 @@
     z-index: 2;
   }
   
-  //.mcam-section-map__content
+  //.section-map__content
   &__content {
     position: relative;
     margin: 50px 0;
@@ -18,7 +18,7 @@
       margin: -20px 0 20px;
     }
 
-    //.mcam-section-map__content:after, .mcam-section-map__content:before
+    //.section-map__content:after, .section-map__content:before
     &::before,
     &::after {
       content: "";
@@ -29,14 +29,14 @@
       z-index: 1;
     }
 
-    //.mcam-section-map__content:before
+    //.section-map__content:before
     &::before {
       top: 0;
       height: 150px;
       background: linear-gradient(180deg, #F9FBFD 5%, rgba(250, 252, 253, 0) 100%);
     }
     
-    //.mcam-section-map__content:after
+    //.section-map__content:after
     &::after {
       bottom: 0;
       height: 100px;
@@ -44,7 +44,7 @@
     }
   }
   
-  //.mcam-section-map img
+  //.section-map img
   img {
     position: relative;
     left: 50%;

@@ -1,4 +1,9 @@
 .mcam-page--home {
+
+  .section--applications {
+    margin: 60px 0;
+  }
+
   .mcam-block-whitepaper {
     position: fixed;
     display: flex;
@@ -53,64 +58,6 @@
         font-size: rem(16px);
         line-height: rem(22px);
       }
-    }
-  }
-
-  .mcam-block-certif {
-    padding: 40px 0;
-
-    background: $blueDark;
-
-    text-align: left;
-    
-    //.mcam-block-certif__logos
-    &__logos {
-      display: flex;
-      justify-content: flex-start;
-
-      margin-top: 20px;
-
-      @media #{$desktop-up} {
-        margin-top: 0;
-      }
-    }
-
-    //.mcam-block-certif__column
-    &__column {
-      @media #{$desktop-up} {
-        display: inline-block;
-        vertical-align: middle;
-      }
-      
-      //.mcam-block-certif__column--left
-      &--left {
-        @media #{$desktop-up} {
-          width: 57%;
-          margin-right: 5%;
-        }
-      }
-      
-      //.mcam-block-certif__column--right
-      &--right {
-        @media #{$desktop-up} {
-          width: 32%;
-        }
-
-        //.mcam-block-certif__column--right .mcam-block-certif__text
-        .mcam-block-certif__text {
-          font-size: rem(14px);
-          line-height: rem(22px);
-        }
-      }
-    }
-
-    //.mcam-block-certif__text
-    &__text {
-      padding: 0 10px;
-
-      color: $white;
-      font-size: rem(18px);
-      line-height: rem(30px);
     }
   }
 }

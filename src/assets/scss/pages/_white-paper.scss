@@ -28,11 +28,11 @@
     }
   }
   
-  //.mcam-page--whitepaper .mcam-section-whitepaper
-  .mcam-section-whitepaper {
+  //.mcam-page--whitepaper .section-whitepaper
+  .section-whitepaper {
     text-align: left;
 
-    //.mcam-page--whitepaper .mcam-section-whitepaper__fieldsets
+    //.mcam-page--whitepaper .section-whitepaper__fieldsets
     &__fieldsets {
       margin-top: 40px;
 
@@ -43,14 +43,14 @@
       }
     }
 
-    //.mcam-page--whitepaper .mcam-section-whitepaper .mcam-fieldset
+    //.mcam-page--whitepaper .section-whitepaper .mcam-fieldset
     .mcam-fieldset {
       @media #{$tablet-up} {
         width: 48%;
       }
     }
 
-    //.mcam-page--whitepaper .mcam-section-whitepaper .mcam-cta
+    //.mcam-page--whitepaper .section-whitepaper .mcam-cta
     .mcam-cta {
       @media #{$tablet-up} {
         display: block;

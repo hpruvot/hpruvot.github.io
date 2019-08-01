@@ -79,33 +79,39 @@ const clientStories = [
   }
 ];
 
-const articles = [
+const ourSolutions = [
   {
-    'title': 'Mitsubishi Chemical Advanced Materials Acquires Advanced Polymer Technologies',
-    'metaTitle': 'Acquisition : Advanced polymer technology | MCAM',
-    'description': 'Mitsubishi Chemical Advanced Solutions acquires the Advanced Poylmer Technology',
-    'url': 'mitsubishi-chemical-advanced-materials-acquires-advanced-polymer-technologies',
-    'date': '03.06.2019',
-    'thumbnail': 'home-article-1',
-    'img': 'article-1'
+
+  }
+];
+
+const ourApplications = [
+  {
+    'metaTitle': 'Labyrinth Seals',
+    'metaDescription': 'Discover why our polymer seals are better than metal seals.',
+    'thumbnailTitle': 'Labyrinth Seals',
+    'thumbnailDescription': 'Discover why our polymer seals are better than metal seals.',
+    'title': 'The Effects of Corrosion on Labyrinth Seals',
+    'url': 'the-effects-of-corrosion-on-labyrinth-seals',
+    'img': 'application-1'
   },
   {
-    'title': 'Come Join Mitsubishi Chemical Advanced Materials at K 2019',
-    'metaTitle': 'Meet us at K 2019 | Mitsubishi Chemical Advanced Solutions',
-    'description': 'Meet us at trade fair for plastics and rubber in Düsseldorf in October 2019 and discover our latest innovations in advanced polymer solutions',
-    'url': 'come-join-mitsubishi-chemical-advanced-materials-at-k-2019',
-    'date': '28.6.2019',
-    'thumbnail': 'home-article-2',
-    'img': 'article-2'
+    'metaTitle': 'Poppets, Valve Plates, Back Up Rings & Connectors',
+    'metaDescription': 'Learn more about our poppets, valve plates, back up rings & connectors.',
+    'thumbnailTitle': 'Poppets, Valve Plates, Back Up Rings & Connectors',
+    'thumbnailDescription': 'Learn more about our poppets, valve plates, back up rings & connectors.',
+    'title': 'Poppets, Valve Plates, Back Up Rings & Connectors',
+    'url': 'poppets-valve-plates-back-up-rings-connectors',
+    'img': 'application-2'
   },
   {
-    'title': 'Quadrant Changes Name to Mitsubishi Chemical Advanced Materials as of April 1, 2019 ',
-    'metaTitle': 'Quadrant becomes Mitsubishi Chemical Advanced Materials | MCAM',
-    'description': 'Quadrant becomes MCAM and will continue to enhance its high-performance thermoplastics materials and strive to realize KAITEKI',
-    'url': 'quadrant-changes-name-to-mitsubishi-chemical-advanced-materials-as-of-april-1-2019',
-    'date': '25.02.2019',
-    'thumbnail': 'home-article-3',
-    'img': 'article-3'
+    'metaTitle': 'Biodegradable and Dissolvable Polymers',
+    'metaDescription': 'Discover how our biodegradable polymer has better mechanical properties than others.',
+    'thumbnailTitle': 'Frac Plug',
+    'thumbnailDescription': 'Discover how our biodegradable polymer has better mechanical properties than others.',
+    'title': 'Biodegradable and Dissolvable Polymers',
+    'url': 'biodegradable-and-dissolvable-polymers',
+    'img': 'application-3'
   }
 ]
 
@@ -128,19 +134,19 @@ let clientStoriesHtmlPlugins = clientStories.map(function (clientStory) {
   })
 });
 
-let articlesHtmlPlugins = articles.map(function (article) {
+let ourApplicationsHtmlPlugins = ourApplications.map(function (ourApplication) {
   return new HtmlWebpackPlugin({
-    filename: 'articles/' + article.url + '.html',
-    template: __dirname + `/src/${article.url}.hbs`,
+    filename: 'our-applications/' + ourApplication.url + '.html',
+    template: __dirname + `/src/templates/applications/${ourApplication.url}.hbs`,
     templateParameters: {
-      'title': article.title,
-      'metaTitle': article.metaTitle,
-      'description': article.description,
-      'url': article.url,
-      'date': article.date,
-      'thumbnail': article.thumbnail,
-      'img': article.img,
-      'otherArticles': articles
+      'metaTitle': ourApplication.metaTitle,
+      'metaDescription': ourApplication.metaDescription,
+      'thumbnailTitle': ourApplication.thumbnailTitle,
+      'thumbnailDescription': ourApplication.thumbnailDescription,
+      'title': ourApplication.title,
+      'url': ourApplication.url,
+      'img': ourApplication.img,
+      'otherApplications': ourApplications
     },
     excludeChunks: ['contact']
   })
@@ -172,6 +178,10 @@ module.exports = {
         test: /\.hbs$/, 
         loader: 'handlebars-loader',
         options: {
+          partialDirs: [
+            path.resolve(__dirname, 'src', 'partials')
+          ],
+          helperDirs: path.resolve(__dirname, './src/assets/js/hbs-helpers/lowercase.js'),
           knownHelpersOnly: false
         }
       },
@@ -238,8 +248,8 @@ module.exports = {
         'title': 'Oil and gas polymer solutions| Mitsubishi Chemical Advanced Materials',
         'metaTitle': 'Oil and gas polymer solutions| Mitsubishi Chemical Advanced Materials',
         'description': 'Mitsubishi chemical advanced materials provides taylor made solutions for Oil and Gas compressors and pumps such as labyrinth seals, valves.',
-        'articles': articles,
-        'clientStories': clientStories
+        'clientStories': clientStories,
+        'ourApplications': ourApplications
       },
       excludeChunks: ['contact']
     }),
@@ -251,6 +261,17 @@ module.exports = {
         'metaTitle': 'Client stories in Oil and Gas industry using polymers solutions | MCAM',
         'description': 'Discover case studies based on client succes stories using taylor made polymer solutions and labby seals',
         'articles': clientStories
+      },
+      excludeChunks: ['contact']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/our-applications.hbs',
+      filename: 'our-applications.html',
+      templateParameters: {
+        'title': 'Our Applications for Compressors & Pumps',
+        'metaTitle': 'Our Applications for Compressors & Pumps',
+        'description': 'Mitsubishi Chemical Advanced Materials is the leader for engineered solutions to the compressor and pump market. We engage in material selection, designing, prototyping, providing advanced polymer stock shapes and finished parts.',
+        'ourApplications': ourApplications
       },
       excludeChunks: ['contact']
     }),
@@ -338,7 +359,7 @@ module.exports = {
         reload: true
       }
     )
-  ].concat(clientStoriesHtmlPlugins).concat(articlesHtmlPlugins),
+  ].concat(clientStoriesHtmlPlugins).concat(ourApplicationsHtmlPlugins),
   optimization: {
     minimizer: [
       new UglifyJsPlugin({

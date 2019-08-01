@@ -40,7 +40,7 @@ export default class Filters {
   // On focus
   filterProducts(e, filters, filter, products, more) {
     // We get all the detail sections
-    let details = more.querySelectorAll('.mcam-section-more');
+    let details = more.querySelectorAll('.section-more');
 
     // If on click it's already selected
     if (filter.classList.contains('selected')) {

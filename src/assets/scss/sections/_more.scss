@@ -1,4 +1,4 @@
-.mcam-section-more {
+.section-more {
   
   &.hidden {
     display: none;
@@ -10,7 +10,7 @@
     justify-content: space-between;
   }
 
-  //.mcam-section-more__left
+  //.section-more__left
   &__left {
     @media #{$desktop-up} {
       width: 43%;
@@ -18,14 +18,14 @@
     }
   }
 
-  //.mcam-section-more__right
+  //.section-more__right
   &__right {
     @media #{$desktop-up} {
       width: 57%;
     }
   }
 
-  //.mcam-section-more .mcam-body-text
+  //.section-more .mcam-body-text
   .mcam-body-text {
     margin-top: 15px;
 
@@ -36,7 +36,7 @@
     }
   }
 
-  //.mcam-section-more img
+  //.section-more img
   img {
     margin-top: 15px;
     

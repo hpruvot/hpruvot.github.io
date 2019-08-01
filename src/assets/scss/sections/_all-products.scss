@@ -1,8 +1,14 @@
-.mcam-section-allproducts {
+.section-products {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1%;
   padding-bottom: 20px;
+
+  &__title {
+    margin-bottom: 20px;
+    
+    color: $white;
+  }
 
   .mcam-card-product {
     margin-bottom: 40px;

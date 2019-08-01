@@ -1,19 +1,58 @@
 .mcam-block-certif {
-  text-align: center;
+  padding: 25px 0;
+
+  background: $blueDark;
+
+  text-align: left;
   
   //.mcam-block-certif__logos
   &__logos {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-top: 20px;
+
+    @media #{$desktop-up} {
+      margin-top: 0;
+    }
+  }
+
+  //.mcam-block-certif__column
+  &__column {
+    @media #{$desktop-up} {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    //.mcam-block-certif__column--left
+    &--left {
+      @media #{$desktop-up} {
+        width: 53%;
+        margin-right: 5%;
+      }
+    }
+    
+    //.mcam-block-certif__column--right
+    &--right {
+      @media #{$desktop-up} {
+        width: 41%;
+      }
+
+      //.mcam-block-certif__column--right .mcam-block-certif__text
+      .mcam-block-certif__text {
+        font-size: rem(12px);
+        line-height: rem(19px);
+      }
+    }
   }
 
   //.mcam-block-certif__text
   &__text {
-    margin-top: 20px;
-    padding: 0 20px;
+    padding: 0 10px;
 
-    color: $greyLight;
-    font-size: rem(14px);
-    line-height: rem(22px);
+    color: $white;
+    font-size: rem(24px);
+    line-height: rem(40px);
   }
 }
