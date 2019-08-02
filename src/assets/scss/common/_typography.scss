@@ -38,6 +38,14 @@
   font-size: rem(18px);
   line-height: rem(30px);
   font-weight: normal;
+
+  //.mcam-body-text--title
+  &--title {
+    color: $blueDark;
+    font-size: rem(22px);
+    line-height: rem(30px);
+    font-weight: bold;
+  }
 }
 
 // CONTENT

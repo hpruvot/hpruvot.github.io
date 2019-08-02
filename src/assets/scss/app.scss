@@ -18,6 +18,7 @@
 @import 'blocks/tarteaucitron';
 @import 'blocks/whitepaper';
 @import 'blocks/engineered';
+@import 'blocks/getintouch';
 
 @import 'cards/product';
 @import 'cards/news';
@@ -44,6 +45,7 @@
 @import 'sections/contact';
 @import 'sections/applications';
 @import 'sections/related';
+@import 'sections/getintouch';
 
 @import 'pages/home';
 @import 'pages/solutions';
@@ -54,5 +56,6 @@
 @import 'pages/white-paper';
 @import 'pages/thanks';
 @import 'pages/applications';
+@import 'pages/application';
 
 @import '~aos/dist/aos.css';

@@ -54,7 +54,15 @@
   }
 
   &__content {
+    .mcam-body-text--title {
+      display: block;
+      
+      margin-top: 60px;
+    }
+
     ul {
+      position: relative;
+
       margin-top: 20px;
       padding-left: 20px;
 
@@ -65,6 +73,26 @@
       li {
         @extend .mcam-body-text;
         list-style: disc;
+      }
+
+      &.mcam-body-tick {
+        li {
+          margin-bottom: 15px;
+
+          list-style: none;
+        }
+
+        .icon-check {
+          position: absolute;
+          left: 0;
+          
+          width: 25px;
+          height: 20px;
+
+          margin-top: 5px;
+
+          fill: $green;
+        }
       }
     }
 
