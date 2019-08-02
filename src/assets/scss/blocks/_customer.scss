@@ -1,0 +1,27 @@
+.customer {
+  max-width: 540px;
+  
+  padding: 30px;
+
+  background: #F2F2F2;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  &__title {
+    margin: 13px 0 5px;
+  }
+
+  &__job {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+
+    color: $grey;
+    
+    font-size: rem(16px);
+    line-height: rem(30px);
+  }
+}

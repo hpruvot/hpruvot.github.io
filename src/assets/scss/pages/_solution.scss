@@ -1,0 +1,89 @@
+.page--solution {
+  .section--intro {
+    margin-top: 50px;
+  }
+
+  .section-article__head {
+    text-align: left;
+  }
+
+  .section--content {
+    margin-top: 45px;
+    margin-bottom: 30px;
+
+    .mcam-layout-section__inner {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .section-article__content {
+      //.page--solution .section--content .section-article__content img
+      img {
+        margin-top: 0;
+      }
+
+      //.page--solution .section--content .section-article__content--left
+      &--left {
+        @media #{$desktop-up} {
+          width: 57%;
+          margin-right: 2%;
+        }
+      }
+
+      //.page--solution .section--content .section-article__content--right
+      &--right {
+        @media #{$desktop-up} {
+          width: 41%;
+        }
+      }
+    }
+  }
+
+  .customer {
+    margin-top: 75px;
+  }
+
+  .getintouch {
+    margin-top: 45px;
+    margin-left: 0;
+  }
+
+  .what-side {
+    @media #{$desktop-down} {
+      margin-top: 45px;
+    }
+
+    @media #{$desktop-up} {
+      position: sticky;
+      top: 120px;
+      left: 100%;
+    }
+  }
+
+  .section-products {
+    margin-top: 40px;
+  }
+
+  &2 {
+    .customer,
+    .getintouch {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .customer {
+      margin-top: 0;
+    }
+  }
+
+  &4 {
+    .section--content {
+      padding-bottom: 150px;
+    }
+
+    .mcam-body-text--title {
+      margin-top: 15px;
+      margin-bottom: 18px;
+    }
+  }
+}

@@ -19,6 +19,9 @@
 @import 'blocks/whitepaper';
 @import 'blocks/engineered';
 @import 'blocks/getintouch';
+@import 'blocks/customer';
+@import 'blocks/what-side';
+@import 'blocks/breadcrumb';
 
 @import 'cards/product';
 @import 'cards/news';
@@ -28,6 +31,7 @@
 @import 'cards/filter';
 @import 'cards/application';
 @import 'cards/solution';
+@import 'cards/solution-big';
 
 @import 'layouts/main';
 @import 'layouts/header';
@@ -46,6 +50,7 @@
 @import 'sections/contact';
 @import 'sections/applications';
 @import 'sections/solutions';
+@import 'sections/solutions-big';
 @import 'sections/related';
 @import 'sections/getintouch';
 
@@ -59,5 +64,6 @@
 @import 'pages/thanks';
 @import 'pages/applications';
 @import 'pages/application';
+@import 'pages/solution';
 
 @import '~aos/dist/aos.css';

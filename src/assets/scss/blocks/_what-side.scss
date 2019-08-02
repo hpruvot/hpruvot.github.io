@@ -1,0 +1,28 @@
+.what-side {
+  padding: 30px;
+
+  background: #F2F2F2;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  .section-article__content & {
+    ul {
+      padding-left: 30px;
+  
+      li {
+        font-size: rem(16px);
+        line-height: rem(24px);
+      }
+    }
+
+    .icon-check {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .mcam-cta {
+    margin-top: 40px;
+  }
+}
