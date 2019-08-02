@@ -1,0 +1,37 @@
+.section-solutions {
+  text-align: center;
+  
+  //.section-solutions__title
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  //.section-solutions .card-solution
+  .card-solution {
+    display: inline-block;
+    vertical-align: top; 
+
+    margin: 15px 0;
+
+    @media #{$tablet-up} {
+      width: 47%;
+      margin: 15px 1%;
+    }
+
+    @media #{$desktop-up} {
+      width: 23%;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+  
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .mcam-cta {
+    margin-top: 30px;
+  }
+}

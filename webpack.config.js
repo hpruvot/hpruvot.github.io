@@ -81,8 +81,81 @@ const clientStories = [
 
 const ourSolutions = [
   {
-
-  }
+    'metaTitle': 'Portfolio of Materials & Processing Solutions',
+    'metaDescription': 'Mitsubishi Chemical Advanced Materials is the leader in Engineered Solutions to the compressor and pump market . We engage in material selection.',
+    'thumbnailTitle': 'Portfolio of Materials & Processing Solutions',
+    'thumbnailDescription': [
+      {
+        'item': 'Material Triangle',
+      },
+      {
+        'item': 'Most Commonly Used',
+      },
+      {
+        'item': 'Our Full Product Line'
+      }
+    ],
+    'title': 'Portfolio of materials and processing solutions',
+    'url': 'portfolio-of-materials-and-processing-solutions',
+    'img': 'solution-1'
+  },
+  {
+    'metaTitle': 'Production Parts',
+    'metaDescription': 'With our engineered solutions, we provide our high tech and diversified customer base with complete solutions to their engineering and finished component needs.  We do this by combining their experience, engineering, material science, andtechnology to produce high quality plastic and metal parts that meet exact specifications.',
+    'thumbnailTitle': 'Production Parts',
+    'thumbnailDescription': [
+      {
+        'item': 'CNC Machining',
+      },
+      {
+        'item': 'Injection Moldin',
+      },
+      {
+        'item': 'Vertical Integration'
+      },
+    ],
+    'title': 'Production Parts',
+    'url': 'production-parts',
+    'img': 'solution-2'
+  },
+  {
+    'metaTitle': 'Rapid Prototyping ',
+    'metaDescription': 'Mitsubishi Chemical Advanced Materials is a leader in Engineered Solutions for the Oil & Gas industry. We strive to give the best customer service possible when designing and creating finished parts. Starting from the design phase with the customer, we engage in material selection, rapid prototyping to production and assembly.',
+    'thumbnailTitle': 'Rapid Prototyping ',
+    'thumbnailDescription': [
+      {
+        'item': 'Tight Tolerance'
+      },
+      {
+        'item': 'CNC Turning'
+      },
+      {
+        'item': 'Proprietary 3D Printed Technology'
+      },
+    ],
+    'title': 'Rapid Prototyping for Additive Manufacturing, CNC Machining, & Injection Molding',
+    'url': 'rapid-prototyping',
+    'img': 'solution-3'
+  },
+  {
+    'metaTitle': 'R&D Innovations',
+    'metaDescription': 'Mitsubishi Chemical Advanced Materials Research and Development team is continuously working together with our market segment managers to develop new and exciting materials. With our MSM in the field, we are able to better understand what materials and processes are needed for the industry.',
+    'thumbnailTitle': 'R&D Innovations',
+    'thumbnailDescription': [
+      {
+        'item': 'Latest Innovations'
+      },
+      {
+        'item': 'Near Net Shape Technology'
+      },
+      {
+        'item': 'Constant material under development'
+      },
+    ],
+    'title': 'R&D Innovations',
+    'url': 'rd-innovations',
+    'img': 'solution-4'
+  },
 ];
 
 const ourApplications = [
@@ -147,6 +220,23 @@ let ourApplicationsHtmlPlugins = ourApplications.map(function (ourApplication) {
       'url': ourApplication.url,
       'img': ourApplication.img,
       'otherApplications': ourApplications
+    },
+    excludeChunks: ['contact']
+  })
+});
+
+let ourSolutionsHtmlPlugins = ourSolutions.map(function (ourSolution) {
+  return new HtmlWebpackPlugin({
+    filename: 'our-solutions/' + ourSolution.url + '.html',
+    template: __dirname + `/src/templates/solutions/${ourSolution.url}.hbs`,
+    templateParameters: {
+      'metaTitle': ourSolution.metaTitle,
+      'metaDescription': ourSolution.metaDescription,
+      'thumbnailTitle': ourSolution.thumbnailTitle,
+      'thumbnailDescription': ourSolution.thumbnailDescription,
+      'title': ourSolution.title,
+      'url': ourSolution.url,
+      'img': ourSolution.img,
     },
     excludeChunks: ['contact']
   })
@@ -249,7 +339,8 @@ module.exports = {
         'metaTitle': 'Oil and gas polymer solutions| Mitsubishi Chemical Advanced Materials',
         'description': 'Mitsubishi chemical advanced materials provides taylor made solutions for Oil and Gas compressors and pumps such as labyrinth seals, valves.',
         'clientStories': clientStories,
-        'ourApplications': ourApplications
+        'ourApplications': ourApplications,
+        'ourSolutions': ourSolutions
       },
       excludeChunks: ['contact']
     }),
@@ -359,7 +450,7 @@ module.exports = {
         reload: true
       }
     )
-  ].concat(clientStoriesHtmlPlugins).concat(ourApplicationsHtmlPlugins),
+  ].concat(clientStoriesHtmlPlugins).concat(ourApplicationsHtmlPlugins).concat(ourSolutionsHtmlPlugins),
   optimization: {
     minimizer: [
       new UglifyJsPlugin({

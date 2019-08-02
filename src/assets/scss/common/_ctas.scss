@@ -64,13 +64,14 @@
       //.no-touch .mcam-cta-icon:hover .mcam-cta-icon__link
       .mcam-cta-icon__link {
         color: $blueDark;
+        
 
         //.no-touch .mcam-cta-icon:hover .mcam-cta-icon__link::after
         &::after {
           width: 100%;
         }
       }
-
+      
       //.no-touch .mcam-cta-icon:hover .icon-mail
       .icon-mail {
         fill: $blueDark;
@@ -119,10 +120,15 @@
 
       transition: width .3s;
     }
+
+    .mcam-cta-icon--white & {
+      color: $white;
+    }
   }
 
   //.mcam-cta-icon .icon
-  .icon {
+  .icon,
+  &__icon {
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -133,6 +139,10 @@
     fill: $blueSky;
 
     transition: fill .3s;
+
+    .mcam-cta-icon--white & {
+      fill: $white;
+    }
   }
 
   //.mcam-cta-icon .icon-mail
@@ -147,6 +157,17 @@
     fill: $blueSky;
 
     transition: fill .3s;
+  }
+
+  &--white {
+    &:hover {
+      .no-touch & {
+        //.no-touch .mcam-cta-icon--white:hover .mcam-cta-icon__link
+        .mcam-cta-icon__link {
+          color: $white;
+        }
+      }
+    }
   }
 }
 

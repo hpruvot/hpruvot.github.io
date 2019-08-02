@@ -97,7 +97,45 @@
     </div>
   </div>
 
-  <div class="mcam-block-whitepaper" data-aos="fade-left" data-aos-delay="0" data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">
+  <div class="section section--solutions">
+    <div class="mcam-layout-section__inner">
+      <div class="section-solutions">
+        <p class="mcam-button">Why should you work with Mitsubishi Chemical Advanced Materials?</p>
+        <p class="section-solutions__title mcam-headline-2">We provide the most comprehensive range<br>of engineering solutions for Oil & Gas</p>
+        {{#each ourSolutions}}
+        <div class="card-solution">
+          <picture class="card-solution__picture">
+            <img src="/img/{{ img }}.jpg" alt="">
+          </picture>
+          <div class="card-solution__content">
+            <p class="card-solution__title">{{ thumbnailTitle }}</p>
+            <ul class="card-solution__tick">
+              {{#each thumbnailDescription}}
+              <li>
+                <svg class="icon icon-check">
+                  <use xlink:href="/symbol-defs.svg#icon-check"></use>
+                </svg>
+                {{item}}
+              </li>
+              {{/each}}
+            </ul>
+            <a href="/our-solutions/{{ url }}.html" class="card-solution__icon mcam-cta-icon mcam-cta-icon--white">
+              <svg class="mcam-cta-icon__icon icon icon-arrow">
+                <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+              <span class="mcam-cta-icon__link">Discover more</span>
+            </a>
+          </div>
+        </div>
+        {{/each}}
+        <a href="/our-solutions.html" class="mcam-cta">
+          <span class="mcam-cta__link">Discover our solutions</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {{!-- <div class="mcam-block-whitepaper" data-aos="fade-left" data-aos-delay="0" data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">
     <div class="mcam-block-whitepaper__left">
       <picture class="mcam-block-whitepaper__picture">
         <source data-srcset="/img/whitepaper-mobile.jpg" media="(max-width: 767px)"
@@ -121,7 +159,7 @@
         <use xlink:href="/symbol-defs.svg#icon-cross"></use>
       </svg>
     </div>
-  </div>
+  </div> --}}
 
   {{#> partials/newsletter}}{{/partials/newsletter}}
 
