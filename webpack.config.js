@@ -191,7 +191,7 @@ const ourApplications = [
 let clientStoriesHtmlPlugins = clientStories.map(function (clientStory) {
   return new HtmlWebpackPlugin({
     filename: 'client-stories/' + clientStory.url + '.html',
-    template: __dirname + `/src/${clientStory.url}.hbs`,
+    template: __dirname + `/src/templates/stories/${clientStory.url}.hbs`,
     templateParameters: {
       'title': clientStory.title,
       'metaTitle': clientStory.metaTitle,
@@ -268,10 +268,6 @@ module.exports = {
         test: /\.hbs$/, 
         loader: 'handlebars-loader',
         options: {
-          partialDirs: [
-            path.resolve(__dirname, 'src', 'partials')
-          ],
-          helperDirs: path.resolve(__dirname, './src/assets/js/hbs-helpers/lowercase.js'),
           knownHelpersOnly: false
         }
       },
@@ -332,7 +328,7 @@ module.exports = {
     copyFiles,
     extractSass,
     new HtmlWebpackPlugin({
-      template: './src/index.hbs',
+      template: './src/templates/index.hbs',
       filename: 'index.html',
       templateParameters: {
         'title': 'Oil and gas polymer solutions| Mitsubishi Chemical Advanced Materials',
@@ -345,7 +341,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/client-stories.hbs',
+      template: './src/templates/client-stories.hbs',
       filename: 'client-stories.html',
       templateParameters: {
         'title': 'Client stories in Oil and Gas industry using polymers solutions | MCAM',
@@ -356,7 +352,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/our-applications.hbs',
+      template: './src/templates/our-applications.hbs',
       filename: 'our-applications.html',
       templateParameters: {
         'title': 'Our Applications for Compressors & Pumps',
@@ -367,7 +363,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/our-solutions.hbs',
+      template: './src/templates/our-solutions.hbs',
       filename: 'our-solutions.html',
       templateParameters: {
         'metaTitle': 'Our polymers solutions and products for Oil and Gas industry | MCAM',
@@ -378,7 +374,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/contact.hbs',
+      template: './src/templates/contact.hbs',
       filename: 'contact.html',
       templateParameters: {
         'title': 'Contact us | Mitsubishi Chemical Advanced Solutions',
@@ -389,7 +385,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/thanks.hbs',
+      template: './src/templates/thanks.hbs',
       filename: 'thanks.html',
       templateParameters: {
         'title': 'Thanks for contacting us!',
@@ -400,7 +396,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/404.hbs',
+      template: './src/templates/404.hbs',
       filename: '404.html',
       templateParameters: {
         'title': '404',
@@ -410,7 +406,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/privacy-notice.hbs',
+      template: './src/templates/privacy-notice.hbs',
       filename: 'privacy-notice.html',
       templateParameters: {
         'title': 'Privacy Notice',
@@ -420,7 +416,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/terms-of-use.hbs',
+      template: './src/templates/terms-of-use.hbs',
       filename: 'terms-of-use.html',
       templateParameters: {
         'title': 'Terms of Use',
@@ -430,7 +426,7 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
-      template: './src/white-paper.hbs',
+      template: './src/templates/white-paper.hbs',
       filename: 'white-paper.html',
       templateParameters: {
         'title': 'Learn more about the effects of processing on thermoplastics',

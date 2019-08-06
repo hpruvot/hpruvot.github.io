@@ -12,6 +12,11 @@ export default class Form {
   }
 
   initEvents() {
+    let hiddenArticle = document.querySelector('.section-article__content-hidden');
+    if (hiddenArticle) {
+      this.handleArticleReading(hiddenArticle);
+    }
+
     // Foreach fieldset
     [].slice.call(document.querySelectorAll('.mcam-fieldset')).forEach((fieldsetEl) => {
       // Find the input
@@ -64,5 +69,17 @@ export default class Form {
       // Else we hide it
       inputZipcode.classList.add('hidden')
     }
+  }
+
+  handleArticleReading(hiddenArticle) {
+    let popup = hiddenArticle.querySelector('.popup');
+    let form = hiddenArticle.querySelector('.section-newsletter__form');
+    let hidden = hiddenArticle.querySelector('.hidden');
+    
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      popup.style.display = 'none';
+      hidden.classList.remove('hidden');
+    }, false);
   }
 }

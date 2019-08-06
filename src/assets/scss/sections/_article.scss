@@ -74,8 +74,12 @@
     }
 
     &-hidden {
-      // background: rgba($white, 0.6);
-      // filter: blur(7px);
+      position: relative;
+      
+      .hidden {
+        background: rgba($white, 0.6);
+        filter: blur(7px);
+      }
     }
   }
 

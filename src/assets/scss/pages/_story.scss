@@ -1,4 +1,8 @@
 .mcam-page--story {
+  .section-article__head {
+    color: $blueSky;
+  }
+  
   .mcam-layout-section {
     &--intro {
       margin: 50px 0;
@@ -100,6 +104,10 @@
         }
       }
     }
+  }
+
+  .section-article {
+    text-align: center;
   }
   
   //.mcam-page--story .mcam-card-author
