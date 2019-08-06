@@ -66,46 +66,7 @@
 
     //.section-article__content ul
     ul {
-      position: relative;
-
       margin-top: 20px;
-      padding-left: 20px;
-
-      @media #{$desktop-up} {
-        padding-left: 50px;
-      }
-
-      li {
-        @extend .mcam-body-text;
-        list-style: disc;
-      }
-
-      &.mcam-body-tick {
-        li {
-          margin-bottom: 15px;
-
-          list-style: none;
-        }
-      }
-    }
-    
-    .icon-check {
-      position: absolute;
-      left: 0;
-      
-      width: 14px;
-      height: 14px;
-
-      margin-top: 10px;
-
-      fill: $green;
-
-      @media #{$desktop-up} {
-        width: 25px;
-        height: 20px;
-
-        margin-top: 5px;
-      }
     }
 
     img {

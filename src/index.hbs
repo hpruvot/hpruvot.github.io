@@ -135,23 +135,22 @@
     </div>
   </div>
 
-  {{!-- <div class="mcam-block-whitepaper" data-aos="fade-left" data-aos-delay="0" data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">
+  {{#> partials/whitepaper}}{{/partials/whitepaper}}
+
+  <div class="mcam-block-whitepaper" data-aos="fade-left" data-aos-delay="0" data-aos-easing="easeInOutExpo" data-aos-duration="600" data-aos-once="true">
     <div class="mcam-block-whitepaper__left">
       <picture class="mcam-block-whitepaper__picture">
-        <source data-srcset="/img/whitepaper-mobile.jpg" media="(max-width: 767px)"
-          srcset="/img/whitepaper-mobile.jpg">
-        <img data-src="/img/whitepaper-desktop.jpg" class="lazy loading" alt="white paper"
-          src="/img/whitepaper-desktop.jpg" data-was-processed="true">
+        <source data-srcset="/img/whitepaper-mobile.png" media="(max-width: 767px)">
+        <img data-src="/img/whitepaper-desktop.png" class="lazy" alt="white paper" />
       </picture>
     </div>
     <div class="mcam-block-whitepaper__right">
-      <p class="mcam-button">Whitepaper</p>
       <p class="mcam-block-whitepaper__title mcam-headline-2">Learn more about the effects of processing methods on thermoplastics</p>
       <a href="/white-paper.html" class="mcam-cta-icon">
         <svg class="icon icon-download">
           <use xlink:href="/symbol-defs.svg#icon-download"></use>
         </svg>
-        <span class="mcam-cta-icon__link">Download</span>
+        <span class="mcam-cta-icon__link">Download our whitepaper</span>
       </a>
     </div>
     <div class="mcam-block-whitepaper__close">
@@ -159,9 +158,13 @@
         <use xlink:href="/symbol-defs.svg#icon-cross"></use>
       </svg>
     </div>
-  </div> --}}
+  </div>
 
   {{#> partials/newsletter}}{{/partials/newsletter}}
+
+  <div class="section section--getintouch">
+    {{#> partials/get-in-touch}}{{/partials/get-in-touch}}
+  </div>
 
   {{#> partials/footer}}{{/partials/footer}}
   

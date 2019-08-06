@@ -9,8 +9,20 @@
     margin-top: 60px;
   }
 
+  //.page--applications .section--whitepaper
+  .section--whitepaper {
+    margin-top: 115px;
+
+    background: $greyLighter;
+  }
+
   //.page--applications .section-newsletter
   .section-newsletter {
     background: $white;
+  }
+
+  //.page--applications .section--getintouch
+  .section--getintouch {
+    background: linear-gradient(115.29deg, rgba($white, 0.2) -2.47%, rgba($white, 0) 98.96%), $blueDark;
   }
 }

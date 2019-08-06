@@ -48,6 +48,59 @@
   }
 }
 
+.mcam-body-list {
+  position: relative;
+
+  padding-left: 20px;
+
+  //.mcam-body-list li
+  li {
+     @extend .mcam-body-text;
+     list-style: disc;
+  }
+}
+
+.mcam-body-tick {
+  position: relative;
+
+  padding-left: 20px;
+
+  @media #{$desktop-up} {
+    padding-left: 40px;
+  }
+
+  li {
+    margin-bottom: 15px;
+
+    color: $grey;
+
+    list-style: none;
+
+    @media #{$desktop-up} {
+      margin-bottom: 25px;
+    }
+  }
+
+  .icon-check {
+    position: absolute;
+    left: 0;
+    
+    width: 14px;
+    height: 14px;
+
+    margin-top: 10px;
+
+    fill: $green;
+
+    @media #{$desktop-up} {
+      width: 25px;
+      height: 20px;
+
+      margin-top: 5px;
+    }
+  }
+}
+
 // CONTENT
 .mcam-quote {
   font-size: rem(45px);

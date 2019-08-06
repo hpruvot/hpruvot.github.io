@@ -1,62 +1,59 @@
 .mcam-page--whitepaper {
-  .mcam-layout-section {
-      //.mcam-page--whitepaper .mcam-layout-section--intro
-     &--intro {
-      margin: 50px 0;
-    }
+  //.mcam-page--whitepaper .section--intro
+  .section--intro {
+    margin: 35px 0;
 
-    //.mcam-page--whitepaper .mcam-layout-section--whitepaper
-    &--whitepaper {
-      @media #{$tablet-up} {
-        margin-top: 80px;
-      }
-    }
-
-    //.mcam-page--whitepaper .mcam-layout-section--download
-    &--download {
-      background: #F2F2F2;
-
-      margin: 30px 0 0;
-      padding: 30px 0;
-
-      text-align: center;
-
-      @media #{$tablet-up} {
-        margin: 70px 0 0;
-        padding: 60px 0;
-      }
+    //.mcam-page--whitepaper .section--intro .mcam-headline-1
+    .mcam-headline-1 {
+      margin-bottom: 25px;
     }
   }
-  
-  //.mcam-page--whitepaper .section-whitepaper
-  .section-whitepaper {
-    text-align: left;
 
-    //.mcam-page--whitepaper .section-whitepaper__fieldsets
-    &__fieldsets {
-      margin-top: 40px;
+  //.mcam-page--whitepaper .whitepaper
+  .whitepaper {
+    margin-top: 30px;
 
-      @media #{$tablet-up} {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
+    @media #{$desktop-up} {
+      margin-top: 80px;
     }
 
-    //.mcam-page--whitepaper .section-whitepaper .mcam-fieldset
-    .mcam-fieldset {
-      @media #{$tablet-up} {
-        width: 48%;
-      }
+    //.mcam-page--whitepaper .whitepaper__left
+    &__left {
+      width: 44%;
     }
 
-    //.mcam-page--whitepaper .section-whitepaper .mcam-cta
-    .mcam-cta {
-      @media #{$tablet-up} {
-        display: block;
-        margin: 50px auto 0;
-        width: 210px;
-      }
+    //.mcam-page--whitepaper .whitepaper__right
+    &__right {
+      width: 56%;
+      padding-top: 4%;
+      padding-left: 4%;
     }
+  }
+
+  //.mcam-page--whitepaper .whitepaper-form
+  .whitepaper-form {
+    margin-top: 30px;
+
+    @media #{$desktop-up} {
+      width: 79%;
+      margin-top: 0;
+      margin-left: 4%;
+    }
+  }
+
+  //.mcam-page--whitepaper .section--keynumbers
+  .section--keynumbers {
+    padding: 30px 0 0;
+
+    background: $greyLighter;
+
+    @media #{$desktop-up} {
+      padding: 55px 0 20px;
+    }
+  }
+
+  //.mcam-page--whitepaper .section-newsletter
+  .section-newsletter {
+    background: $white;
   }
 }

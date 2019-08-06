@@ -1,0 +1,15 @@
+<nav class="breadcrumb">
+  <div class="breadcrumb__inner">
+    <a href="/" class="breadcrumb__item">Homepage</a>
+    {{#if parentPage}}
+    <svg class="breadcrumb__icon icon icon-chevron">
+      <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
+    </svg>
+    <a href="/{{ parentUrl }}.html" class="breadcrumb__item">{{ parentPage }}</a>
+    {{/if}}
+    <svg class="breadcrumb__icon icon icon-chevron">
+      <use xlink:href="/symbol-defs.svg#icon-chevron"></use>
+    </svg>
+    <a class="breadcrumb__item current">{{ currentPage }}</a>
+  </div>
+</nav>

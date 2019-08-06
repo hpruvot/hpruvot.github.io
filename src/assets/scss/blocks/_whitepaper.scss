@@ -1,3 +1,69 @@
+.whitepaper {
+  display: flex;
+  flex-wrap: wrap;
+
+  //.whitepaper__left
+  &__left {
+    order: 2;
+
+    @media #{$tablet-up} {
+      width: 26%;
+
+      order: 0;
+    }
+  }
+
+  //.whitepaper__middle
+  &__middle {
+    margin: 0 auto 30px;
+
+    order: 0;
+
+    @media #{$tablet-up} {
+      width: 22%;
+
+      margin: 0 auto;
+
+      order: 1;
+    }
+  }
+
+  //.whitepaper__right
+  &__right {
+    margin-bottom: 30px;
+
+    order: 1;
+
+    @media #{$tablet-up} {
+      width: 48%;
+
+      margin-bottom: 0;
+
+      order: 2;
+    }
+  }
+
+  //.whitepaper__title
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  //.whitepaper__text
+  &__text {
+    margin-bottom: 35px;
+  }
+
+  //.whitepaper__cta
+  &__cta {
+    margin-bottom: 5px;
+  }
+
+  //.whitepaper .mcam-body-tick
+  .mcam-body-tick {
+    margin-top: 30px;
+  }
+}
+
 .mcam-block-whitepaper {
   display: block;
 
@@ -50,8 +116,33 @@
 
     //.mcam-block-whitepaper__close .icon
     .icon {
+      fill: $blueSky;
+      
       width: 11px;
       height: 11px;
     }
+  }
+}
+
+.whitepaper-form {
+  padding: 25px 40px;
+
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  background: $greyLighter;
+
+  //.whitepaper-form__form
+  &__form {
+    margin: 10px 0px;
+
+    //.whitepaper-form__form .mcam-cta
+    .mcam-cta {
+      margin-top: 10px;
+    }
+  }
+
+  //.whitepaper-form .mcam-fieldset
+  .mcam-fieldset {
+    margin: 8px 0;
   }
 }

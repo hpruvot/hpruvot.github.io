@@ -100,4 +100,45 @@
       margin-right: 15px;
     }
   }
+
+  //.section-keynumbers--light
+  &--light {
+    text-align: center;
+
+    .section-keynumbers {
+      //.section-keynumbers--light .section-keynumbers__items
+      &__items {
+        justify-content: center;
+
+        margin: 30px 0 0;
+
+        @media #{$desktop-up} {
+          margin: 33px 0 50px;
+        }
+      }
+
+      &__item {
+        height: 150px;
+
+        @media #{$desktop-up} {
+          height: auto;
+        } 
+      }
+
+      //.section-keynumbers--light .section-keynumbers__item-text
+      &__item-text {
+        color: $blueDark;
+      }
+  
+      //.section-keynumbers--light .section-keynumbers__item-number
+      &__item-number {
+        margin: 5px 0 0px;
+  
+        color: $blueSky;
+        font-size: rem(48px);
+        font-weight: bold;
+        line-height: rem(53px);
+      }
+    }
+  }
 }

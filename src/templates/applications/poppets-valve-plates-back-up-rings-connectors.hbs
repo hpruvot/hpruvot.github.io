@@ -4,6 +4,13 @@
 
   {{#> ./../partials/header}}{{/./../partials/header}}
 
+  {{#> ./../partials/breadcrumb 
+    parentUrl="our-applications" 
+    parentPage="Our Applications" 
+    currentPage=title
+  }}
+  {{/./../partials/breadcrumb}}
+
   <div class="section section--intro">
     <div class="mcam-layout-section__inner mcam-layout-section__inner--small">
       <div class="section-article">
@@ -145,7 +152,7 @@
           <br>
           <strong><em>Ketron® 1000 PEEK</em></strong>
         </p>
-        <ul>
+        <ul class="mcam-body-list">
           <li>Temperature and chemical resistance ideal for valve components and process equipment.</li>
           <li>Industry standard for back-up Seals and many other advanced material applications.</li>
         </ul>

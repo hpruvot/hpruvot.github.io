@@ -4,6 +4,11 @@
 
     {{#> partials/header ourApplications=true}}{{/partials/header}}
 
+    {{#> partials/breadcrumb 
+      currentPage=title
+    }}
+    {{/partials/breadcrumb}}
+
     <div class="section section--intro">
       <div class="mcam-layout-section__inner">
         <div class="section-intro">
@@ -49,7 +54,13 @@
       </div>
     </div>
 
+    {{#> partials/whitepaper}}{{/partials/whitepaper}}
+
     {{#> partials/newsletter}}{{/partials/newsletter}}
+
+    <div class="section section--getintouch">
+      {{#> partials/get-in-touch}}{{/partials/get-in-touch}}
+    </div>
     
     {{#> partials/footer}}{{/partials/footer}}
     

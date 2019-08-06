@@ -370,9 +370,10 @@ module.exports = {
       template: './src/our-solutions.hbs',
       filename: 'our-solutions.html',
       templateParameters: {
-        'title': 'Our polymers solutions and products for Oil and Gas industry | MCAM',
         'metaTitle': 'Our polymers solutions and products for Oil and Gas industry | MCAM',
-        'description': 'Discover all products and taylor made solutions for extrem requirements such as high temperature, high pressure (HTHP), chemical resistance and tolerance.'
+        'description': 'Discover all products and taylor made solutions for extrem requirements such as high temperature, high pressure (HTHP), chemical resistance and tolerance.',
+        'title': 'Our Engineered Solutions',
+        'ourSolutions': ourSolutions
       },
       excludeChunks: ['contact']
     }),
@@ -432,8 +433,8 @@ module.exports = {
       template: './src/white-paper.hbs',
       filename: 'white-paper.html',
       templateParameters: {
-        'title': 'Download our white paper on the effects of processing on thermoplastics',
-        'metaTitle': 'Download our white paper on the effects of processing on thermoplastics | MCAM',
+        'title': 'Learn more about the effects of processing on thermoplastics',
+        'metaTitle': 'Learn more about the effects of processing on thermoplastics | MCAM',
         'description': 'This paper focuses on how the processing of thermoplastics impacts physical properties, theories behind the differences, and the availability of various materials for use in prototypes or production.'
       },
       excludeChunks: ['contact']

@@ -7,16 +7,17 @@
   .section--solutions {
     padding: 50px 0;
     
-    background: #F2F2F2;
+    background: $greyLighter;
   }
 
+  //.mcam-page--home .mcam-block-whitepaper
   .mcam-block-whitepaper {
     position: fixed;
     display: flex;
     align-items: center;
     
     width: 100%;
-    max-width: 500px;
+    max-width: 340px;
     right: 0;
     bottom: 55px;
 
@@ -47,10 +48,10 @@
     //.mcam-block-whitepaper__right
     &__right {
       width: calc(100% - 120px);
-      padding: 13px 20px;
+      padding: 0 20px 13px;
 
       @media #{$tablet-up} {
-        width: calc(100% - 100px);
+        width: calc(100% - 80px);
       }
     }
 
@@ -65,5 +66,10 @@
         line-height: rem(22px);
       }
     }
+  }
+
+  //.mcam-page--home .section--getintouch
+  .section--getintouch {
+    background: linear-gradient(115.29deg, rgba($white, 0.2) -2.47%, rgba($white, 0) 98.96%), $blueDark;
   }
 }
