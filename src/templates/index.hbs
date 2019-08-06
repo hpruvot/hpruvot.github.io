@@ -78,19 +78,21 @@
         <p class="section-applications__title mcam-headline-2">Discover our cutting edge applications</p>
         {{#each ourApplications}}
         <div class="card-application">
-          <picture class="card-application__picture">
-            <img src="/img/{{ img }}.jpg" alt="">
-          </picture>
-          <picture class="card-application__content">
-            <p class="card-application__title">{{ thumbnailTitle }}</p>
-            <p class="card-application__description">{{ thumbnailDescription }}</p>
-            <a href="/our-applications/{{ url }}.html" class="card-application__icon mcam-cta-icon">
-              <svg class="icon icon-arrow">
-                <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
-              </svg>
-              <span class="mcam-cta-icon__link">See more</span>
-            </a>
-          </picture>
+          <a href="/our-applications/{{ url }}.html">
+            <picture class="card-application__picture">
+              <img src="/img/{{ img }}.jpg" alt="">
+            </picture>
+            <div class="card-application__content">
+              <p class="card-application__title">{{ thumbnailTitle }}</p>
+              <p class="card-application__description">{{ thumbnailDescription }}</p>
+              <p class="card-application__icon mcam-cta-icon">
+                <svg class="icon icon-arrow">
+                  <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+                <span class="mcam-cta-icon__link">See more</span>
+              </p>
+            </div>
+          </a>
         </div>
         {{/each}}
       </div>
@@ -104,27 +106,29 @@
         <p class="section-solutions__title mcam-headline-2">We provide the most comprehensive range<br>of engineering solutions for Oil & Gas</p>
         {{#each ourSolutions}}
         <div class="card-solution">
-          <picture class="card-solution__picture">
-            <img src="/img/{{ img }}.jpg" alt="">
-          </picture>
-          <div class="card-solution__content">
-            <p class="card-solution__title">{{ thumbnailTitle }}</p>
-            <ul class="card-solution__tick">
-              {{#each thumbnailDescription}}
-              <li>
-                <svg class="icon icon-check">
-                  <use xlink:href="/symbol-defs.svg#icon-check"></use>
+          <a href="/our-solutions/{{ url }}.html">
+            <picture class="card-solution__picture">
+              <img src="/img/{{ img }}.jpg" alt="">
+            </picture>
+            <div class="card-solution__content">
+              <p class="card-solution__title">{{ thumbnailTitle }}</p>
+              <ul class="card-solution__tick">
+                {{#each thumbnailDescription}}
+                <li>
+                  <svg class="icon icon-check">
+                    <use xlink:href="/symbol-defs.svg#icon-check"></use>
+                  </svg>
+                  {{item}}
+                </li>
+                {{/each}}
+              </ul>
+              <p class="card-solution__icon mcam-cta-icon mcam-cta-icon--white">
+                <svg class="mcam-cta-icon__icon icon icon-arrow">
+                  <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
                 </svg>
-                {{item}}
-              </li>
-              {{/each}}
-            </ul>
-            <a href="/our-solutions/{{ url }}.html" class="card-solution__icon mcam-cta-icon mcam-cta-icon--white">
-              <svg class="mcam-cta-icon__icon icon icon-arrow">
-                <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
-              </svg>
-              <span class="mcam-cta-icon__link">Discover more</span>
-            </a>
+                <span class="mcam-cta-icon__link">Discover more</span>
+              </p>
+          </a>
           </div>
         </div>
         {{/each}}

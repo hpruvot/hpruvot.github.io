@@ -1,6 +1,10 @@
 .page--application {
   .section--intro {
-    margin-top: 140px;
+    margin-top: 50px;
+
+    @media #{$tablet-up} {
+      margin-top: 140px;
+    }
   }
   
   .section--products {

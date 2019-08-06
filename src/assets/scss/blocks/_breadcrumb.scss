@@ -19,6 +19,12 @@
 
     fill: $grey;
     transform: rotate(-90deg);
+
+    @media #{$phone-only} {
+      &:first-of-type {
+        display: none;
+      }
+    }
   }
 
   //.breadcrumb__item
@@ -27,6 +33,19 @@
     font-weight: 600;
     font-size: rem(12px);
     line-height: rem(16px);
+
+    @media #{$phone-only} {
+      font-size: rem(10px);
+      line-height: rem(12px);
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:first-of-type {
+        display: none;
+      }
+    }
 
     //.breadcrumb__item.current
     &.current {

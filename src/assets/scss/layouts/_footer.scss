@@ -88,12 +88,16 @@
       max-width: 250px;
     }
 
+    img {
+      margin: 0 auto 20px;
+    }
+
     //.mcam-layout-footer__copyright ul
     ul {
       display: flex;
       justify-content: space-around;
 
-      margin-bottom: 60px;
+      margin-bottom: 16px;
     }
 
     //.mcam-layout-footer__copyright .mcam-layout-footer__item

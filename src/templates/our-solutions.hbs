@@ -34,7 +34,7 @@
     <div class="mcam-layout-section__inner">
       <div class="section-solutions-big">
         {{#each ourSolutions}}
-        <div class="card-solution-big">
+        <a href="/our-solutions/{{ url }}.html" class="card-solution-big">
           <div class="card-solution-big__content">
             <p class="card-solution-big__title">{{ thumbnailTitle }}</p>
             <ul class="card-solution-big__tick">
@@ -47,17 +47,17 @@
               </li>
               {{/each}}
             </ul>
-            <a href="/our-solutions/{{ url }}.html" class="card-solution-big__icon mcam-cta-icon">
+            <p class="card-solution-big__icon mcam-cta-icon">
               <svg class="mcam-cta-icon__icon icon icon-light">
                 <use xlink:href="/symbol-defs.svg#icon-light"></use>
               </svg>
               <span class="mcam-cta-icon__link">Know more</span>
-            </a>
+            </p>
           </div>
           <picture class="card-solution-big__picture">
             <img src="/img/{{ img }}.jpg" alt="">
           </picture>
-        </div>
+        </a>
         {{/each}}
       </div>
     </div>

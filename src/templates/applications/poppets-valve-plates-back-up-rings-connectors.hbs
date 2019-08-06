@@ -313,19 +313,21 @@
         <div class="section-related__items">
           {{#each otherApplications}}
           <div class="section-related__item card-application">
-            <picture class="card-application__picture">
-              <img src="/img/{{ img }}.jpg" alt="">
-            </picture>
-            <picture class="card-application__content">
-              <p class="card-application__title">{{ thumbnailTitle }}</p>
-              <p class="card-application__description">{{ thumbnailDescription }}</p>
-              <a href="/our-applications/{{ url }}.html" class="card-application__icon mcam-cta-icon">
-                <svg class="icon icon-arrow">
-                  <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
-                </svg>
-                <span class="mcam-cta-icon__link">See more</span>
-              </a>
-            </picture>
+            <a href="/our-applications/{{ url }}.html">
+              <picture class="card-application__picture">
+                <img src="/img/{{ img }}.jpg" alt="">
+              </picture>
+              <div class="card-application__content">
+                <p class="card-application__title">{{ thumbnailTitle }}</p>
+                <p class="card-application__description">{{ thumbnailDescription }}</p>
+                <p class="card-application__icon mcam-cta-icon">
+                  <svg class="icon icon-arrow">
+                    <use xlink:href="/symbol-defs.svg#icon-arrow"></use>
+                  </svg>
+                  <span class="mcam-cta-icon__link">See more</span>
+                </p>
+              </div>
+            </a>
           </div>
           {{/each}}
         </div>

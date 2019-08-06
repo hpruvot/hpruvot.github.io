@@ -58,6 +58,8 @@
   }
 
   &__content {
+    width: 100%;
+    
     .mcam-body-text--title {
       display: block;
       
@@ -79,6 +81,22 @@
       .hidden {
         background: rgba($white, 0.6);
         filter: blur(7px);
+
+        .ie & {
+          p,
+          h2,
+          figcaption,
+          li {
+            text-shadow: 0 0 8px #000;
+            filter: unquote("DXImageTransform.Microsoft.Blur(pixelradius=2)");
+            color: rgba(255,255,255,0);
+            zoom: 1;
+          } 
+
+          img {
+            opacity: 0.1;
+          }
+        }
       }
     }
   }
