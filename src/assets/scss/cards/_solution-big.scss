@@ -45,19 +45,23 @@
     font-weight: bold;
   }
 
+  //.card-solution-big__tick
   &__tick {
     position: relative;
 
-    margin-top: 25px;
+    margin-top: 20px;
     padding-left: 20px;
 
+    //.card-solution-big__tick li
     li {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
 
+      color: $grey;
       font-size: rem(14px);
-      line-height: rem(17px);
+      line-height: rem(21px);
     }
 
+    //.card-solution-big__tick .icon-check
     .icon-check {
       position: absolute;
       left: 0;
@@ -71,7 +75,7 @@
     }
   }
 
-  //.card-solution__icon
+  //.card-solution-big__icon
   &__icon {
     position: absolute;
     bottom: 25px;

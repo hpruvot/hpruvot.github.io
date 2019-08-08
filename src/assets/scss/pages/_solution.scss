@@ -65,14 +65,16 @@
   }
 
   &2 {
-    .customer,
-    .getintouch {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     .customer {
       margin-top: 0;
+    }
+
+    .section--getintouch {
+      padding-top: 0;
+    }
+
+    .getintouch {
+      margin: 0 auto;
     }
 
     .section-article__content {

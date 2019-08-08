@@ -81,8 +81,8 @@ const clientStories = [
 
 const ourSolutions = [
   {
-    'metaTitle': 'Materials & Processing',
-    'metaDescription': 'Mitsubishi Chemical Advanced Materials is the leader in Engineered Solutions to the compressor and pump market . We engage in material selection.',
+    'metaTitle': 'Portfolio of materials and processing solutions',
+    'metaDescription': 'The Polymer Performance Triangle is a material selection tool that segregates our material portfolio by temperature and strength. Furthermore, we categorize our materials into three main areas- Standard, General Engineered, and Advanced Engineered where thermal and chemical resistance increases as you navigate to the top of the triangle.',
     'thumbnailTitle': 'Materials & Processing',
     'thumbnailDescription': [
       {
@@ -98,7 +98,7 @@ const ourSolutions = [
   },
   {
     'metaTitle': 'Production Parts',
-    'metaDescription': 'With our engineered solutions, we provide our high tech and diversified customer base with complete solutions to their engineering and finished component needs.  We do this by combining their experience, engineering, material science, andtechnology to produce high quality plastic and metal parts that meet exact specifications.',
+    'metaDescription': 'With our engineered solutions, we provide our high tech and diversified customer base with complete solutions to their engineering and finished component needs.  We do this by combining their experience, engineering, material science, and technology to produce high quality plastic and metal parts that meet exact specifications.',
     'thumbnailTitle': 'Production Parts',
     'thumbnailDescription': [
       {
@@ -113,9 +113,9 @@ const ourSolutions = [
     'img': 'solution-2'
   },
   {
-    'metaTitle': 'Rapid Prototyping ',
+    'metaTitle': 'Rapid Prototyping for Additive Manufacturing, CNC Machining & Injection Molding',
     'metaDescription': 'Mitsubishi Chemical Advanced Materials is a leader in Engineered Solutions for the Oil & Gas industry. We strive to give the best customer service possible when designing and creating finished parts. Starting from the design phase with the customer, we engage in material selection, rapid prototyping to production and assembly.',
-    'thumbnailTitle': 'Rapid Prototyping ',
+    'thumbnailTitle': 'Rapid Prototyping',
     'thumbnailDescription': [
       {
         'item': '1-3 Days Lead Time'
@@ -127,13 +127,13 @@ const ourSolutions = [
         'item': 'Injection Molded Mechanical Properties'
       },
     ],
-    'title': 'Rapid Prototyping for Additive Manufacturing, CNC Machining, & Injection Molding',
+    'title': 'Rapid Prototyping for Additive Manufacturing, CNC Machining & Injection Molding',
     'url': 'rapid-prototyping',
     'img': 'solution-3'
   },
   {
-    'metaTitle': 'Research & Development',
-    'metaDescription': 'Mitsubishi Chemical Advanced Materials Research and Development team is continuously working together with our market segment managers to develop new and exciting materials. With our MSM in the field, we are able to better understand what materials and processes are needed for the industry.',
+    'metaTitle': 'R&D Innovations',
+    'metaDescription': 'Mitsubishi Chemical Advanced Materials Research and Development team is continuously working together with our market segment managers to further develop new and exciting materials. With our market segment manager in the field, we are able to better understand what materials and processes are needed for the industry.',
     'thumbnailTitle': 'Research & Development',
     'thumbnailDescription': [
       {
