@@ -64,17 +64,19 @@
     margin-top: 40px;
   }
 
-  &2 {
-    .customer {
-      margin-top: 0;
-    }
-
+  &1 {
     .section--getintouch {
       padding-top: 0;
     }
 
     .getintouch {
       margin: 0 auto;
+    }
+  }
+
+  &2 {
+    .customer {
+      margin-top: 0;
     }
 
     .section-article__content {
