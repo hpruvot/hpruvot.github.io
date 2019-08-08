@@ -26,7 +26,7 @@
     top: 0; bottom: 0;
     left: 0; right: 0;
 
-    padding: 15px;
+    padding: 15px 10px 15px 15px;
   }
 
   //.card-solution__picture
@@ -44,14 +44,15 @@
       display: block;
       left: 0;
       top: 0;
-      background: linear-gradient(94.6deg, rgba(12, 55, 98, 0.9) 51.28%, rgba(12, 55, 98, 0.4) 89.7%, rgba(12, 55, 98, 0.2) 116.91%);
+      background: linear-gradient(90deg, #0C3762 36.72%, rgba(12, 55, 98, 0) 107.06%),linear-gradient(0deg, rgba(12, 55, 98, 0.5), rgba(12, 55, 98, 0.5));
     }
   }
-
+  
   //.card-solution img
   img {
+    float: right;
     height: 100%;
-    width: 100%;
+    width: 70%;
     object-fit: cover;
   }
 

@@ -108,7 +108,7 @@
 
     transition: color .3s;
 
-    //.mcam-cta-icon__link::after
+    //.mcam-cta-icon__link:after
     &::after {
       content: "";
       position: absolute;
@@ -124,6 +124,10 @@
 
     .mcam-cta-icon--white & {
       color: $white;
+
+      &::after {
+        background: $white;
+      }
     }
   }
 

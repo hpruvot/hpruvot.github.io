@@ -81,18 +81,15 @@ const clientStories = [
 
 const ourSolutions = [
   {
-    'metaTitle': 'Portfolio of Materials & Processing Solutions',
+    'metaTitle': 'Materials & Processing',
     'metaDescription': 'Mitsubishi Chemical Advanced Materials is the leader in Engineered Solutions to the compressor and pump market . We engage in material selection.',
-    'thumbnailTitle': 'Portfolio of Materials & Processing Solutions',
+    'thumbnailTitle': 'Materials & Processing',
     'thumbnailDescription': [
       {
-        'item': 'Material Triangle',
+        'item': 'Wide range of high temperature operating materials',
       },
       {
-        'item': 'Most Commonly Used',
-      },
-      {
-        'item': 'Our Full Product Line'
+        'item': 'NORSOK M-710 and ISO 23936 compliance',
       }
     ],
     'title': 'Portfolio of materials and processing solutions',
@@ -105,14 +102,11 @@ const ourSolutions = [
     'thumbnailTitle': 'Production Parts',
     'thumbnailDescription': [
       {
-        'item': 'CNC Machining',
+        'item': 'Extensive in-house stock of shapes',
       },
       {
-        'item': 'Injection Moldin',
-      },
-      {
-        'item': 'Vertical Integration'
-      },
+        'item': 'Vertical integration for tight control of critical operations',
+      }
     ],
     'title': 'Production Parts',
     'url': 'production-parts',
@@ -124,13 +118,13 @@ const ourSolutions = [
     'thumbnailTitle': 'Rapid Prototyping ',
     'thumbnailDescription': [
       {
-        'item': 'Tight Tolerance'
+        'item': '1-3 Days Lead Time'
       },
       {
-        'item': 'CNC Turning'
+        'item': 'Proprietary 3D Printing Technology'
       },
       {
-        'item': 'Proprietary 3D Printed Technology'
+        'item': 'Injection Molded Mechanical Properties'
       },
     ],
     'title': 'Rapid Prototyping for Additive Manufacturing, CNC Machining, & Injection Molding',
@@ -138,18 +132,18 @@ const ourSolutions = [
     'img': 'solution-3'
   },
   {
-    'metaTitle': 'R&D Innovations',
+    'metaTitle': 'Research & Development',
     'metaDescription': 'Mitsubishi Chemical Advanced Materials Research and Development team is continuously working together with our market segment managers to develop new and exciting materials. With our MSM in the field, we are able to better understand what materials and processes are needed for the industry.',
-    'thumbnailTitle': 'R&D Innovations',
+    'thumbnailTitle': 'Research & Development',
     'thumbnailDescription': [
       {
-        'item': 'Latest Innovations'
+        'item': 'Team of technical engineers in the field, with our client'
       },
       {
-        'item': 'Near Net Shape Technology'
+        'item': 'Track-record of patents'
       },
       {
-        'item': 'Constant material under development'
+        'item': 'Focus on improving reliability, efficiency and assets life'
       },
     ],
     'title': 'R&D Innovations',
@@ -161,27 +155,27 @@ const ourSolutions = [
 const ourApplications = [
   {
     'metaTitle': 'Labyrinth Seals',
-    'metaDescription': 'Discover why our polymer seals are better than metal seals.',
+    'metaDescription': 'Our materials resist to extremely corrosive environments and boost compressors and pumps efficiency',
     'thumbnailTitle': 'Labyrinth Seals',
-    'thumbnailDescription': 'Discover why our polymer seals are better than metal seals.',
+    'thumbnailDescription': 'Our materials resist to extremely corrosive environments and boost compressors and pumps efficiency',
     'title': 'The Effects of Corrosion on Labyrinth Seals',
     'url': 'the-effects-of-corrosion-on-labyrinth-seals',
     'img': 'application-1'
   },
   {
     'metaTitle': 'Poppets, Valve Plates, Back Up Rings & Connectors',
-    'metaDescription': 'Learn more about our poppets, valve plates, back up rings & connectors.',
+    'metaDescription': 'Sealing components are designed and produced to last up to 50% longer than traditional ones',
     'thumbnailTitle': 'Poppets, Valve Plates, Back Up Rings & Connectors',
-    'thumbnailDescription': 'Learn more about our poppets, valve plates, back up rings & connectors.',
+    'thumbnailDescription': 'Sealing components are designed and produced to last up to 50% longer than traditional ones',
     'title': 'Poppets, Valve Plates, Back Up Rings & Connectors',
     'url': 'poppets-valve-plates-back-up-rings-connectors',
     'img': 'application-2'
   },
   {
     'metaTitle': 'Biodegradable and Dissolvable Polymers',
-    'metaDescription': 'Discover how our biodegradable polymer has better mechanical properties than others.',
-    'thumbnailTitle': 'Frac Plug',
-    'thumbnailDescription': 'Discover how our biodegradable polymer has better mechanical properties than others.',
+    'metaDescription': 'Our biodegradable polymer has higher mechanical strength, resulting in cost-effective dissolution',
+    'thumbnailTitle': 'Biodegradables / Dissolvables Frac Plug Components',
+    'thumbnailDescription': 'Our biodegradable polymer has higher mechanical strength, resulting in cost-effective dissolution',
     'title': 'Biodegradable and Dissolvable Polymers',
     'url': 'biodegradable-and-dissolvable-polymers',
     'img': 'application-3'
