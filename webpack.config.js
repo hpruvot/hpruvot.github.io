@@ -390,6 +390,17 @@ module.exports = {
       excludeChunks: ['contact']
     }),
     new HtmlWebpackPlugin({
+      template: './src/templates/subscribed.hbs',
+      filename: 'subscribed.html',
+      templateParameters: {
+        'title': 'Thanks for subscribing to our newsletter!',
+        'metaTitle': 'Thank you | Mitsubishi Chemical Advanced Solutions',
+        'description': ''
+
+      },
+      excludeChunks: ['contact']
+    }),
+    new HtmlWebpackPlugin({
       template: './src/templates/404.hbs',
       filename: '404.html',
       templateParameters: {
