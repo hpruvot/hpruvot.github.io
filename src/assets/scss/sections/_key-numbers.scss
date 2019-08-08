@@ -76,6 +76,11 @@
     @media #{$desktop-up} {
       margin-bottom: 0;
       margin-right: 80px;
+
+      //.section-keynumbers__item:last-of-type
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
 
     //.section-keynumbers__item-number

@@ -172,11 +172,11 @@ const ourApplications = [
     'img': 'application-2'
   },
   {
-    'metaTitle': 'Biodegradable and Dissolvable Polymers',
+    'metaTitle': 'Biodegradable / Dissolvable Frac Plug Components',
     'metaDescription': 'Our biodegradable polymer has higher mechanical strength, resulting in cost-effective dissolution',
     'thumbnailTitle': 'Biodegradables / Dissolvables Frac Plug Components',
     'thumbnailDescription': 'Our biodegradable polymer has higher mechanical strength, resulting in cost-effective dissolution',
-    'title': 'Biodegradable and Dissolvable Polymers',
+    'title': 'Biodegradable / Dissolvable Frac Plug Components',
     'url': 'biodegradable-and-dissolvable-polymers',
     'img': 'application-3'
   }
@@ -349,9 +349,9 @@ module.exports = {
       template: './src/templates/our-applications.hbs',
       filename: 'our-applications.html',
       templateParameters: {
-        'title': 'Our Applications for Compressors & Pumps',
-        'metaTitle': 'Our Applications for Compressors & Pumps',
-        'description': 'Mitsubishi Chemical Advanced Materials is the leader for engineered solutions to the compressor and pump market. We engage in material selection, designing, prototyping, providing advanced polymer stock shapes and finished parts.',
+        'title': 'Our materials support cutting edge applications for Compressors & Pumps',
+        'metaTitle': 'Our materials support cutting edge applications for Compressors & Pumps',
+        'description': 'Mitsubishi Chemical Advanced Materials sets develops materials to be NORSOK - M710 compliance and have better quality. Our materials used in our applications are versatile and benefit multiple segments in the market.',
         'ourApplications': ourApplications
       },
       excludeChunks: ['contact']
@@ -423,8 +423,8 @@ module.exports = {
       template: './src/templates/white-paper.hbs',
       filename: 'white-paper.html',
       templateParameters: {
-        'title': 'Learn more about the effects of processing on thermoplastics',
-        'metaTitle': 'Learn more about the effects of processing on thermoplastics | MCAM',
+        'title': 'Effects of Processing Methods on Thermoplastics',
+        'metaTitle': 'Effects of Processing Methods on Thermoplastics | MCAM',
         'description': 'This paper focuses on how the processing of thermoplastics impacts physical properties, theories behind the differences, and the availability of various materials for use in prototypes or production.'
       },
       excludeChunks: ['contact']

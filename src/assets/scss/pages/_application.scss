@@ -1,9 +1,52 @@
 .page--application {
   .section--intro {
     margin-top: 50px;
+  }
 
-    @media #{$tablet-up} {
-      margin-top: 140px;
+  .section-article__head {
+    text-align: left;
+  }
+
+  .what-side {
+    @media #{$desktop-down} {
+      margin-top: 45px;
+    }
+
+    @media #{$desktop-up} {
+      position: sticky;
+      top: 120px;
+      left: 100%;
+    }
+  }
+
+  .section--content {
+    margin-top: 45px;
+
+    .mcam-layout-section__inner {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .section-article__content {
+      //.page--solution .section--content .section-article__content img
+      img {
+        margin-top: 0;
+      }
+
+      //.page--solution .section--content .section-article__content--left
+      &--left {
+        @media #{$desktop-up} {
+          width: 57%;
+          margin-right: 2%;
+        }
+      }
+
+      //.page--solution .section--content .section-article__content--right
+      &--right {
+        @media #{$desktop-up} {
+          width: 41%;
+        }
+      }
     }
   }
   
@@ -20,6 +63,10 @@
 
   .section-products {
     display: block;
+
+    margin: 0 -2%;
+
+    text-align: center;
   }
 
   .mcam-card-product {
@@ -29,9 +76,10 @@
     margin-bottom: 20px;
     
     box-shadow: 0px 10px 40px rgba(7, 35, 64, 0.8);
+    text-align: left;
     
     @media #{$tablet-up} {
-      width: 35%;
+      width: 23%;
 
       margin-bottom: 0;
     }
