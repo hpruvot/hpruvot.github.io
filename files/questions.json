@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "question": "De quelle façon ?",
+      "choices": [
+        "Question ouverte",
+        "Question fermée"
+      ],
+      "answer": "1"
+    },
+    {
+      "question": "Préférez-vous que nous le mettions en annexe ?",
+      "choices": [
+        "Question ouverte",
+        "Question fermée"
+      ],
+      "answer": "2"
+    },
+    {
+      "question": "Pourquoi avez-vous eu des difficultés ?",
+      "choices": [
+        "Question ouverte",
+        "Question fermée"
+      ],
+      "answer": "1"
+    },
+    {
+      "question": "Comment nous avez-vous identifié ?",
+      "choices": [
+        "Question ouverte",
+        "Question fermée"
+      ],
+      "answer": "1"
+    },
+    {
+      "question": "Pour quelle raison souhaitez-vous retarder votre décision ?",
+      "choices": [
+        "Question ouverte",
+        "Question fermée"
+      ],
+      "answer": "1"
+    },
+    {
+      "question": "Avez-vous aimé ?",
+      "choices": [
+        "Question ouverte",
+        "Question fermée"
+      ],
+      "answer": "2"
+    }
+  ]
+}
