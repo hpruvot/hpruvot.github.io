@@ -1,8 +1,10 @@
 @import 'common/reset';
 @import 'utils/fonts';
 
+$font: 'LeanO FY';
+
 body {
-  font-family: 'LeanO FY';
+  font-family: $font;
   font-size: 16px;
 }
 

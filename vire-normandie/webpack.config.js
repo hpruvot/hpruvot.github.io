@@ -11,6 +11,7 @@ const copyFiles = new CopyWebpackPlugin({
     { from: path.resolve(__dirname, 'index.html'), to: '' },
     { from: path.resolve(__dirname, 'src/assets/fonts'), to: 'fonts' },
     { from: path.resolve(__dirname, 'src/assets/videos'), to: 'videos' },
+    { from: path.resolve(__dirname, 'src/assets/images'), to: 'images' },
   ],
 });
 
