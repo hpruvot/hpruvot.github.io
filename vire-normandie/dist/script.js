@@ -10,6 +10,6 @@
 /*!********************************!*\
   !*** ./src/assets/js/index.js ***!
   \********************************/
-eval("console.log(\"coucou\");\n\n//# sourceURL=webpack://vire-normandie/./src/assets/js/index.js?");
+eval("document.querySelector('.zone').addEventListener('click', function () {\n  document.querySelector('.popup').classList.add('-isShowed');\n});\ndocument.querySelector('.popup__back').addEventListener('click', function () {\n  document.querySelector('.popup').classList.remove('-isShowed');\n});\n\n//# sourceURL=webpack://vire-normandie/./src/assets/js/index.js?");
 /******/ })()
 ;

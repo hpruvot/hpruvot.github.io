@@ -1,0 +1,20 @@
+.popup {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  &.-isShowed {
+    display: block;
+  }
+}
+
+.popup__back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+}
