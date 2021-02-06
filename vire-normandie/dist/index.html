@@ -8,30 +8,184 @@
 </head>
 <body>
   <video src="videos/SampleVideo.mp4" autoplay muted loop></video>
-  <div class="zone"></div>
-  <div class="popup">
-    <img src="images/robert-flowers.png" class="popup__flower" alt="">
-    <div class="popup__content">
-      <h1 class="popup__title">Herbe à Robert</h1>
-      <h2 class="popup__subtitle">Geranium robertianum</h2>
-      <div class="popup__text">
-        <p>
-          <strong>Une plante au don d’ubiquité<br>
-          (présente sur l’ensemble du territoire)
-          </strong>
-        </p>
-        <p>
-          Présente dans les bois, les haies, sur les murs et les bords de chemins, à proximité des habitations… on la retrouve sur
-          l’ensemble du territoire.<br>
-          Sa physionomie est très variable : plutôt verte et bien développée en sous-bois, elle est rougissante et réduite à
-          quelques feuilles à forte pilosité sur les failles d’un mur exposé au soleil.
-        </p>
-      </div>
-      <div class="popup__images">
-        <img src="images/robert-map.png" alt="">
-        <img src="images/robert-exergue.png" alt="">
-      </div>
-      <div class="popup__back">Back</div>
+  <div class="zone__list">
+    <div class="zone__item" data-zone="1"></div>
+    <div class="zone__item" data-zone="2"></div>
+    <div class="zone__item" data-zone="3"></div>
+    <div class="zone__item" data-zone="4"></div>
+    <div class="zone__item" data-zone="5"></div>
+    <div class="zone__item" data-zone="6"></div>
+  </div>
+  <div class="popup__list">
+    <div class="popup__item" data-popup="1">
+        <div class="popup__left">
+            <img src="images/orchidee-flower.png" class="popup__flower" alt="">
+        </div>
+        <div class="popup__right">
+            <div class="popup__content">
+                <h1 class="popup__title">Orchidée des marais</h1>
+                <h2 class="popup__subtitle">Orchis Palustris</h2>
+                <div class="popup__text">
+                    <p>
+                        <strong>Plante disparue depuis 1931 et redécouverte en 2012 !</strong>
+                    </p>
+                    <p>
+                        Au 19e siècle, cette espèce rare d’orchidée était signalée à<br>
+                        Falaise, Port-en-Bessin, Percy-en-Auge et Camembert. On l’a<br>
+                        pensé éteinte jusqu'à ce que M. Roche<br>
+                        la redécouvre en 2012 à Colleville-Montgomery.<br>
+                        Des actions sont engagées pour éviter toute dégradation de<br>
+                        son milieu, un marais encore riche en biodiversité.
+                    </p>
+                </div>
+                <div class="popup__images">
+                    <img src="images/orchidee-map.png" alt="">
+                    <img src="images/orchidee-exergue.png" alt="">
+                </div>
+                <div class="popup__back">
+                    <img src="images/arrow-left.png" alt="">
+                    Retour
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__item" data-popup="2">
+        <div class="popup__left">
+            <img src="images/rhinanthe-flower.png" class="popup__flower" alt="">
+        </div>
+        <div class="popup__right">
+            <div class="popup__content">
+                <h1 class="popup__title">Rhinanthe crête de coq</h1>
+                <h2 class="popup__subtitle">Rhinanthus minor</h2>
+                <div class="popup__text">
+                    <p>
+                        <strong>Pas si rare, mais en régression depuis plusieurs années.</strong>
+                    </p>
+                    <p>
+                        Autrefois très commune dans les prairies naturelles<br>
+                        et sur les bernes des chemins, elle se raréfie depuis<br>
+                        une quinzaine d’années.<br>
+                        Dans les près, la régression s’explique par les pratiques<br>
+                        agricoles trop intensives (épandages d’engrais, fauches<br>
+                        précoces et répétées…). Sur les bernes, la tonte mécanique<br>
+                        détruit la plante avant qu’elle ait pu produire ses graines.<br>
+                        Elle est aujourd’hui classée parmi les plantes vulnérables.
+                    </p>
+                </div>
+                <div class="popup__images">
+                    <img src="images/rhinanthe-map.png" alt="">
+                    <img src="images/rhinanthe-exergue.png" alt="">
+                </div>
+                <div class="popup__back">
+                    <img src="images/arrow-left.png" alt="">
+                    Retour
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__item" data-popup="3">
+        <div class="popup__left">
+            <img src="images/violette-flower.png" class="popup__flower" alt="">
+        </div>
+        <div class="popup__right">
+            <div class="popup__content">
+                <h1 class="popup__title">Violette des marais</h1>
+                <h2 class="popup__subtitle">Viola Palustris</h2>
+                <div class="popup__text">
+                    <p>
+                        <strong>Plante vivant dans des zones très localisées !</strong>
+                    </p>
+                    <p>
+                        René Lenormand avait repéré cette plante au 19e siècle<br>
+                        mais elle s’est raréfiée. Ses stations dans le bocage virois<br>
+                        sont très ponctuelles, avec un nombre d'individus faible<br>
+                        sur des surfaces réduites.<br>
+                        Le déclin de cette espèce est lié au déclin des zones<br>
+                        humides. Les humains en agissant sur le niveau et la<br>
+                        pollution des eaux, en développant la culture du maïs,<br>
+                        détruisent son milieu.
+                    </p>
+                </div>
+                <div class="popup__images">
+                    <img src="images/violette-map.png" alt="">
+                    <img src="images/violette-exergue.png" alt="">
+                </div>
+                <div class="popup__back">
+                    <img src="images/arrow-left.png" alt="">
+                    Retour
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__item" data-popup="4">
+        <div class="popup__left">
+            <img src="images/robert-flowers.png" class="popup__flower" alt="">
+        </div>
+        <div class="popup__right">
+            <div class="popup__content">
+                <h1 class="popup__title">Herbe à Robert</h1>
+                <h2 class="popup__subtitle">Geranium robertianum</h2>
+                <div class="popup__text">
+                <p>
+                    <strong>Une plante au don d’ubiquité<br>
+                    (présente sur l’ensemble du territoire)
+                    </strong>
+                </p>
+                <p>
+                    Présente dans les bois, les haies, sur les murs et les bords<br>
+                    de chemins, à proximité des habitations… on la retrouve<br>
+                    sur l’ensemble du territoire.<br>
+                    Sa physionomie est très variable : plutôt verte et bien<br>
+                    développée en sous-bois, elle est rougissante et réduite<br>
+                    à quelques feuilles à forte pilosité sur les failles d’un mur<br>
+                    exposé au soleil.
+                </p>
+                </div>
+                <div class="popup__images">
+                <img src="images/robert-map.png" alt="">
+                <img src="images/robert-exergue.png" alt="">
+                </div>
+                <div class="popup__back">
+                <img src="images/arrow-left.png" alt="">
+                Retour
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__item" data-popup="6">
+        <div class="popup__left">
+            <img src="images/robert-flowers.png" class="popup__flower" alt="">
+        </div>
+        <div class="popup__right">
+            <div class="popup__content">
+                <h1 class="popup__title">Herbe à Robert</h1>
+                <h2 class="popup__subtitle">Geranium robertianum</h2>
+                <div class="popup__text">
+                    <p>
+                        <strong>Une plante au don d’ubiquité<br>
+                            (présente sur l’ensemble du territoire)
+                        </strong>
+                    </p>
+                    <p>
+                        Présente dans les bois, les haies, sur les murs et les bords<br>
+                        de chemins, à proximité des habitations… on la retrouve<br>
+                        sur l’ensemble du territoire.<br>
+                        Sa physionomie est très variable : plutôt verte et bien<br>
+                        développée en sous-bois, elle est rougissante et réduite<br>
+                        à quelques feuilles à forte pilosité sur les failles d’un mur<br>
+                        exposé au soleil.
+                    </p>
+                </div>
+                <div class="popup__images">
+                    <img src="images/robert-map.png" alt="">
+                    <img src="images/robert-exergue.png" alt="">
+                </div>
+                <div class="popup__back">
+                    <img src="images/arrow-left.png" alt="">
+                    Retour
+                </div>
+            </div>
+        </div>
     </div>
   </div>
   <script src="script.js"></script>

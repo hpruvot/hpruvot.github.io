@@ -1,7 +1,13 @@
-document.querySelector('.zone').addEventListener('click', () => {
-  document.querySelector('.popup').classList.add('-isShowed');
-});
+document.querySelectorAll('.zone__item').forEach(item => {
+  item.addEventListener('click', () => {
+    const index = item.getAttribute('data-zone');
+    console.log(index);
+    document.querySelector('[data-popup="'+ index +'"]').classList.add('-isShowed');
+  });
+})
 
-document.querySelector('.popup__back').addEventListener('click', () => {
-  document.querySelector('.popup').classList.remove('-isShowed');
+document.querySelectorAll('.popup__back').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.-isShowed').classList.remove('-isShowed');
+  })
 });

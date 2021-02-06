@@ -10,6 +10,6 @@
 /*!********************************!*\
   !*** ./src/assets/js/index.js ***!
   \********************************/
-eval("document.querySelector('.zone').addEventListener('click', function () {\n  document.querySelector('.popup').classList.add('-isShowed');\n});\ndocument.querySelector('.popup__back').addEventListener('click', function () {\n  document.querySelector('.popup').classList.remove('-isShowed');\n});\n\n//# sourceURL=webpack://vire-normandie/./src/assets/js/index.js?");
+eval("document.querySelectorAll('.zone__item').forEach(function (item) {\n  item.addEventListener('click', function () {\n    var index = item.getAttribute('data-zone');\n    console.log(index);\n    document.querySelector('[data-popup=\"' + index + '\"]').classList.add('-isShowed');\n  });\n});\ndocument.querySelectorAll('.popup__back').forEach(function (item) {\n  item.addEventListener('click', function () {\n    document.querySelector('.-isShowed').classList.remove('-isShowed');\n  });\n});\n\n//# sourceURL=webpack://vire-normandie/./src/assets/js/index.js?");
 /******/ })()
 ;

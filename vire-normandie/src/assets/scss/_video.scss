@@ -2,14 +2,53 @@ video {
   position: fixed;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
 }
 
-.zone {
+.zone__item {
   position: absolute;
   width: 255px;
   height: 40px;
-  border: 1px solid black;
-  top: 8%;
-  left: 37%;
+  border: 5px solid red;
+
+  &[data-zone="1"] {
+    top: 25%;
+    left: 2%;
+    width: 401px;
+    height: 713px;
+  }
+
+  &[data-zone="2"] {
+    top: 45%;
+    left: 29%;
+    width: 395px;
+    height: 555px;
+  }
+
+  &[data-zone="3"] {
+    top: 55%;
+    left: 53%;
+    width: 330px;
+    height: 320px;
+  }
+
+  &[data-zone="4"] {
+    top: 49%;
+    left: 72%;
+    width: 490px;
+    height: 485px;
+  }
+
+  &[data-zone="5"] {
+    top: 7%;
+    left: 35%;
+    width: 360px;
+    height: 240px;
+  }
+
+  &[data-zone="6"] {
+    top: 12%;
+    right: 6%;
+    width: 640px;
+    height: 335px;
+  }
 }
