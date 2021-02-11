@@ -245,8 +245,12 @@ img {
   font-display: swap; }
 
 body {
-  font-family: "LeanO FY";
+  font-family: "LeanOSans FY";
   font-size: 16px; }
+
+h1,
+h2 {
+  font-family: "LeanO FY"; }
 
 video {
   position: fixed;
@@ -256,7 +260,7 @@ video {
 .zone__item {
   position: absolute;
   width: 255px;
-  height: 40px;}
+  height: 40px; }
   .zone__item[data-zone="1"] {
     top: 25%;
     left: 2%;
@@ -290,13 +294,17 @@ video {
 
 .popup__item {
   position: fixed;
-  display: none;
+  display: flex;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: url("../images/noise.png") #fff;
+  opacity: 0;
+  transition: opacity 0.8s;
+  pointer-events: none;
   z-index: 1; }
   .popup__item.-isShowed {
-    display: flex; }
+    opacity: 1;
+    pointer-events: all; }
 
 .popup__left,
 .popup__right {
@@ -338,10 +346,104 @@ video {
   padding: 15px 25px;
   margin-left: auto;
   width: 225px;
+  font-family: "LeanO FY";
   font-size: 38px;
   font-style: italic;
   font-weight: bold;
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0.857px 0.515px 7px 0px rgba(0, 0, 0, 0.65); }
   .popup__back img {
     margin-right: 20px; }
+
+.o-interview {
+  position: relative;
+  padding: 90px 87px 70px 175px;
+  width: 100%; }
+  .o-interview h1 {
+    font-size: 61px;
+    font-weight: bold; }
+  .o-interview h2 {
+    font-size: 39px;
+    font-style: italic;
+    font-weight: 400; }
+  .o-interview__background {
+    position: absolute;
+    top: 54%;
+    right: 0;
+    transform: translateY(-50%); }
+  .o-interview__tooltipList {
+    position: absolute;
+    right: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -60px;
+    opacity: 0;
+    transition: opacity 0.8s;
+    pointer-events: none; }
+    .o-interview__tooltipList.-isShowed {
+      opacity: 1;
+      pointer-events: all; }
+  .o-interview__tooltipItem {
+    position: relative;
+    padding: 30px 57px;
+    width: 735px;
+    background-color: #fff;
+    border-radius: 50px;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.65)); }
+    .o-interview__tooltipItem.-first {
+      margin-bottom: 28px; }
+      .o-interview__tooltipItem.-first::after {
+        position: absolute;
+        top: 30px;
+        right: -110px;
+        width: 140px;
+        height: 96px;
+        background: url("../images/interview/tooltip-right.png");
+        content: ""; }
+    .o-interview__tooltipItem.-second {
+      padding: 50px 57px;
+      padding-right: 30px; }
+      .o-interview__tooltipItem.-second::before {
+        position: absolute;
+        top: 70px;
+        left: -110px;
+        width: 140px;
+        height: 96px;
+        background: url("../images/interview/tooltip-left.png");
+        content: ""; }
+  .o-interview__tooltipTitle {
+    font-family: "LeanO FY";
+    font-size: 43px;
+    font-weight: bold; }
+  .o-interview__tooltipText {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.3; }
+  .o-interview__tooltipNext {
+    position: absolute;
+    right: 320px;
+    bottom: 203px;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    margin-left: auto;
+    font-family: "LeanO FY";
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold; }
+  .o-interview__tooltipNextImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0.857px 0.515px 7px 0px rgba(0, 0, 0, 0.65); }
+  .o-interview .popup__back {
+    position: absolute;
+    right: 87px;
+    bottom: 70px; }

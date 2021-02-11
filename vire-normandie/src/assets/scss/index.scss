@@ -2,11 +2,18 @@
 @import 'utils/fonts';
 
 $font: 'LeanO FY';
+$fontSans: 'LeanOSans FY';
 
 body {
-  font-family: $font;
+  font-family: $fontSans;
   font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: $font;
 }
 
 @import './video';
 @import './popup';
+@import './interview';
