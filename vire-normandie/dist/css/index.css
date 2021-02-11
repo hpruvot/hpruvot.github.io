@@ -256,8 +256,7 @@ video {
 .zone__item {
   position: absolute;
   width: 255px;
-  height: 40px;
-  border: 5px solid red; }
+  height: 40px;}
   .zone__item[data-zone="1"] {
     top: 25%;
     left: 2%;
