@@ -88,6 +88,7 @@
     line-height: 1.3;
   }
 
+  &__tooltipPrev,
   &__tooltipNext {
     position: absolute;
     right: 320px;
@@ -100,8 +101,19 @@
     font-size: 45px;
     font-style: italic;
     font-weight: bold;
+
+    &.-isHidden {
+      display: none;
+    }
   }
 
+  &__tooltipPrev {
+    right: 35%;
+    bottom: 21%;
+    font-size: 26px;
+  }
+
+  &__tooltipPrevImg,
   &__tooltipNextImg {
     display: flex;
     align-items: center;
@@ -112,6 +124,13 @@
     background: #fff;
     border-radius: 100%;
     box-shadow: 0.857px 0.515px 7px 0px rgba(0, 0, 0, 0.65);
+  }
+
+  &__tooltipPrevImg {
+    margin-right: 15px;
+    margin-left: 0;
+    width: 45px;
+    height: 45px;
   }
 
   .popup__back {
