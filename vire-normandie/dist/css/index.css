@@ -338,13 +338,45 @@ video {
   display: flex;
   align-items: center;
   margin-top: 8%; }
-  .popup__images img {
-    margin-right: 6%; }
+
+.popup__map {
+  margin-right: 50px;
+  font-size: 21px;
+  font-style: italic; }
+  .popup__map img {
+    margin-bottom: 18px; }
+  .popup__map p {
+    margin-bottom: 12px; }
+
+.popup__mapPoint {
+  display: inline-block;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%; }
+  .popup__mapPoint.-blue {
+    background: #0680ff; }
+  .popup__mapPoint.-brown {
+    background: #d3705e; }
+
+.popup__exergue {
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+  width: 325px;
+  font-family: "LeanO FY";
+  font-size: 26px;
+  font-style: italic;
+  font-weight: bold; }
+  .popup__exergue img {
+    margin-right: 15px; }
 
 .popup__back {
+  position: absolute;
+  right: 5%;
+  bottom: 7%;
   display: flex;
   padding: 15px 25px;
-  margin-left: auto;
   width: 225px;
   font-family: "LeanO FY";
   font-size: 38px;
