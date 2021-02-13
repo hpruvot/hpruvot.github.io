@@ -252,6 +252,27 @@ h1,
 h2 {
   font-family: "LeanO FY"; }
 
+.instructions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 42px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.8s;
+  z-index: 1; }
+  .instructions.-isHidden {
+    opacity: 0;
+    pointer-events: none; }
+  .instructions img {
+    margin: 0 auto 40px; }
+
 video {
   position: fixed;
   width: 100%;

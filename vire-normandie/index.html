@@ -1,52 +1,311 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Document</title>
-  <link type="text/css" rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <video src="videos/botanistes_boucle_accueil.mp4" autoplay muted loop></video>
-  <div class="zone__list">
-    <div class="zone__item" data-zone="1"></div>
-    <div class="zone__item" data-zone="2"></div>
-    <div class="zone__item" data-zone="3"></div>
-    <div class="zone__item" data-zone="4"></div>
-    <div class="zone__item" data-zone="5"></div>
-    <div class="zone__item" data-zone="6"></div>
-  </div>
-  <div class="popup__list">
-    <div class="popup__item" data-popup="1">
-        <div class="popup__left">
-            <img src="images/orchidee-flower.png" class="popup__flower" alt="">
+    <div class="instructions">
+        <div class="instructions__content">
+            <img src="images/hand.png" alt="">
+            <p>Touchez l'écran</p>
         </div>
-        <div class="popup__right">
-            <div class="popup__content">
-                <h1 class="popup__title">Orchidée des marais</h1>
-                <h2 class="popup__subtitle">Orchis Palustris</h2>
-                <div class="popup__text">
-                    <p>
-                        <strong>Plante disparue depuis 1931 et redécouverte en 2012 !</strong>
-                    </p>
-                    <p>
-                        Au 19e siècle, cette espèce rare d’orchidée était signalée à<br>
-                        Falaise, Port-en-Bessin, Percy-en-Auge et Camembert. On l’a<br>
-                        pensée éteinte jusqu'à ce que M. Roche<br>
-                        la redécouvre en 2012 à Colleville-Montgomery.<br>
-                        Des actions sont engagées pour éviter toute dégradation de<br>
-                        son milieu, un marais encore riche en biodiversité.
-                    </p>
-                </div>
-                <div class="popup__images">
-                    <div class="popup__map">
-                        <img src="images/orchidee-map.png" alt="">
-                        <p><span class="popup__mapPoint -blue"></span>Observée depuis 1999</p>
-                        <p><span class="popup__mapPoint -brown"></span>Observée avant 1999</p>
+    </div>
+    <video class="video -home" src="videos/botanistes_boucle_accueil.mp4" autoplay muted loop></video>
+    <div class="zone__list">
+        <div class="zone__item" data-zone="1"></div>
+        <div class="zone__item" data-zone="2"></div>
+        <div class="zone__item" data-zone="3"></div>
+        <div class="zone__item" data-zone="4"></div>
+        <div class="zone__item" data-zone="5"></div>
+        <div class="zone__item" data-zone="6"></div>
+    </div>
+    <div class="popup__list">
+        <div class="popup__item" data-popup="1">
+            <div class="popup__left">
+                <img src="images/orchidee-flower.png" class="popup__flower" alt="">
+            </div>
+            <div class="popup__right">
+                <div class="popup__content">
+                    <h1 class="popup__title">Orchidée des marais</h1>
+                    <h2 class="popup__subtitle">Orchis Palustris</h2>
+                    <div class="popup__text">
+                        <p>
+                            <strong>Plante disparue depuis 1931 et redécouverte en 2012 !</strong>
+                        </p>
+                        <p>
+                            Au 19e siècle, cette espèce rare d’orchidée était signalée à<br>
+                            Falaise, Port-en-Bessin, Percy-en-Auge et Camembert. On l’a<br>
+                            pensée éteinte jusqu'à ce que M. Roche<br>
+                            la redécouvre en 2012 à Colleville-Montgomery.<br>
+                            Des actions sont engagées pour éviter toute dégradation de<br>
+                            son milieu, un marais encore riche en biodiversité.
+                        </p>
                     </div>
-                    <div class="popup__exergue">
-                        <img src="images/danger.png" alt="">
-                        <p>Plante en danger<br>critique d’extinction</p>
+                    <div class="popup__images">
+                        <div class="popup__map">
+                            <img src="images/orchidee-map.png" alt="">
+                            <p><span class="popup__mapPoint -blue"></span>Observée depuis 1999</p>
+                            <p><span class="popup__mapPoint -brown"></span>Observée avant 1999</p>
+                        </div>
+                        <div class="popup__exergue">
+                            <img src="images/danger.png" alt="">
+                            <p>Plante en danger<br>critique d’extinction</p>
+                        </div>
+                    </div>
+                    <div class="popup__back">
+                        <img src="images/arrow-left.png" alt="">
+                        Retour
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__item" data-popup="2">
+            <div class="popup__left">
+                <img src="images/rhinanthe-flower.png" class="popup__flower" alt="">
+            </div>
+            <div class="popup__right">
+                <div class="popup__content">
+                    <h1 class="popup__title">Rhinanthe crête de coq</h1>
+                    <h2 class="popup__subtitle">Rhinanthus minor</h2>
+                    <div class="popup__text">
+                        <p>
+                            <strong>Pas si rare, mais en régression depuis plusieurs années.</strong>
+                        </p>
+                        <p>
+                            Autrefois très commune dans les prairies naturelles<br>
+                            et sur les bernes des chemins, elle se raréfie depuis<br>
+                            une quinzaine d’années.<br>
+                            Dans les près, la régression s’explique par les pratiques<br>
+                            agricoles trop intensives (épandages d’engrais, fauches<br>
+                            précoces et répétées…). Sur les bernes, la tonte mécanique<br>
+                            détruit la plante avant qu’elle ait pu produire ses graines.<br>
+                            Elle est aujourd’hui classée parmi les plantes vulnérables.
+                        </p>
+                    </div>
+                    <div class="popup__images">
+                        <div class="popup__map">
+                            <img src="images/rhinanthe-map.png" alt="">
+                            <p><span class="popup__mapPoint -blue"></span>Observée depuis 1999</p>
+                            <p><span class="popup__mapPoint -brown"></span>Observée avant 1999</p>
+                        </div>
+                        <div class="popup__exergue">
+                            <img src="images/warning.png" alt="">
+                            <p>Plante vulnérable,<br>à surveiller</p>
+                        </div>
+                    </div>
+                    <div class="popup__back">
+                        <img src="images/arrow-left.png" alt="">
+                        Retour
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__item" data-popup="3">
+            <div class="popup__left">
+                <img src="images/violette-flower.png" class="popup__flower" alt="">
+            </div>
+            <div class="popup__right">
+                <div class="popup__content">
+                    <h1 class="popup__title">Violette des marais</h1>
+                    <h2 class="popup__subtitle">Viola Palustris</h2>
+                    <div class="popup__text">
+                        <p>
+                            <strong>Plante vivant dans des zones très localisées !</strong>
+                        </p>
+                        <p>
+                            René Lenormand avait repéré cette plante au 19e siècle<br>
+                            mais elle s’est raréfiée. Ses stations dans le bocage virois<br>
+                            sont très ponctuelles, avec un nombre d'individus faible<br>
+                            sur des surfaces réduites.<br>
+                            Le déclin de cette espèce est lié au déclin des zones<br>
+                            humides. Les humains en agissant sur le niveau et la<br>
+                            pollution des eaux, en développant la culture du maïs,<br>
+                            détruisent son milieu.
+                        </p>
+                    </div>
+                    <div class="popup__images">
+                        <div class="popup__map">
+                            <img src="images/violette-map.png" alt="">
+                            <p><span class="popup__mapPoint -blue"></span>Observée depuis 1999</p>
+                            <p><span class="popup__mapPoint -brown"></span>Observée avant 1999</p>
+                        </div>
+                        <div class="popup__exergue">
+                            <img src="images/danger.png" alt="">
+                            <p>Plante en danger<br>critique d’extinction</p>
+                        </div>
+                    </div>
+                    <div class="popup__back">
+                        <img src="images/arrow-left.png" alt="">
+                        Retour
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__item" data-popup="4">
+            <div class="popup__left">
+                <img src="images/robert-flowers.png" class="popup__flower" alt="">
+            </div>
+            <div class="popup__right">
+                <div class="popup__content">
+                    <h1 class="popup__title">Herbe à Robert</h1>
+                    <h2 class="popup__subtitle">Geranium robertianum</h2>
+                    <div class="popup__text">
+                        <p>
+                            <strong>Une plante au don d’ubiquité<br>
+                                (présente sur l’ensemble du territoire)
+                            </strong>
+                        </p>
+                        <p>
+                            Présente dans les bois, les haies, sur les murs et les bords<br>
+                            de chemins, à proximité des habitations… on la retrouve<br>
+                            sur l’ensemble du territoire.<br>
+                            Sa physionomie est très variable : plutôt verte et bien<br>
+                            développée en sous-bois, elle est rougissante et réduite<br>
+                            à quelques feuilles à forte pilosité sur les failles d’un mur<br>
+                            exposé au soleil.
+                        </p>
+                    </div>
+                    <div class="popup__images">
+                        <div class="popup__map">
+                            <img src="images/robert-map.png" alt="">
+                            <p><span class="popup__mapPoint -blue"></span>Observée depuis 1999</p>
+                        </div>
+                        <div class="popup__exergue">
+                            <img src="images/good.png" alt="">
+                            <p>Plante non menacée,<br>non protégée</p>
+                        </div>
+                    </div>
+                    <div class="popup__back">
+                        <img src="images/arrow-left.png" alt="">
+                        Retour
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__item -video" data-popup="5">
+            <video class="video -menace" autoplay src="videos/botanistes_menaces.mp4" muted></video>
+        </div>
+        <div class="popup__item -interview" data-popup="6">
+            <div class="o-interview">
+                <img class="o-interview__background" src="images/interview/step1.png" alt="">
+                <h1>Entretien avec Juliette</h1>
+                <h2>Botaniste au Conservatoire<br>national de botanique</h2>
+                <div class="o-interview__tooltipList" data-interview="1">
+                    <div class="o-interview__tooltipItem -first">
+                        <p class="o-interview__tooltipTitle">Bonjour Juliette, <br>peux-tu te présenter ?</p>
+                    </div>
+                    <div class="o-interview__tooltipItem -second">
+                        <p class="o-interview__tooltipText">
+                            Bonjour ! Je suis Juliette, je suis chargée d’étude<br>
+                            de la flore et de l’habitat, l’appellation moderne<br>
+                            pour botaniste ! Mon travail est partagé entre le bureau<br>
+                            et le terrain où j’observe les plantes et les milieux<br>
+                            naturels. Je suis attachée à l’antenne de Caen<br>
+                            du Conservatoire botanique national de Brest.
+                        </p>
+                    </div>
+                </div>
+                <div class="o-interview__tooltipList" data-interview="2">
+                    <div class="o-interview__tooltipItem -first">
+                        <p class="o-interview__tooltipTitle">Justement, peux-tu présenter le Conservatoire ?</p>
+                    </div>
+                    <div class="o-interview__tooltipItem -second">
+                        <p class="o-interview__tooltipText">
+                            Le Conservatoire botanique national de Brest couvre <br>
+                            le nord-ouest de la France. Nous sommes une équipe<br>
+                            pluridisciplinaire répartie entre Caen, Brest et Nantes.<br>
+                            Nous sommes chargés d’étude, phytosociologues,<br>
+                            spécialistes de la conservation, informaticiens, jardiniers,<br>
+                            documentalistes… Notre objectif commun est<br>
+                            de connaître pour mieux préserver !
+                        </p>
+                    </div>
+                </div>
+                <div class="o-interview__tooltipList" data-interview="3">
+                    <div class="o-interview__tooltipItem -first">
+                        <p class="o-interview__tooltipTitle">Quelles sont vos<br>principales missions ?</p>
+                    </div>
+                    <div class="o-interview__tooltipItem -second">
+                        <p class="o-interview__tooltipText">
+                            Nos deux missions fondamentales sont l’étude et la<br>
+                            préservation. S’ensuivent des missions<br>
+                            d’accompagnement et de sensibilisation.
+                        </p>
+                    </div>
+                </div>
+                <div class="o-interview__tooltipList" data-interview="4">
+                    <div class="o-interview__tooltipItem -first">
+                        <p class="o-interview__tooltipTitle">Vous ne travaillez<br>donc pas seuls ?!</p>
+                    </div>
+                    <div class="o-interview__tooltipItem -second">
+                        <p class="o-interview__tooltipText">
+                            Non effectivement, nous travaillons avec des<br>
+                            associations naturalistes, des collectivités,<br>
+                            le conservatoire du littoral, des laboratoires<br>
+                            de recherches….<br>
+                            Pour l’inventaire de la flore du Calvados, c’est aussi 249<br>
+                            bénévoles qui participent activement à nos côtés.<br>
+                            Une aide très précieuse !
+                        </p>
+                    </div>
+                </div>
+                <div class="o-interview__tooltipList" data-interview="5">
+                    <div class="o-interview__tooltipItem -first">
+                        <p class="o-interview__tooltipTitle">Faut-il s’inquiéter de la<br>situation actuelle ?</p>
+                    </div>
+                    <div class="o-interview__tooltipItem -second">
+                        <p class="o-interview__tooltipText">
+                            Aujourd’hui, un tiers de notre flore locale est menacée de disparition ! Les raisons : l’urbanisation et
+                            l’artificialisation des territoires mais aussi<br>
+                            la transformation des pratiques agricoles.<br>
+                            Chaque espèce de plante sauvage se développe dans<br>
+                            un contexte qui lui est propre : le sol, le climat, l’activité
+                            humaine de proximité. Tout déséquilibre a un impact<br>
+                            sur la flore et la faune.
+                        </p>
+                    </div>
+                </div>
+                <div class="o-interview__tooltipList" data-interview="6">
+                    <div class="o-interview__tooltipItem -first">
+                        <p class="o-interview__tooltipTitle">Quelles sont les mesures mises en place ?</p>
+                    </div>
+                    <div class="o-interview__tooltipItem -second">
+                        <p class="o-interview__tooltipText">
+                            Suite à nos études, nous conseillons et accompagnons<br>
+                            les politiques locales et nationales en faveur de la<br>
+                            biodiversité, en créant des aires protégées par exemple.
+                        </p>
+                    </div>
+                </div>
+                <div class="o-interview__tooltipList" data-interview="7">
+                    <div class="o-interview__tooltipItem -first">
+                        <p class="o-interview__tooltipTitle">Comment vous rencontrer<br>ou en savoir plus ?</p>
+                    </div>
+                    <div class="o-interview__tooltipItem -second">
+                        <p class="o-interview__tooltipText">
+                            Nous proposons des sorties botaniques,<br>
+                            des découvertes de sites naturels, des ateliers<br>
+                            ou des conférences. Nous intervenons dans les écoles...<br>
+                            Si nos actions vous intéressent n’hésitez pas à aller<br>
+                            sur le site du Conservatoire. En attendant je vous laisse<br>
+                            découvrir quelques spécimens que j’ai identifiés,<br>
+                            en touchant l’écran d’accueil.
+                        </p>
+                    </div>
+                </div>
+                <div class="o-interview__tooltipPrev">
+                    <div class="o-interview__tooltipPrevImg">
+                        <img src="images/arrow-left-small.png" alt="">
+                    </div>
+                    Précédent
+                </div>
+                <div class="o-interview__tooltipNext">
+                    Suivant
+                    <div class="o-interview__tooltipNextImg">
+                        <img src="images/arrow-right.png" alt="">
                     </div>
                 </div>
                 <div class="popup__back">
@@ -56,256 +315,6 @@
             </div>
         </div>
     </div>
-    <div class="popup__item" data-popup="2">
-        <div class="popup__left">
-            <img src="images/rhinanthe-flower.png" class="popup__flower" alt="">
-        </div>
-        <div class="popup__right">
-            <div class="popup__content">
-                <h1 class="popup__title">Rhinanthe crête de coq</h1>
-                <h2 class="popup__subtitle">Rhinanthus minor</h2>
-                <div class="popup__text">
-                    <p>
-                        <strong>Pas si rare, mais en régression depuis plusieurs années.</strong>
-                    </p>
-                    <p>
-                        Autrefois très commune dans les prairies naturelles<br>
-                        et sur les bernes des chemins, elle se raréfie depuis<br>
-                        une quinzaine d’années.<br>
-                        Dans les près, la régression s’explique par les pratiques<br>
-                        agricoles trop intensives (épandages d’engrais, fauches<br>
-                        précoces et répétées…). Sur les bernes, la tonte mécanique<br>
-                        détruit la plante avant qu’elle ait pu produire ses graines.<br>
-                        Elle est aujourd’hui classée parmi les plantes vulnérables.
-                    </p>
-                </div>
-                <div class="popup__images">
-                    <div class="popup__map">
-                        <img src="images/rhinanthe-map.png" alt="">
-                        <p><span class="popup__mapPoint -blue"></span>Observée depuis 1999</p>
-                        <p><span class="popup__mapPoint -brown"></span>Observée avant 1999</p>
-                    </div>
-                    <div class="popup__exergue">
-                        <img src="images/warning.png" alt="">
-                        <p>Plante vulnérable,<br>à surveiller</p>
-                    </div>
-                </div>
-                <div class="popup__back">
-                    <img src="images/arrow-left.png" alt="">
-                    Retour
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup__item" data-popup="3">
-        <div class="popup__left">
-            <img src="images/violette-flower.png" class="popup__flower" alt="">
-        </div>
-        <div class="popup__right">
-            <div class="popup__content">
-                <h1 class="popup__title">Violette des marais</h1>
-                <h2 class="popup__subtitle">Viola Palustris</h2>
-                <div class="popup__text">
-                    <p>
-                        <strong>Plante vivant dans des zones très localisées !</strong>
-                    </p>
-                    <p>
-                        René Lenormand avait repéré cette plante au 19e siècle<br>
-                        mais elle s’est raréfiée. Ses stations dans le bocage virois<br>
-                        sont très ponctuelles, avec un nombre d'individus faible<br>
-                        sur des surfaces réduites.<br>
-                        Le déclin de cette espèce est lié au déclin des zones<br>
-                        humides. Les humains en agissant sur le niveau et la<br>
-                        pollution des eaux, en développant la culture du maïs,<br>
-                        détruisent son milieu.
-                    </p>
-                </div>
-                <div class="popup__images">
-                    <div class="popup__map">
-                        <img src="images/violette-map.png" alt="">
-                        <p><span class="popup__mapPoint -blue"></span>Observée depuis 1999</p>
-                        <p><span class="popup__mapPoint -brown"></span>Observée avant 1999</p>
-                    </div>
-                    <div class="popup__exergue">
-                        <img src="images/danger.png" alt="">
-                        <p>Plante en danger<br>critique d’extinction</p>
-                    </div>
-                </div>
-                <div class="popup__back">
-                    <img src="images/arrow-left.png" alt="">
-                    Retour
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup__item" data-popup="4">
-        <div class="popup__left">
-            <img src="images/robert-flowers.png" class="popup__flower" alt="">
-        </div>
-        <div class="popup__right">
-            <div class="popup__content">
-                <h1 class="popup__title">Herbe à Robert</h1>
-                <h2 class="popup__subtitle">Geranium robertianum</h2>
-                <div class="popup__text">
-                <p>
-                    <strong>Une plante au don d’ubiquité<br>
-                    (présente sur l’ensemble du territoire)
-                    </strong>
-                </p>
-                <p>
-                    Présente dans les bois, les haies, sur les murs et les bords<br>
-                    de chemins, à proximité des habitations… on la retrouve<br>
-                    sur l’ensemble du territoire.<br>
-                    Sa physionomie est très variable : plutôt verte et bien<br>
-                    développée en sous-bois, elle est rougissante et réduite<br>
-                    à quelques feuilles à forte pilosité sur les failles d’un mur<br>
-                    exposé au soleil.
-                </p>
-                </div>
-                <div class="popup__images">
-                    <div class="popup__map">
-                        <img src="images/robert-map.png" alt="">
-                        <p><span class="popup__mapPoint -blue"></span>Observée depuis 1999</p>
-                    </div>
-                    <div class="popup__exergue">
-                        <img src="images/good.png" alt="">
-                        <p>Plante non menacée,<br>non protégée</p>
-                    </div>
-                </div>
-                <div class="popup__back">
-                    <img src="images/arrow-left.png" alt="">
-                    Retour
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup__item -interview" data-popup="6">
-        <div class="o-interview">
-            <img class="o-interview__background" src="images/interview/step1.png" alt="">
-            <h1>Entretien avec Juliette</h1>
-            <h2>Botaniste au Conservatoire<br>national de botanique</h2>
-            <div class="o-interview__tooltipList" data-interview="1">
-                <div class="o-interview__tooltipItem -first">
-                    <p class="o-interview__tooltipTitle">Bonjour Juliette, <br>peux-tu te présenter ?</p>
-                </div>
-                <div class="o-interview__tooltipItem -second">
-                    <p class="o-interview__tooltipText">
-                        Bonjour ! Je suis Juliette, je suis chargée d’étude<br>
-                        de la flore et de l’habitat, l’appellation moderne<br>
-                        pour botaniste ! Mon travail est partagé entre le bureau<br>
-                        et le terrain où j’observe les plantes et les milieux<br>
-                        naturels. Je suis attachée à l’antenne de Caen<br>
-                        du Conservatoire botanique national de Brest.
-                    </p>
-                </div>
-            </div>
-            <div class="o-interview__tooltipList" data-interview="2">
-                <div class="o-interview__tooltipItem -first">
-                    <p class="o-interview__tooltipTitle">Justement, peux-tu présenter le Conservatoire ?</p>
-                </div>
-                <div class="o-interview__tooltipItem -second">
-                    <p class="o-interview__tooltipText">
-                        Le Conservatoire botanique national de Brest couvre <br>
-                        le nord-ouest de la France. Nous sommes une équipe<br>
-                        pluridisciplinaire répartie entre Caen, Brest et Nantes.<br>
-                        Nous sommes chargés d’étude, phytosociologues,<br>
-                        spécialistes de la conservation, informaticiens, jardiniers,<br>
-                        documentalistes… Notre objectif commun est<br>
-                        de connaître pour mieux préserver !
-                    </p>
-                </div>
-            </div>
-            <div class="o-interview__tooltipList" data-interview="3">
-                <div class="o-interview__tooltipItem -first">
-                    <p class="o-interview__tooltipTitle">Quelles sont vos<br>principales missions ?</p>
-                </div>
-                <div class="o-interview__tooltipItem -second">
-                    <p class="o-interview__tooltipText">
-                        Nos deux missions fondamentales sont l’étude et la<br>
-                        préservation. S’ensuivent des missions<br>
-                        d’accompagnement et de sensibilisation.
-                    </p>
-                </div>
-            </div>
-            <div class="o-interview__tooltipList" data-interview="4">
-                <div class="o-interview__tooltipItem -first">
-                    <p class="o-interview__tooltipTitle">Vous ne travaillez<br>donc pas seuls ?!</p>
-                </div>
-                <div class="o-interview__tooltipItem -second">
-                    <p class="o-interview__tooltipText">
-                        Non effectivement, nous travaillons avec des<br>
-                        associations naturalistes, des collectivités,<br>
-                        le conservatoire du littoral, des laboratoires<br>
-                        de recherches….<br>
-                        Pour l’inventaire de la flore du Calvados, c’est aussi 249<br>
-                        bénévoles qui participent activement à nos côtés.<br>
-                        Une aide très précieuse !
-                    </p>
-                </div>
-            </div>
-            <div class="o-interview__tooltipList" data-interview="5">
-                <div class="o-interview__tooltipItem -first">
-                    <p class="o-interview__tooltipTitle">Faut-il s’inquiéter de la<br>situation actuelle ?</p>
-                </div>
-                <div class="o-interview__tooltipItem -second">
-                    <p class="o-interview__tooltipText">
-                        Aujourd’hui, un tiers de notre flore locale est menacée de disparition ! Les raisons : l’urbanisation et
-                        l’artificialisation des territoires mais aussi<br>
-                        la transformation des pratiques agricoles.<br>
-                        Chaque espèce de plante sauvage se développe dans<br>
-                        un contexte qui lui est propre : le sol, le climat, l’activité
-                        humaine de proximité. Tout déséquilibre a un impact<br>
-                        sur la flore et la faune.
-                    </p>
-                </div>
-            </div>
-            <div class="o-interview__tooltipList" data-interview="6">
-                <div class="o-interview__tooltipItem -first">
-                    <p class="o-interview__tooltipTitle">Quelles sont les mesures mises en place ?</p>
-                </div>
-                <div class="o-interview__tooltipItem -second">
-                    <p class="o-interview__tooltipText">
-                        Suite à nos études, nous conseillons et accompagnons<br>
-                        les politiques locales et nationales en faveur de la<br>
-                        biodiversité, en créant des aires protégées par exemple.
-                    </p>
-                </div>
-            </div>
-            <div class="o-interview__tooltipList" data-interview="7">
-                <div class="o-interview__tooltipItem -first">
-                    <p class="o-interview__tooltipTitle">Comment vous rencontrer<br>ou en savoir plus ?</p>
-                </div>
-                <div class="o-interview__tooltipItem -second">
-                    <p class="o-interview__tooltipText">
-                        Nous proposons des sorties botaniques,<br>
-                        des découvertes de sites naturels, des ateliers<br>
-                        ou des conférences. Nous intervenons dans les écoles...<br>
-                        Si nos actions vous intéressent n’hésitez pas à aller<br>
-                        sur le site du Conservatoire. En attendant je vous laisse<br>
-                        découvrir quelques spécimens que j’ai identifiés,<br>
-                        en touchant l’écran d’accueil.
-                    </p>
-                </div>
-            </div>
-            <div class="o-interview__tooltipPrev">
-                <div class="o-interview__tooltipPrevImg">
-                    <img src="images/arrow-left-small.png" alt="">
-                </div>
-                Précédent
-            </div>
-            <div class="o-interview__tooltipNext">
-                Suivant
-                <div class="o-interview__tooltipNextImg">
-                    <img src="images/arrow-right.png" alt="">
-                </div>
-            </div>
-            <div class="popup__back">
-                <img src="images/arrow-left.png" alt="">
-                Retour
-            </div>
-        </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
