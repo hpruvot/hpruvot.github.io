@@ -464,7 +464,7 @@ video {
         top: 70px;
         left: -110px;
         width: 140px;
-        height: 96px;
+        height: 95px;
         background: url("../images/interview/tooltip-left.png");
         content: ""; }
   .o-interview__tooltipTitle {

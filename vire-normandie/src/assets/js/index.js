@@ -100,9 +100,12 @@ interviewNext.addEventListener('click', () => {
  */
 document.querySelector('.video.-menace').addEventListener('ended', () => {
   document.querySelector('[data-popup="5"]').classList.remove('-isShowed');
-  videoMenace.currentTime = 0;
-  isHomeScreen = true;
-  startTimer();
+
+  setTimeout(() => {
+    isHomeScreen = true;
+    videoMenace.currentTime = 0;
+    startTimer();
+  }, 1000);
 });
 
 const showInterviewPrev = (interviewIndex) => {
