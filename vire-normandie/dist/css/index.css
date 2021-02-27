@@ -424,7 +424,8 @@ video {
     position: absolute;
     top: 54%;
     right: 0;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    z-index: -1; }
   .o-interview__tooltipList {
     position: absolute;
     right: 200px;
