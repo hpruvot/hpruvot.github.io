@@ -6,7 +6,7 @@ const interviewNext = document.querySelector('.o-interview__tooltipNext');
 
 let interviewStep = 1;
 let isHomeScreen = false;
-let timeoutInMiliseconds = 90000; // 90 seconds
+let timeoutInMiliseconds = 5000; // 90 seconds
 let timeoutId;
 
 instructions.addEventListener('click', () => {
@@ -23,6 +23,7 @@ document.querySelectorAll('.zone__item').forEach(item => {
     // Not home => Reset timer
     isHomeScreen = false;
     resetTimer();
+
 
     // Show popup
     const index = item.getAttribute('data-zone');
