@@ -492,7 +492,8 @@ video {
   .o-interview__tooltipPrev {
     right: 35%;
     bottom: 21%;
-    font-size: 26px; }
+    font-size: 26px;
+    font-weight: 400; }
   .o-interview__tooltipPrevImg, .o-interview__tooltipNextImg {
     display: flex;
     align-items: center;
