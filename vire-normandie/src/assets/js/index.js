@@ -6,7 +6,7 @@ const interviewNext = document.querySelector('.o-interview__tooltipNext');
 
 let interviewStep = 1;
 let isHomeScreen = false;
-let timeoutInMiliseconds = 5000; // 90 seconds
+let timeoutInMiliseconds = 20000; // 90 seconds
 let timeoutId;
 
 instructions.addEventListener('click', () => {
