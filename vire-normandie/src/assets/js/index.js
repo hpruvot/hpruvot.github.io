@@ -63,6 +63,9 @@ document.querySelectorAll('.popup__back').forEach(item => {
     isHomeScreen = true;
     startTimer();
 
+    // Reset back to homescreen
+    resetScreensTimer();
+
     // Hide all popup
     document.querySelectorAll('.popup__item').forEach(popup => {
       popup.classList.remove('-isShowed');
@@ -141,6 +144,7 @@ const startTimer = () => {
 const startScreensTimer = () => {
   timeoutScreensId = window.setTimeout(() => {
     document.querySelector('.popup__item.-isShowed').classList.remove('-isShowed');
+    startTimer();
   }, timeoutScreensInactivity)
 }
 
