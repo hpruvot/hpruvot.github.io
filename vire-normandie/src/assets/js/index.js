@@ -6,8 +6,10 @@ const interviewNext = document.querySelector('.o-interview__tooltipNext');
 
 let interviewStep = 1;
 let isHomeScreen = false;
-let timeoutInMiliseconds = 20000; // 90 seconds
-let timeoutId;
+let timeoutHomeInactivity = 30000; // 30 seconds
+let timeoutScreensInactivity = 90000; // 90 seconds
+let timeoutHomeId;
+let timeoutScreensId;
 
 instructions.addEventListener('click', () => {
   instructions.classList.add('-isHidden');
@@ -24,10 +26,14 @@ document.querySelectorAll('.zone__item').forEach(item => {
     isHomeScreen = false;
     resetTimer();
 
-
     // Show popup
     const index = item.getAttribute('data-zone');
     document.querySelector('[data-popup="'+ index +'"]').classList.add('-isShowed');
+
+    // If not video
+    if (index != 5) {
+      startScreensTimer();
+    }
 
     // If popup 5
     if (index == 5) {
@@ -80,6 +86,7 @@ interviewPrev.addEventListener('click', () => {
   document.querySelector('[data-interview="'+ prevIndex +'"]').classList.add('-isShowed');
   showInterviewPrev(prevIndex);
   showInterviewNext(prevIndex);
+  resetScreensTimer();
 });
 
 /**
@@ -93,6 +100,7 @@ interviewNext.addEventListener('click', () => {
   document.querySelector('[data-interview="'+ nextIndex +'"]').classList.add('-isShowed');
   showInterviewPrev(nextIndex);
   showInterviewNext(nextIndex);
+  resetScreensTimer();
 });
 
 /**
@@ -125,15 +133,29 @@ const showInterviewNext = (interviewIndex) => {
 }
 
 const startTimer = () => {
-  timeoutId = window.setTimeout(() => {
+  timeoutHomeId = window.setTimeout(() => {
     instructions.classList.remove('-isHidden');
-  }, timeoutInMiliseconds)
+  }, timeoutHomeInactivity)
+}
+
+const startScreensTimer = () => {
+  timeoutScreensId = window.setTimeout(() => {
+    document.querySelector('.popup__item.-isShowed').classList.remove('-isShowed');
+  }, timeoutScreensInactivity)
 }
 
 const resetTimer = () => {
-  window.clearTimeout(timeoutId);
+  window.clearTimeout(timeoutHomeId);
   if(isHomeScreen) {
     startTimer();
+  }
+}
+
+const resetScreensTimer = () => {
+  window.clearTimeout(timeoutScreensId);
+
+  if(!isHomeScreen) {
+    startScreensTimer();
   }
 }
 
