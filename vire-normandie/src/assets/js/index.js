@@ -1,5 +1,5 @@
 const videoHome = document.querySelector('.video.-home');
-const videoMenace = document.querySelector('.video.-menace');
+const videoThreat = document.querySelector('.video.-menace');
 const instructions = document.querySelector('.instructions');
 const interviewPrev = document.querySelector('.o-interview__tooltipPrev');
 const interviewNext = document.querySelector('.o-interview__tooltipNext');
@@ -38,8 +38,8 @@ document.querySelectorAll('.zone__item').forEach(item => {
     // If popup 5
     if (index == 5) {
       // Play video
-      videoMenace.currentTime = 0;
-      videoMenace.play();
+      videoThreat.currentTime = 0;
+      videoThreat.play();
     }
 
     // If popup 6
@@ -111,7 +111,7 @@ document.querySelector('.video.-menace').addEventListener('ended', () => {
 
   setTimeout(() => {
     isHomeScreen = true;
-    videoMenace.currentTime = 0;
+    videoThreat.currentTime = 0;
     startTimer();
   }, 1000);
 });

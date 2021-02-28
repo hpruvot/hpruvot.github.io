@@ -280,6 +280,10 @@ video {
 
 .zone__item {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   width: 255px;
   height: 40px; }
   .zone__item[data-zone="1"] {
@@ -287,31 +291,64 @@ video {
     left: 2%;
     width: 401px;
     height: 713px; }
+    .zone__item[data-zone="1"] .zone__itemTitle {
+      left: -10px; }
   .zone__item[data-zone="2"] {
     top: 45%;
     left: 29%;
     width: 395px;
     height: 555px; }
+    .zone__item[data-zone="2"] .zone__itemTitle {
+      top: 7px; }
   .zone__item[data-zone="3"] {
     top: 55%;
     left: 53%;
     width: 330px;
     height: 320px; }
+    .zone__item[data-zone="3"] .zone__itemTitle {
+      top: 15px; }
   .zone__item[data-zone="4"] {
     top: 49%;
     left: 72%;
     width: 490px;
     height: 485px; }
+    .zone__item[data-zone="4"] .zone__itemTitle {
+      top: 5px;
+      left: -20px; }
   .zone__item[data-zone="5"] {
     top: 7%;
     left: 35%;
     width: 360px;
     height: 240px; }
+    .zone__item[data-zone="5"] .zone__itemTitle {
+      top: -15px;
+      left: -15px; }
   .zone__item[data-zone="6"] {
     top: 12%;
     right: 6%;
     width: 640px;
     height: 335px; }
+    .zone__item[data-zone="6"] .zone__itemTitle {
+      top: -10px;
+      left: -82px; }
+
+.zone__itemTitle {
+  position: relative;
+  margin: 30px auto;
+  font-family: "LeanO FY";
+  font-size: 24px;
+  font-weight: 400; }
+  .zone__itemTitle::before, .zone__itemTitle::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+    content: ""; }
+  .zone__itemTitle::before {
+    top: -7px; }
+  .zone__itemTitle::after {
+    bottom: -6px; }
 
 .popup__item {
   position: fixed;
