@@ -86,9 +86,11 @@ video {
 .zone__itemTitle {
   position: relative;
   margin: 30px auto;
+  color: #394E45;
   font-family: $font;
   font-size: 24px;
   font-weight: 400;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 
   &::before,
   &::after {

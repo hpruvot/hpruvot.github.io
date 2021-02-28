@@ -335,9 +335,11 @@ video {
 .zone__itemTitle {
   position: relative;
   margin: 30px auto;
+  color: #394E45;
   font-family: "LeanO FY";
   font-size: 24px;
-  font-weight: 400; }
+  font-weight: 400;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35); }
   .zone__itemTitle::before, .zone__itemTitle::after {
     position: absolute;
     left: 0;
