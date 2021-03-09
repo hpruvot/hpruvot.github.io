@@ -7,7 +7,7 @@ const interviewNext = document.querySelector('.o-interview__tooltipNext');
 let interviewStep = 1;
 let isHomeScreen = false;
 let timeoutHomeInactivity = 30000; // 30 seconds
-let timeoutScreensInactivity = 90000; // 90 seconds
+let timeoutScreensInactivity = 120000; // 120 seconds
 let timeoutHomeId;
 let timeoutScreensId;
 
