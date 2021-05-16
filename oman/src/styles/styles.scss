@@ -5,7 +5,10 @@
 @import "typography";
 @import "icons";
 @import "buttons";
+@import "components/map/index.scss";
+@import "components/country/index.scss";
 
 body {
+  overflow: hidden;
   background: rgb(219, 219, 219);
 }
