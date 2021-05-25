@@ -16,9 +16,15 @@ export default class Map {
   initEvents() {
     // For each map pin
     document.querySelectorAll('.o-map__zoneItem').forEach((zoneItem, index) => {
-      // Handle click
+      // Handle click open
       zoneItem.addEventListener('click', () => this.openZone(index), false);
-    })
+    });
+
+    // For each area
+    document.querySelectorAll('.o-map__contentItem').forEach((areaItem) => {
+      // Handle click close
+      areaItem.querySelector('.o-country__close').addEventListener('click', () => this.closeZone(), false);
+    });
   }
   /**
    * openZone
@@ -26,14 +32,14 @@ export default class Map {
    * @param  {number} index
    */
   openZone(index) {
-    // Add class to the parent
+    // Add class on the map
     document.querySelector('.o-map').classList.add('-open')
 
-    // Remove all active classes and style
+    // Remove all active classes and style of areas
     document.querySelectorAll('.o-map__contentItem').forEach((contentItem) => {
       contentItem.style.transform = "";
       contentItem.classList.remove('-open')
-    })
+    });
 
     // Add class active on the selected item
     document.querySelectorAll('.o-map__contentItem')[index].classList.add('-open');
@@ -56,6 +62,16 @@ export default class Map {
         // Close zone
         document.querySelector('.o-map__contentItem.-open').style.transform = "translateX(835px)";
       }
+    });
+  }
+  closeZone() {
+    // Remove class of the map
+    document.querySelector('.o-map').classList.remove('-open')
+
+    // Remove all active classes and style of areas
+    document.querySelectorAll('.o-map__contentItem').forEach((contentItem) => {
+      contentItem.style.transform = "";
+      contentItem.classList.remove('-open')
     });
   }
 }
