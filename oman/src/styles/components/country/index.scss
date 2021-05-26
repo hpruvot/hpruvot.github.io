@@ -29,31 +29,13 @@
 
 .o-country__top {
   position: relative;
+  height: 352px;
 }
 
 .o-country__close {
   position: absolute;
   top: 40px;
   left: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 7px 10px;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background: $color-white;
-  border-radius: 4px;
-  z-index: 1;
-
-  .icon-close {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-.o-country__image {
-  height: 352px;
 }
 
 .o-country__content {
@@ -76,12 +58,9 @@
   }
 }
 
-.o-country__contentImageList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.o-country__contentList {
   padding-right: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   width: 58%;
   overflow-y: scroll;
 
@@ -104,15 +83,26 @@
   }
 }
 
-.o-country__contentImage {
-  position: relative;
-  margin-bottom: 25px;
-  height: 272px;
-  background: $color-sand;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+.o-country__animalList {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-rows: repeat(auto-fill, 272px);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.o-country__contentImageName {
+.o-country__animal {
+  position: relative;
+  height: 272px;
+  overflow: hidden;
+  background: $color-sand;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 100%;
+  }
+}
+
+.o-country__animalName {
   position: absolute;
   bottom: 0;
   left: 0;

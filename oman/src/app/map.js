@@ -25,6 +25,18 @@ export default class Map {
       // Handle click close
       areaItem.querySelector('.o-country__close').addEventListener('click', () => this.closeZone(), false);
     });
+
+    // For each animal
+    document.querySelectorAll('.o-country__animal').forEach((animalItem) => {
+      // Handle click animal overlay
+      animalItem.addEventListener('click', () => this.openAnimalOverlay(animalItem.dataset.name), false);
+    });
+
+    // For each back to region on animal overlay
+    document.querySelectorAll('.o-animalOverlay').forEach((animalOverlay) => {
+      animalOverlay.querySelector('.o-animalOverlay__closeRegion').addEventListener('click', () => this.closeAnimalOverlay(), false);
+      animalOverlay.querySelector('.o-animalOverlay__closeHome').addEventListener('click', () => this.closeZone(), false);
+    });
   }
   /**
    * openZone
@@ -72,6 +84,18 @@ export default class Map {
     document.querySelectorAll('.o-map__contentItem').forEach((contentItem) => {
       contentItem.style.transform = "";
       contentItem.classList.remove('-open')
+    });
+
+    this.closeAnimalOverlay();
+  }
+  openAnimalOverlay(name) {
+    const overlayToOpen = document.querySelector('.o-animalOverlay[data-name='+ name +']');
+    overlayToOpen.classList.add('-open');
+  }
+  closeAnimalOverlay() {
+    console.log('closeAnimalOverlay');
+    document.querySelectorAll('.o-animalOverlay').forEach((animalOverlay) => {
+      animalOverlay.classList.remove('-open')
     });
   }
 }
