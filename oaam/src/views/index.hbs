@@ -3,15 +3,41 @@
         <main role="main">
             {{> partials/header }}
             <div class="o-map">
-                <img class="o-map__image" src="img/Background.jpg" alt="">
-                <div class="o-map__zoneList">
-                    {{#each areas}}
-                    <div class="o-map__zoneItem">
-                        <svg class="icon icon-pin">
-                            <use xlink:href="img/symbol-defs.svg#icon-pin"></use>
-                        </svg>
+                <div class="o-map__background">
+                    <img class="o-map__image" src="img/Background.jpg" alt="">
+                    <div class="o-map__zoneList">
+                        {{#each areas}}
+                        <div class="o-map__zoneItem" style="
+                            {{#if location.top }}top: {{ location.top }}%;{{/if}}
+                            {{#if location.left }}left: {{ location.left }}%;{{/if}}
+                            {{#if location.bottom }}bottom: {{ location.bottom }}%;{{/if}}
+                            {{#if location.right }}right: {{ location.right }}%;{{/if}}"
+                        >
+                            <svg class="icon icon-pin">
+                                <use xlink:href="img/symbol-defs.svg#icon-pin"></use>
+                            </svg>
+                        </div>
+                        {{/each}}
                     </div>
-                    {{/each}}
+                    <div class="o-map__intro">
+                        <p class="t-title">
+                            {{ site.title }}
+                            <span>{{ site.subtitle }}</span>
+                        </p>
+                        <p class="t-text">{{ site.text }}</p>
+                        <div class="t-help">
+                            <svg class="icon icon-hand">
+                                <use xlink:href="img/symbol-defs.svg#icon-hand"></use>
+                            </svg>
+                            <p>
+                                {{ site.help_1 }}
+                                <svg class="icon icon-pin">
+                                    <use xlink:href="img/symbol-defs.svg#icon-pin"></use>
+                                </svg>
+                                {{ site.help_2 }}
+                            </p>
+                        </p>
+                    </div>
                 </div>
                 <div class="o-map__contentList">
                     {{#each areas}}

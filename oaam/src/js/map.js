@@ -2,7 +2,7 @@ export default class Map {
   constructor() {
     let map = document.querySelector('.o-map');
 
-    if (map.length <= 0) return
+    if (map.length <= 0) return;
 
     this.init();
   }
@@ -23,7 +23,13 @@ export default class Map {
     // For each area
     document.querySelectorAll('.o-map__contentItem').forEach((areaItem) => {
       // Handle click close
-      areaItem.querySelector('.o-country__close').addEventListener('click', () => this.closeZone(), false);
+      areaItem.querySelector('.o-country__close').addEventListener('click', () => {
+        // Reset map style
+        document.querySelector('.o-map').classList.remove('-open');
+
+        // Reset areas + pins
+        this.closeZone();
+      });
     });
 
     // For each animal
@@ -45,12 +51,17 @@ export default class Map {
    */
   openZone(index) {
     // Add class on the map
-    document.querySelector('.o-map').classList.add('-open')
+    document.querySelector('.o-map').classList.add('-open');
+
+    this.closeZone();
+
+    // Add class on the pin
+    document.querySelectorAll('.o-map__zoneItem')[index].classList.add('-open');
 
     // Remove all active classes and style of areas
     document.querySelectorAll('.o-map__contentItem').forEach((contentItem) => {
       contentItem.style.transform = "";
-      contentItem.classList.remove('-open')
+      contentItem.classList.remove('-open');
     });
 
     // Add class active on the selected item
@@ -77,13 +88,15 @@ export default class Map {
     });
   }
   closeZone() {
-    // Remove class of the map
-    document.querySelector('.o-map').classList.remove('-open')
-
     // Remove all active classes and style of areas
     document.querySelectorAll('.o-map__contentItem').forEach((contentItem) => {
       contentItem.style.transform = "";
-      contentItem.classList.remove('-open')
+      contentItem.classList.remove('-open');
+    });
+
+    // Remove all active classes and style of pins
+    document.querySelectorAll('.o-map__zoneItem').forEach((zoneItem) => {
+      zoneItem.classList.remove('-open');
     });
 
     this.closeAnimalOverlay();
@@ -95,7 +108,7 @@ export default class Map {
   closeAnimalOverlay() {
     console.log('closeAnimalOverlay');
     document.querySelectorAll('.o-animalOverlay').forEach((animalOverlay) => {
-      animalOverlay.classList.remove('-open')
+      animalOverlay.classList.remove('-open');
     });
   }
 }
