@@ -1,0 +1,48 @@
+{
+  "name": "webpack-handlebars-static",
+  "version": "1.0.0",
+  "description": "A webpack static site builder using handlebars templates, sass and babel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server",
+    "prestart": "npm run clean",
+    "build": "NODE_ENV=production webpack",
+    "prebuild": "npm run clean",
+    "clean": "rimraf build generated",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mitch Heddles <mitchell.heddles@gmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 11"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "file-loader": "^5.0.2",
+    "handlebars": "^4.7.3",
+    "handlebars-layouts": "^3.1.4",
+    "handlebars-webpack-plugin": "https://github.com/mitchheddles/handlebars-webpack-plugin#478592b",
+    "html-webpack-plugin": "^3.2.0",
+    "ignore-loader": "^0.1.2",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

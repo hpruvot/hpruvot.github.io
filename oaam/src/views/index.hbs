@@ -1,0 +1,84 @@
+{{#extend "html/template"}}
+    {{#content "body"}}
+        <main role="main">
+            {{> partials/header }}
+            <div class="o-map">
+                <img class="o-map__image" src="img/Background.jpg" alt="">
+                <div class="o-map__zoneList">
+                    {{#each areas}}
+                    <div class="o-map__zoneItem">
+                        <svg class="icon icon-pin">
+                            <use xlink:href="img/symbol-defs.svg#icon-pin"></use>
+                        </svg>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="o-map__contentList">
+                    {{#each areas}}
+                    <div class="o-map__contentItem">
+                        <div class="o-country" style="--color: #BE9965;">
+                            <div class="o-country__drag">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="o-country__top">
+                                <div class="a-cta o-country__close">
+                                    <svg class="icon icon-close">
+                                        <use xlink:href="img/symbol-defs.svg#icon-close"></use>
+                                    </svg>
+                                    Close
+                                </div>
+                                <img class="o-country__image" src="img/Musandam Peninsula.jpg" alt="">
+                            </div>
+                            <div class="o-country__content">
+                                <div class="o-country__contentText">
+                                    <h2 class="t-title">{{ title }}</h2>
+                                    <p class="t-subtitle">{{ subtitle }}</p>
+                                    <p class="t-text">
+                                        {{ text }}
+                                    </p>
+                                </div>
+                                <div class="o-country__contentList">
+                                    <ul class="o-country__animalList">
+                                        {{#each animals}}
+                                        <li class="o-country__animal" data-name="{{ name }}">
+                                            <img src="img/{{ thumbnail }}" alt="">
+                                            <div class="o-country__animalName">
+                                                {{ title }}
+                                            </div>
+                                        </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            {{#each areas}}
+            <div class="o-animalList">
+                {{#each animals}}
+                <div class="o-animalOverlay" data-name="{{ name }}">
+                    <div class="o-animalOverlay__close">
+                        <div class="a-cta o-animalOverlay__closeRegion">
+                            <svg class="icon icon-close">
+                                <use xlink:href="img/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                            Back to Region
+                        </div>
+                        <div class="a-cta o-animalOverlay__closeHome">
+                            <svg class="icon icon-home">
+                                <use xlink:href="img/symbol-defs.svg#icon-home"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <img src="img/{{ background }}" alt="" class="o-animalOverlay__background">
+                    <img src="img/{{ image }}" alt="" class="o-animalOverlay__animal">
+                </div>
+                {{/each}}
+            </div>
+            {{/each}}
+        </main>
+    {{/content}}
+{{/extend}}
