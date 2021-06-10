@@ -1,8 +1,8 @@
 export default class Map {
   constructor() {
-    let map = document.querySelector('.o-map');
+    this.map = document.querySelector('.o-map');
 
-    if (map.length <= 0) return;
+    if (this.map.length <= 0) return;
 
     this.init();
   }
@@ -25,7 +25,7 @@ export default class Map {
       // Handle click close
       areaItem.querySelector('.o-country__close').addEventListener('click', () => {
         // Reset map style
-        document.querySelector('.o-map').classList.remove('-open');
+        this.map.classList.remove('-open');
 
         // Reset areas + pins
         this.closeZone();
@@ -41,7 +41,10 @@ export default class Map {
     // For each back to region on animal overlay
     document.querySelectorAll('.o-animalOverlay').forEach((animalOverlay) => {
       animalOverlay.querySelector('.o-animalOverlay__closeRegion').addEventListener('click', () => this.closeAnimalOverlay(), false);
-      animalOverlay.querySelector('.o-animalOverlay__closeHome').addEventListener('click', () => this.closeZone(), false);
+      animalOverlay.querySelector('.o-animalOverlay__closeHome').addEventListener('click', () => {
+        this.map.classList.remove('-open');
+        this.closeZone();
+      });
     });
   }
   /**
@@ -51,7 +54,7 @@ export default class Map {
    */
   openZone(index) {
     // Add class on the map
-    document.querySelector('.o-map').classList.add('-open');
+    this.map.classList.add('-open');
 
     this.closeZone();
 
