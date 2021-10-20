@@ -1,0 +1,40 @@
+.home__title {
+  position: absolute;
+
+  &.-en {
+    bottom: 23%;
+    left: 26%;
+  }
+
+  &.-ar {
+    right: 26%;
+    bottom: 30%;
+    direction: rtl;
+  }
+
+  .t-title {
+    margin-bottom: 50px;
+  }
+}
+
+.home__ctaList {
+  position: absolute;
+  bottom: 13%;
+  left: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateX(-50%);
+}
+
+.home__ctaItem {
+  flex: 1;
+  margin: 0 10px;
+  width: 130px;
+}
+
+.home__map {
+  position: absolute;
+  top: 10%;
+  left: 46%;
+  transform: translateX(-50%);
+}
