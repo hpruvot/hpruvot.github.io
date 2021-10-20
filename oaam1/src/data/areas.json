@@ -1,0 +1,169 @@
+[{
+        "title": "Al-Hajar Mountains",
+        "subtitle": "Northern Oman",
+        "text": "The country in the north of the main part of Oman is mountainous, Al Hajar Mountains reaching almost to 3,000 m. They run parallel to the coast of the Gulf of Oman, with a narrow coastal plain in between. This is crossed by a number of wadis and has several oases.",
+        "location": {
+            "top": 0,
+            "right": 38
+        },
+        "animals": [{
+                "name": "lizard",
+                "title": "Blue-Tailed Lizard",
+                "thumbnail": "areas/lizard.png",
+                "background": "animals/lizard-background.jpg",
+                "image": "animals/lizard-animal.png"
+            },
+            {
+                "name": "gazelle",
+                "title": "Arabian Sand Gazelle",
+                "thumbnail": "areas/gazelle.png",
+                "background": "animals/gazelle-background.jpg",
+                "image": "animals/gazelle-animal.png"
+            }
+        ]
+    },
+    {
+        "title": "Central Plain Deserts",
+        "subtitle": "Northern Oman",
+        "text": "The country in the north of the main part of Oman is mountainous, Al Hajar Mountains reaching almost to 3,000 m. They run parallel to the coast of the Gulf of Oman, with a narrow coastal plain in between. This is crossed by a number of wadis and has several oases.",
+        "location": {
+            "top": 22,
+            "right": 25
+        },
+        "animals": [{
+                "name": "lizard",
+                "title": "Blue-Tailed Lizard",
+                "thumbnail": "areas/lizard.png",
+                "background": "animals/lizard-background.jpg",
+                "image": "animals/lizard-animal.png"
+            },
+            {
+                "name": "gazelle",
+                "title": "Arabian Sand Gazelle",
+                "thumbnail": "areas/gazelle.png",
+                "background": "animals/gazelle-background.jpg",
+                "image": "animals/gazelle-animal.png"
+            }
+        ]
+    },
+    {
+        "title": "Central Plain Deserts",
+        "subtitle": "Northern Oman",
+        "text": "The country in the north of the main part of Oman is mountainous, Al Hajar Mountains reaching almost to 3,000 m. They run parallel to the coast of the Gulf of Oman, with a narrow coastal plain in between. This is crossed by a number of wadis and has several oases.",
+        "location": {
+            "top": 36,
+            "right": 4
+        },
+        "animals": [{
+                "name": "lizard",
+                "title": "Blue-Tailed Lizard",
+                "thumbnail": "areas/lizard.png",
+                "background": "animals/lizard-background.jpg",
+                "image": "animals/lizard-animal.png"
+            },
+            {
+                "name": "gazelle",
+                "title": "Arabian Sand Gazelle",
+                "thumbnail": "areas/gazelle.png",
+                "background": "animals/gazelle-background.jpg",
+                "image": "animals/gazelle-animal.png"
+            }
+        ]
+    },
+    {
+        "title": "Central Plain Deserts",
+        "subtitle": "Northern Oman",
+        "text": "The country in the north of the main part of Oman is mountainous, Al Hajar Mountains reaching almost to 3,000 m. They run parallel to the coast of the Gulf of Oman, with a narrow coastal plain in between. This is crossed by a number of wadis and has several oases.",
+        "location": {
+            "top": 50,
+            "right": 29
+        },
+        "animals": [{
+                "name": "lizard",
+                "title": "Blue-Tailed Lizard",
+                "thumbnail": "areas/lizard.png",
+                "background": "animals/lizard-background.jpg",
+                "image": "animals/lizard-animal.png"
+            },
+            {
+                "name": "gazelle",
+                "title": "Arabian Sand Gazelle",
+                "thumbnail": "areas/gazelle.png",
+                "background": "animals/gazelle-background.jpg",
+                "image": "animals/gazelle-animal.png"
+            }
+        ]
+    },
+    {
+        "title": "Central Plain Deserts",
+        "subtitle": "Northern Oman",
+        "text": "The country in the north of the main part of Oman is mountainous, Al Hajar Mountains reaching almost to 3,000 m. They run parallel to the coast of the Gulf of Oman, with a narrow coastal plain in between. This is crossed by a number of wadis and has several oases.",
+        "location": {
+            "bottom": 34,
+            "right": 2
+        },
+        "animals": [{
+                "name": "lizard",
+                "title": "Blue-Tailed Lizard",
+                "thumbnail": "areas/lizard.png",
+                "background": "animals/lizard-background.jpg",
+                "image": "animals/lizard-animal.png"
+            },
+            {
+                "name": "gazelle",
+                "title": "Arabian Sand Gazelle",
+                "thumbnail": "areas/gazelle.png",
+                "background": "animals/gazelle-background.jpg",
+                "image": "animals/gazelle-animal.png"
+            }
+        ]
+    },
+    {
+        "title": "Central Plain Deserts",
+        "subtitle": "Northern Oman",
+        "text": "The country in the north of the main part of Oman is mountainous, Al Hajar Mountains reaching almost to 3,000 m. They run parallel to the coast of the Gulf of Oman, with a narrow coastal plain in between. This is crossed by a number of wadis and has several oases.",
+        "location": {
+            "bottom": 29,
+            "left": 38
+        },
+        "animals": [{
+                "name": "lizard",
+                "title": "Blue-Tailed Lizard",
+                "thumbnail": "areas/lizard.png",
+                "background": "animals/lizard-background.jpg",
+                "image": "animals/lizard-animal.png"
+            },
+            {
+                "name": "gazelle",
+                "title": "Arabian Sand Gazelle",
+                "thumbnail": "areas/gazelle.png",
+                "background": "animals/gazelle-background.jpg",
+                "image": "animals/gazelle-animal.png"
+            }
+        ]
+    },
+    {
+        "title": "Central Plain Deserts",
+        "subtitle": "Northern Oman",
+        "text": "The country in the north of the main part of Oman is mountainous, Al Hajar Mountains reaching almost to 3,000 m. They run parallel to the coast of the Gulf of Oman, with a narrow coastal plain in between. This is crossed by a number of wadis and has several oases.",
+        "location": {
+            "bottom": 9,
+            "left": 13
+        },
+        "animals": [{
+                "name": "lizard",
+                "title": "Blue-Tailed Lizard",
+                "thumbnail": "areas/lizard.png",
+                "background": "animals/lizard-background.jpg",
+                "image": "animals/lizard-animal.png"
+            },
+            {
+                "name": "gazelle",
+                "title": "Arabian Sand Gazelle",
+                "thumbnail": "areas/gazelle.png",
+                "background": "animals/gazelle-background.jpg",
+                "image": "animals/gazelle-animal.png"
+            }
+        ]
+    }
+]

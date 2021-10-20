@@ -1,0 +1,23 @@
+// Base
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "icons";
+@import "buttons";
+@import "fonts";
+@import "components/map/index.scss";
+@import "components/country/index.scss";
+@import "components/animal/index.scss";
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: rgb(219, 219, 219);
+}
